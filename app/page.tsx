@@ -2,9 +2,9 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/home/Hero";
 import { Services } from "@/components/home/Services";
+import { Products } from "@/components/home/Products";
 import { Stats } from "@/components/home/Stats";
 import { Process } from "@/components/home/Process";
-import { Testimonials } from "@/components/home/Testimonials";
 import { ContactCTA } from "@/components/home/ContactCTA";
 import { MarqueeStrip } from "@/components/animations/MarqueeStrip";
 
@@ -36,9 +36,11 @@ export default function HomePage() {
           accentColor="#FF7F00"
         />
         <Services />
+        {/* Gradient bridge from Services (#0047AB) to Products (#1A4070) */}
+        <div className="h-32 bg-gradient-to-b from-[#0047AB] to-[#1A4070]" />
+        <Products />
         <Stats />
         <Process />
-        <Testimonials />
         <ContactCTA />
       </main>
       <Footer />
