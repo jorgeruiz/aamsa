@@ -58,7 +58,7 @@ export function Products() {
   const shouldReduce = useReducedMotion();
 
   return (
-    <section className="relative py-24 lg:py-32 bg-[#1A4070]">
+    <section className="relative py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <MotionSection className="mb-16">
           <div className="flex items-center gap-3 mb-5">

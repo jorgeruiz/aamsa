@@ -162,7 +162,7 @@ export function Services() {
   const shouldReduce = useReducedMotion();
 
   return (
-    <section className="relative py-24 lg:py-32 bg-[#0047AB]">
+    <section className="relative py-24 lg:py-32">
       {/* Section header */}
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <MotionSection className="mb-16">

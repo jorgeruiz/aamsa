@@ -7,6 +7,7 @@ import { Stats } from "@/components/home/Stats";
 import { Process } from "@/components/home/Process";
 import { ContactCTA } from "@/components/home/ContactCTA";
 import { MarqueeStrip } from "@/components/animations/MarqueeStrip";
+import { ScrollColorSection } from "@/components/ui/ScrollColorSection";
 
 const capabilities = [
   "Corte Láser",
@@ -35,10 +36,10 @@ export default function HomePage() {
           textColor="#7A9CC0"
           accentColor="#FF7F00"
         />
-        <Services />
-        {/* Gradient bridge from Services (#0047AB) to Products (#1A4070) */}
-        <div className="h-32 bg-gradient-to-b from-[#0047AB] to-[#1A4070]" />
-        <Products />
+        <ScrollColorSection fromColor="#0047AB" toColor="#1A4070">
+          <Services />
+          <Products />
+        </ScrollColorSection>
         <Stats />
         <Process />
         <ContactCTA />
