@@ -162,7 +162,7 @@ export function Services() {
   const shouldReduce = useReducedMotion();
 
   return (
-    <section className="relative py-24 lg:py-32 bg-[#0A1A2E]">
+    <section className="relative py-24 lg:py-32 bg-[#0047AB]">
       {/* Section header */}
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <MotionSection className="mb-16">
@@ -181,7 +181,7 @@ export function Services() {
               <br />
               de Acero Industrial
             </h2>
-            <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] max-w-sm leading-relaxed text-sm md:text-base">
+            <p className="font-[family-name:var(--font-inter)] text-white/70 max-w-sm leading-relaxed text-sm md:text-base">
               Seis procesos integrados bajo un mismo techo. Habilitado de
               material y maquila para la industria del noreste de México.
             </p>
@@ -206,7 +206,7 @@ export function Services() {
             >
               <Link
                 href={service.href}
-                className="group block bg-[#0F2440] border border-[#1A4070] border-t-[3px] border-t-[#FF7F00] h-full transition-colors duration-200 hover:border-[#FF7F00]/40 hover:bg-[#153050] overflow-hidden"
+                className="group block bg-[#003885] border border-white/10 border-t-[3px] border-t-[#FF7F00] h-full transition-colors duration-200 hover:border-[#FF7F00]/40 hover:bg-[#004ABC] overflow-hidden"
               >
                 {/* Service photo */}
                 <div className="relative w-full h-40 overflow-hidden">
@@ -216,7 +216,7 @@ export function Services() {
                     fill
                     className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F2440] via-[#0F2440]/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#003885] via-[#003885]/30 to-transparent" />
                 </div>
 
                 <div className="p-8 pt-4">
@@ -229,13 +229,13 @@ export function Services() {
                 </h3>
 
                 {/* Description */}
-                <p className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] leading-relaxed mb-6">
+                <p className="font-[family-name:var(--font-inter)] text-sm text-white/70 leading-relaxed mb-6">
                   {service.description}
                 </p>
 
                 {/* Spec badge */}
                 <div className="flex items-center justify-between">
-                  <span className="font-[family-name:var(--font-inter)] text-xs text-[#7A9CC0] uppercase tracking-wider">
+                  <span className="font-[family-name:var(--font-inter)] text-xs text-white/50 uppercase tracking-wider">
                     {service.spec}
                   </span>
                   <svg

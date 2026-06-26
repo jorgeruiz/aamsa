@@ -35,7 +35,7 @@ export function Process() {
   const shouldReduce = useReducedMotion();
 
   return (
-    <section className="py-24 lg:py-32 bg-[#0A1A2E]">
+    <section className="py-24 lg:py-32 bg-[#EDF1F7]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="grid lg:grid-cols-2 gap-10 items-center mb-16">
           <MotionSection>
@@ -46,7 +46,7 @@ export function Process() {
               </span>
             </div>
             <h2
-              className="font-[family-name:var(--font-barlow)] font-black uppercase leading-none text-white"
+              className="font-[family-name:var(--font-barlow)] font-black uppercase leading-none text-[#0A1A2E]"
               style={{ fontSize: "clamp(36px, 5vw, 60px)" }}
             >
               Cotizar es sencillo.
@@ -59,28 +59,28 @@ export function Process() {
 
           {/* Blueprint photo */}
           <MotionSection delay={0.15} className="hidden lg:block">
-            <div className="relative h-64 overflow-hidden border border-[#1A4070]">
+            <div className="relative h-64 overflow-hidden border border-[#C8D3E3]">
               <Image
                 src="/plano-tecnico.png"
                 alt="Plano técnico de acero"
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#0A1A2E]/60" />
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#EDF1F7]/60" />
             </div>
           </MotionSection>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-0 relative">
           {/* Connector line */}
-          <div className="absolute top-8 left-0 right-0 h-px bg-[#1A4070] hidden lg:block" />
+          <div className="absolute top-8 left-0 right-0 h-px bg-[#C8D3E3] hidden lg:block" />
 
           {steps.map((step, i) => (
             <MotionSection key={step.number} delay={i * 0.1} className="relative">
               <div className="lg:pr-8">
                 {/* Number with dot */}
                 <div className="relative mb-6">
-                  <div className="w-16 h-16 bg-[#0A1A2E] border border-[#1A4070] flex items-center justify-center relative z-10">
+                  <div className="w-16 h-16 bg-white border border-[#C8D3E3] flex items-center justify-center relative z-10">
                     <span className="font-[family-name:var(--font-barlow)] text-2xl font-black text-[#FF7F00]">
                       {step.number}
                     </span>
@@ -91,17 +91,17 @@ export function Process() {
                   )}
                 </div>
 
-                <h3 className="font-[family-name:var(--font-barlow)] text-xl font-bold uppercase text-white mb-3 leading-tight">
+                <h3 className="font-[family-name:var(--font-barlow)] text-xl font-bold uppercase text-[#0A1A2E] mb-3 leading-tight">
                   {step.title}
                 </h3>
-                <p className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] leading-relaxed">
+                <p className="font-[family-name:var(--font-inter)] text-sm text-[#4A5B75] leading-relaxed">
                   {step.description}
                 </p>
               </div>
 
               {/* Vertical separator for mobile/tablet */}
               {i < 3 && (
-                <div className="block lg:hidden w-px h-8 bg-[#1A4070] ml-8 mt-6" />
+                <div className="block lg:hidden w-px h-8 bg-[#C8D3E3] ml-8 mt-6" />
               )}
             </MotionSection>
           ))}
@@ -135,7 +135,7 @@ export function Process() {
             whileHover={shouldReduce ? {} : { y: -2 }}
             whileTap={shouldReduce ? {} : { scale: 0.96, y: 0 }}
             transition={{ duration: 0.18, ease: [0.23, 1, 0.32, 1] }}
-            className="inline-flex items-center gap-2 border border-[#1A4070] hover:border-[#FF7F00]/50 text-[#B0C4DE] hover:text-white font-[family-name:var(--font-barlow)] text-base font-bold uppercase tracking-widest px-8 py-4 transition-colors duration-200 cursor-pointer"
+            className="inline-flex items-center gap-2 border border-[#0A1A2E]/20 hover:border-[#FF7F00]/50 text-[#0A1A2E] hover:text-[#FF7F00] font-[family-name:var(--font-barlow)] text-base font-bold uppercase tracking-widest px-8 py-4 transition-colors duration-200 cursor-pointer"
           >
             <svg
               width="16"
