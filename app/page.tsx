@@ -7,7 +7,6 @@ import { Stats } from "@/components/home/Stats";
 import { Process } from "@/components/home/Process";
 import { ContactCTA } from "@/components/home/ContactCTA";
 import { MarqueeStrip } from "@/components/animations/MarqueeStrip";
-import { ScrollColorSection } from "@/components/ui/ScrollColorSection";
 
 const capabilities = [
   "Corte Láser",
@@ -36,10 +35,8 @@ export default function HomePage() {
           textColor="#7A9CC0"
           accentColor="#FF7F00"
         />
-        <ScrollColorSection fromColor="#0047AB" toColor="#0F2440">
-          <Services />
-          <Products />
-        </ScrollColorSection>
+        <Services />
+        <Products />
         <Stats />
         <Process />
         <ContactCTA />

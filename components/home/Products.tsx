@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { MotionSection } from "@/components/ui/MotionSection";
 
 const products = [
@@ -56,10 +57,25 @@ const gridChildVariants = {
 
 export function Products() {
   const shouldReduce = useReducedMotion();
+  const sectionRef = useRef<HTMLElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "start 0.5"],
+  });
+
+  // Fade from 0 to 1 — triggers around 25% into the section entering viewport
+  const overlayOpacity = useTransform(scrollYProgress, [0.4, 0.8], [0, 1]);
 
   return (
-    <section className="relative py-24 lg:py-32">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+    <section ref={sectionRef} className="relative py-24 lg:py-32 bg-[#0047AB]">
+      {/* Fade-in overlay that transitions to #0F2440 */}
+      <motion.div
+        className="absolute inset-0 bg-[#0F2440] pointer-events-none"
+        style={{ opacity: overlayOpacity }}
+      />
+
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
         <MotionSection className="mb-16">
           <div className="flex items-center gap-3 mb-5">
             <span className="block w-12 h-[3px] bg-[#FF7F00]" />
