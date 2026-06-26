@@ -11,6 +11,12 @@ const products = [
     description:
       "Lámina de acero en diversos calibres y acabados, cortada y habilitada según las especificaciones de tu proyecto.",
     href: "/productos/lamina",
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+        <path d="M4 7h16v2H4zM4 11h16v2H4zM4 15h16v2H4z" />
+        <path d="M6 5l14 0M6 19l14 0" strokeOpacity="0.4" />
+      </svg>
+    ),
   },
   {
     id: "placa",
@@ -18,6 +24,13 @@ const products = [
     description:
       "Placa de acero al carbón en diferentes espesores, con corte y procesamiento a medida para aplicaciones industriales.",
     href: "/productos/placa",
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+        <path d="M3 8l4-4h10l4 4v12H3z" />
+        <path d="M3 8h18" />
+        <path d="M7 4v4" strokeOpacity="0.4" />
+      </svg>
+    ),
   },
   {
     id: "perfiles-ligeros",
@@ -25,6 +38,13 @@ const products = [
     description:
       "Perfiles metálicos ligeros para estructuras secundarias, herrería y aplicaciones de manufactura general.",
     href: "/productos/perfiles-ligeros",
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+        <path d="M4 4v16h2V6h12V4H4z" />
+        <path d="M8 8v10" strokeOpacity="0.4" />
+        <path d="M6 14h8" strokeOpacity="0.4" />
+      </svg>
+    ),
   },
   {
     id: "perfiles-estructurales",
@@ -32,6 +52,12 @@ const products = [
     description:
       "Perfiles de acero estructural para construcción, naves industriales y proyectos de ingeniería de alto desempeño.",
     href: "/productos/perfiles-estructurales",
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+        <path d="M5 4h14v2H13v12h6v2H5v-2h6V6H5z" />
+        <path d="M8 10h8" strokeOpacity="0.4" />
+      </svg>
+    ),
   },
 ];
 
@@ -107,8 +133,8 @@ export function Products() {
               variants={shouldReduce ? {} : gridChildVariants}
               className="group bg-white/8 backdrop-blur-sm border border-white/10 p-8 flex flex-col transition-colors duration-200 hover:bg-white/15 hover:border-[#FF7F00]/40"
             >
-              {/* Icon dot */}
-              <div className="w-3 h-3 bg-[#FF7F00] mb-6" />
+              {/* Product icon */}
+              <div className="text-[#FF7F00] mb-6">{product.icon}</div>
 
               <h3 className="font-[family-name:var(--font-barlow)] text-2xl font-bold uppercase text-white mb-3 group-hover:text-[#FF7F00] transition-colors duration-200">
                 {product.title}
