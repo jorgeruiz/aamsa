@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { MotionSection } from "@/components/ui/MotionSection";
 
@@ -33,10 +34,25 @@ const steps = [
 
 export function Process() {
   const shouldReduce = useReducedMotion();
+  const sectionRef = useRef<HTMLElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"],
+  });
+
+  // Same timing as Products: fade at ~60%, slower
+  const overlayOpacity = useTransform(scrollYProgress, [0.25, 0.45], [0, 1]);
 
   return (
-    <section className="py-24 lg:py-32 bg-[#EDF1F7]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+    <section ref={sectionRef} className="relative py-24 lg:py-32 bg-[#0F2440]">
+      {/* Fade-in overlay to light gray-blue */}
+      <motion.div
+        className="absolute inset-0 bg-[#EDF1F7] pointer-events-none"
+        style={{ opacity: overlayOpacity }}
+      />
+
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
         <div className="grid lg:grid-cols-2 gap-10 items-center mb-16">
           <MotionSection>
             <div className="flex items-center gap-3 mb-5">

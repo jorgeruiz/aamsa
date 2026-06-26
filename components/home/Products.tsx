@@ -6,39 +6,32 @@ import { MotionSection } from "@/components/ui/MotionSection";
 
 const products = [
   {
-    id: "gabinetes",
-    title: "Gabinetes",
+    id: "lamina",
+    title: "Lámina",
     description:
-      "Gabinetes metálicos industriales fabricados a medida para resguardo de equipo eléctrico, electrónico y de control.",
-    href: "/productos/gabinetes",
+      "Lámina de acero en diversos calibres y acabados, cortada y habilitada según las especificaciones de tu proyecto.",
+    href: "/productos/lamina",
   },
   {
-    id: "bases-maquinaria",
-    title: "Bases para Maquinaria",
+    id: "placa",
+    title: "Placa",
     description:
-      "Estructuras y bases de acero diseñadas para soportar maquinaria pesada con estabilidad y resistencia.",
-    href: "/productos/bases-maquinaria",
+      "Placa de acero al carbón en diferentes espesores, con corte y procesamiento a medida para aplicaciones industriales.",
+    href: "/productos/placa",
   },
   {
-    id: "prototipos",
-    title: "Prototipos",
+    id: "perfiles-ligeros",
+    title: "Perfiles Ligeros",
     description:
-      "Desarrollo de prototipos en acero para validación de diseño antes de entrar a producción en serie.",
-    href: "/productos/prototipos",
+      "Perfiles metálicos ligeros para estructuras secundarias, herrería y aplicaciones de manufactura general.",
+    href: "/productos/perfiles-ligeros",
   },
   {
-    id: "guardas-seguridad",
-    title: "Guardas de Seguridad",
+    id: "perfiles-estructurales",
+    title: "Perfiles Estructurales",
     description:
-      "Guardas y protecciones metálicas para maquinaria industrial, cumpliendo normativas de seguridad.",
-    href: "/productos/guardas-seguridad",
-  },
-  {
-    id: "piezas-especiales",
-    title: "Piezas Especiales",
-    description:
-      "Fabricación de piezas únicas y componentes especiales según plano o muestra del cliente.",
-    href: "/productos/piezas-especiales",
+      "Perfiles de acero estructural para construcción, naves industriales y proyectos de ingeniería de alto desempeño.",
+    href: "/productos/perfiles-estructurales",
   },
 ];
 
@@ -61,11 +54,11 @@ export function Products() {
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start end", "start 0.5"],
+    offset: ["start end", "end start"],
   });
 
-  // Fade from 0 to 1 — triggers around 25% into the section entering viewport
-  const overlayOpacity = useTransform(scrollYProgress, [0.4, 0.8], [0, 1]);
+  // Fade triggers around 60% into section, slower transition
+  const overlayOpacity = useTransform(scrollYProgress, [0.25, 0.45], [0, 1]);
 
   return (
     <section ref={sectionRef} className="relative py-24 lg:py-32 bg-[#0047AB]">
@@ -93,16 +86,16 @@ export function Products() {
               Fabricamos
             </h2>
             <p className="font-[family-name:var(--font-inter)] text-white/70 max-w-md leading-relaxed text-sm md:text-base">
-              Productos terminados y componentes metálicos para la industria.
-              Desde prototipos hasta producción en serie, cada pieza fabricada
-              a la medida de tu proyecto.
+              Acero habilitado y procesado para la industria. Lámina, placa y
+              perfiles listos para tu línea de producción o proyecto de
+              construcción.
             </p>
           </div>
         </MotionSection>
 
-        {/* Products grid */}
+        {/* Products grid — 2x2 */}
         <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid md:grid-cols-2 gap-6"
           variants={shouldReduce ? {} : gridParentVariants}
           initial="hidden"
           whileInView="visible"
