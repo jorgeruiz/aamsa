@@ -96,7 +96,7 @@ export function Products() {
             <motion.div
               key={product.id}
               variants={shouldReduce ? {} : gridChildVariants}
-              className="group bg-white/10 backdrop-blur-sm border border-white/15 p-8 flex flex-col transition-colors duration-200 hover:bg-white/15 hover:border-[#FF7F00]/40"
+              className="group bg-white/8 backdrop-blur-sm border border-white/10 p-8 flex flex-col transition-colors duration-200 hover:bg-white/15 hover:border-[#FF7F00]/40"
             >
               {/* Icon dot */}
               <div className="w-3 h-3 bg-[#FF7F00] mb-6" />
