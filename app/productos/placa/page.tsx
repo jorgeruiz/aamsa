@@ -155,6 +155,8 @@ export default function PlacaPage() {
           eyebrow="Productos"
           title="Placa de Acero en Diferentes Espesores en Monterrey"
           id="placa_hero"
+          image="/planta-general.png"
+          imageAlt="Placa de acero en planta Aamsa"
         />
 
         {/* Intro */}

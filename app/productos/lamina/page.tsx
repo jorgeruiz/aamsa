@@ -102,6 +102,8 @@ export default function LaminaPage() {
           eyebrow="Productos"
           title="Lamina de Acero en Varios Calibres en Monterrey"
           id="lamina_hero"
+          image="/planta-interior.png"
+          imageAlt="Lamina de acero en planta Aamsa"
         />
 
         {/* Intro */}

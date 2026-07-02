@@ -96,6 +96,8 @@ export default function CortePlasmaCncPage() {
           eyebrow="Servicios"
           title="Corte Plasma CNC para Acero Grueso en Nuevo Leon"
           id="corte_plasma_hero"
+          image="/corte-plasma-cnc.png"
+          imageAlt="Equipo de corte plasma CNC en planta Aamsa"
         />
 
         {/* Que es el corte plasma CNC */}

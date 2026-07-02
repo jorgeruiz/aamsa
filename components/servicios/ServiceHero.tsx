@@ -1,13 +1,26 @@
+import Image from "next/image";
+
 interface ServiceHeroProps {
   eyebrow: string;
   title: string;
   id?: string;
+  image: string;
+  imageAlt?: string;
 }
 
-export function ServiceHero({ eyebrow, title, id }: ServiceHeroProps) {
+export function ServiceHero({ eyebrow, title, id, image, imageAlt }: ServiceHeroProps) {
   return (
     <section id={id} className="relative pt-36 pb-20 lg:pt-44 lg:pb-28 bg-[#0A1A2E] overflow-hidden">
-      <div className="absolute inset-0 dot-grid opacity-40 pointer-events-none" />
+      {/* Background image */}
+      <Image
+        src={image}
+        alt={imageAlt ?? ""}
+        fill
+        className="object-cover opacity-20"
+        priority
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0A1A2E] via-[#0A1A2E]/85 to-[#0A1A2E]/60" />
+      <div className="absolute inset-0 dot-grid opacity-30 pointer-events-none" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#FF7F00]/40 to-transparent" />
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
         <div className="flex items-center gap-3 mb-6">
