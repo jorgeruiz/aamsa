@@ -14,7 +14,7 @@ const steps = [
   },
   {
     number: "02",
-    title: "Recibe cotización en 24 horas",
+    title: "Recibe cotización",
     description:
       "Nuestro equipo de ventas revisa los requerimientos y te envía una cotización detallada con precio, tiempo de entrega y especificaciones del proceso.",
   },
@@ -22,13 +22,13 @@ const steps = [
     number: "03",
     title: "Aprobación y programación",
     description:
-      "Una vez aprobada la cotización, tu orden entra a programa de producción. Te confirmamos fecha de entrega antes de arrancar.",
+      "Una vez aprobada la cotización y condiciones, tu orden entra a programa de producción. Te confirmamos fecha de entrega antes de arrancar.",
   },
   {
     number: "04",
     title: "Fabricación y control de calidad",
     description:
-      "Producimos tu orden con equipos CNC de última generación. Control dimensional pieza a pieza para garantizar calidad y acabado.",
+      "Producimos tu orden con equipos CNC de última generación.",
   },
 ];
 
@@ -69,7 +69,7 @@ export function Process() {
               <br />
               Entregar a tiempo,
               <br />
-              <span className="text-[#FF7F00]">nuestra garantía.</span>
+              <span className="text-[#FF7F00]">nuestro compromiso.</span>
             </h2>
           </MotionSection>
 
@@ -126,7 +126,7 @@ export function Process() {
         {/* Final CTA */}
         <MotionSection className="mt-16 flex flex-col sm:flex-row gap-4">
           <motion.a
-            href="https://wa.me/528183600414?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20de%20corte%20y%20doblez%20de%20acero"
+            href="https://wa.me/528115115660?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20de%20corte%20y%20doblez%20de%20acero"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Solicitar cotización por WhatsApp"

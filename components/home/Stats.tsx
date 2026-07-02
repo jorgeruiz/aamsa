@@ -7,27 +7,25 @@ import { MotionSection } from "@/components/ui/MotionSection";
 const stats = [
   {
     numeric: 45,
-    suffix: "+",
+    prefix: "+",
+    suffix: "",
     label: "Años de operación",
     description: "Desde 1981 sirviendo a la industria del noreste de México",
   },
   {
     numeric: 6,
+    prefix: "",
     suffix: "",
     label: "Procesos integrados",
     description: "Láser, Plasma CNC, Doblez, Guillotina, Pantógrafo, Rolado",
   },
   {
     numeric: 3,
+    prefix: "",
     suffix: "",
     label: "Líneas de contacto",
-    description: "800 112 2376 · +52 81 8360-0414 · ventas@aamsa.com",
-  },
-  {
-    numeric: 100,
-    suffix: "%",
-    label: "B2B industrial",
-    description: "Exclusivamente manufactura, construcción y maquila",
+    description: "",
+    phones: ["800 11 Acero", "8183600414", "8115115660"],
   },
 ];
 
@@ -62,7 +60,7 @@ export function Stats() {
         </MotionSection>
 
         {/* Stats — separated by 1px lines, no card boxes */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-[#1A4070]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#1A4070]">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
@@ -74,6 +72,9 @@ export function Stats() {
             >
               {/* Animated orange underline on hover */}
               <div className="relative mb-2">
+                <span className="font-[family-name:var(--font-barlow)] font-black text-[#FF7F00]" style={{ fontSize: "clamp(48px, 6vw, 72px)", lineHeight: 1 }}>
+                  {stat.prefix}
+                </span>
                 <CountUp
                   to={stat.numeric}
                   suffix={stat.suffix}
@@ -92,37 +93,24 @@ export function Stats() {
               <div className="font-[family-name:var(--font-barlow)] text-sm font-bold uppercase tracking-wider text-white mt-4 mb-2">
                 {stat.label}
               </div>
-              <p className="font-[family-name:var(--font-inter)] text-xs text-[#7A9CC0] leading-relaxed">
-                {stat.description}
-              </p>
+              {stat.description && (
+                <p className="font-[family-name:var(--font-inter)] text-xs text-[#7A9CC0] leading-relaxed">
+                  {stat.description}
+                </p>
+              )}
+              {"phones" in stat && stat.phones && (
+                <div className="flex flex-col gap-1">
+                  {stat.phones.map((phone: string) => (
+                    <span key={phone} className="font-[family-name:var(--font-inter)] text-xs text-[#7A9CC0]">
+                      {phone}
+                    </span>
+                  ))}
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
 
-        {/* Quality guarantee bar */}
-        <MotionSection className="mt-16 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 p-8 bg-[#0A1A2E] border border-[#1A4070]">
-          <div className="flex items-center gap-4 flex-shrink-0">
-            <div className="w-12 h-12 bg-[#FF7F00]/10 border border-[#FF7F00]/30 flex items-center justify-center">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7F00" strokeWidth="1.5" aria-hidden="true">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
-            </div>
-            <div>
-              <div className="font-[family-name:var(--font-barlow)] text-sm font-bold uppercase tracking-wider text-white">
-                Calidad garantizada
-              </div>
-              <div className="font-[family-name:var(--font-inter)] text-xs text-[#7A9CC0]">
-                Compromiso con cada orden
-              </div>
-            </div>
-          </div>
-          <div className="w-px h-12 bg-[#1A4070] hidden md:block" />
-          <p className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] leading-relaxed max-w-xl">
-            Cada pieza que sale de nuestra planta cumple con las especificaciones del
-            plano. Habilitado de acero para la industria manufacturera, automotriz y de
-            construcción del noreste de México.
-          </p>
-        </MotionSection>
       </div>
     </section>
   );

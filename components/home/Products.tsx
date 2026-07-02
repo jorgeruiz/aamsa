@@ -6,6 +6,18 @@ import { MotionSection } from "@/components/ui/MotionSection";
 
 const products = [
   {
+    id: "acero",
+    title: "Acero",
+    description:
+      "Acero al carbón e inoxidable en diversas presentaciones, cortado y habilitado según las necesidades de tu proyecto industrial.",
+    href: "/productos/acero",
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+      </svg>
+    ),
+  },
+  {
     id: "lamina",
     title: "Lámina",
     description:
@@ -33,25 +45,11 @@ const products = [
     ),
   },
   {
-    id: "perfiles-ligeros",
-    title: "Perfiles Ligeros",
+    id: "perfiles",
+    title: "Perfiles",
     description:
-      "Perfiles metálicos ligeros para estructuras secundarias, herrería y aplicaciones de manufactura general.",
-    href: "/productos/perfiles-ligeros",
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-        <path d="M4 4v16h2V6h12V4H4z" />
-        <path d="M8 8v10" strokeOpacity="0.4" />
-        <path d="M6 14h8" strokeOpacity="0.4" />
-      </svg>
-    ),
-  },
-  {
-    id: "perfiles-estructurales",
-    title: "Perfiles Estructurales",
-    description:
-      "Perfiles de acero estructural para construcción, naves industriales y proyectos de ingeniería de alto desempeño.",
-    href: "/productos/perfiles-estructurales",
+      "Perfiles metálicos ligeros y estructurales para construcción, herrería, naves industriales y proyectos de ingeniería.",
+    href: "/productos/perfiles",
     icon: (
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M5 4h14v2H13v12h6v2H5v-2h6V6H5z" />

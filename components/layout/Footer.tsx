@@ -31,13 +31,31 @@ export function Footer() {
                 alt="AAMSA — Abastecedora de Aceros y Maquilas"
                 width={200}
                 height={220}
-                className="h-16 w-auto"
+                className="h-24 w-auto"
               />
             </Link>
             <p className="font-[family-name:var(--font-inter)] text-sm text-[#7A9CC0] leading-relaxed mb-6 max-w-xs">
               Abastecedora de Aceros y Maquilas S.A. de C.V. — más de 45 años
               al servicio de la industria del noreste de México.
             </p>
+            {/* Certifications */}
+            <div className="flex items-center gap-4 mb-6">
+              <Image
+                src="/iso-9001-lrqa.webp"
+                alt="LRQA Certified ISO 9001"
+                width={80}
+                height={80}
+                className="h-16 w-auto"
+              />
+              <Image
+                src="/qr-aamsa.webp"
+                alt="Código QR AAMSA"
+                width={80}
+                height={80}
+                className="h-16 w-auto"
+              />
+            </div>
+
             {/* Social */}
             <div className="flex gap-3">
               <a
@@ -115,8 +133,11 @@ export function Footer() {
                 <div className="font-[family-name:var(--font-inter)] text-xs text-[#7A9CC0] uppercase tracking-wider mb-1">
                   Teléfono
                 </div>
-                <a href="tel:8001122376" className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] hover:text-[#FF7F00] transition-colors">
-                  800 112 2376
+                <a href="tel:80011acero" className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] hover:text-[#FF7F00] transition-colors block">
+                  800 11 Acero
+                </a>
+                <a href="tel:8183600414" className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] hover:text-[#FF7F00] transition-colors block">
+                  8183600414
                 </a>
               </li>
               <li>
@@ -124,13 +145,13 @@ export function Footer() {
                   WhatsApp
                 </div>
                 <a
-                  href="https://wa.me/528183600414"
+                  href="https://wa.me/528115115660"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Contactar por WhatsApp"
                   className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] hover:text-[#FF7F00] transition-colors"
                 >
-                  +52 81 8360-0414
+                  8115115660
                 </a>
               </li>
               <li>

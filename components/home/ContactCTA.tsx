@@ -17,8 +17,8 @@ const contactMethods = [
       </svg>
     ),
     label: "WhatsApp",
-    value: "+52 81 8360-0414",
-    href: "https://wa.me/528183600414?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n",
+    value: "8115115660",
+    href: "https://wa.me/528115115660?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n",
     primary: true,
   },
   {
@@ -35,9 +35,9 @@ const contactMethods = [
         <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
       </svg>
     ),
-    label: "Teléfono LADA 800",
-    value: "800 112 2376",
-    href: "tel:8001122376",
+    label: "Teléfono",
+    value: "800 11 Acero",
+    href: "tel:80011acero",
     primary: false,
   },
   {
@@ -51,13 +51,12 @@ const contactMethods = [
         strokeWidth="1.5"
         aria-hidden="true"
       >
-        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-        <polyline points="22,6 12,13 2,6" />
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
       </svg>
     ),
-    label: "Correo ventas",
-    value: "ventas@aamsa.com",
-    href: "mailto:ventas@aamsa.com",
+    label: "Teléfono",
+    value: "8183600414",
+    href: "tel:8183600414",
     primary: false,
   },
 ];
@@ -100,8 +99,8 @@ export function ContactCTA() {
               <span className="text-[#FF7F00]">Cotiza hoy.</span>
             </h2>
             <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed max-w-md">
-              Envíanos tu plano o descripción de la pieza. Respondemos en menos
-              de 24 horas con precio, tiempo de entrega y especificaciones del
+              Envíanos tu plano o descripción de la pieza y recibe tu
+              cotización con precio, tiempo de entrega y especificaciones del
               proceso recomendado.
             </p>
 
@@ -196,31 +195,6 @@ export function ContactCTA() {
               ))}
             </div>
 
-            {/* Horario */}
-            <div className="mt-6 p-5 bg-[#0F2440] border border-[#1A4070]">
-              <div className="flex items-center gap-2 mb-3">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#FF7F00"
-                  strokeWidth="1.5"
-                  aria-hidden="true"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-                <span className="font-[family-name:var(--font-barlow)] text-sm font-bold uppercase tracking-wider text-white">
-                  Horario de atención
-                </span>
-              </div>
-              <div className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] leading-relaxed">
-                Lunes a viernes: 8:00 – 18:00 hrs
-                <br />
-                Sábado: 8:00 – 13:00 hrs
-              </div>
-            </div>
           </MotionSection>
         </div>
       </div>

@@ -84,7 +84,7 @@ export function Hero() {
             <motion.div {...fadeUp(0)} className="flex items-center gap-3 mb-6">
               <span className="block w-10 h-[3px] bg-[#FF7F00]" />
               <span className="font-[family-name:var(--font-barlow)] text-xs font-bold uppercase tracking-[0.18em] text-[#FF7F00]">
-                Guadalupe, Nuevo León — 45+ Años
+                Guadalupe, Nuevo León — +45 Años
               </span>
             </motion.div>
 
@@ -129,7 +129,7 @@ export function Hero() {
             <motion.div {...fadeUp(0.6)} className="flex flex-col sm:flex-row gap-4">
               <MagneticButton strength={0.25}>
                 <motion.a
-                  href="https://wa.me/528183600414?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n"
+                  href="https://wa.me/528115115660?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Solicitar cotización por WhatsApp"
@@ -165,7 +165,7 @@ export function Hero() {
               className="mt-12 pt-8 border-t border-[#1A4070] flex flex-wrap gap-8"
             >
               {[
-                { value: "45+", label: "Años de operación" },
+                { value: "+45", label: "Años de operación" },
                 { value: "6", label: "Procesos integrados" },
                 { value: "NL", label: "Nuevo León" },
               ].map((item) => (
@@ -215,14 +215,6 @@ export function Hero() {
                     </span>
                   </motion.div>
                 ))}
-                <div className="mt-5 p-3 bg-[#FF7F00]/08 border border-[#FF7F00]/20 flex items-center gap-3">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF7F00" strokeWidth="1.5" aria-hidden="true">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                  </svg>
-                  <span className="font-[family-name:var(--font-inter)] text-xs text-[#B0C4DE]">
-                    Calidad garantizada en cada orden
-                  </span>
-                </div>
               </div>
             </div>
           </motion.div>

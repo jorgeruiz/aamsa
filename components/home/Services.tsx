@@ -260,7 +260,7 @@ export function Services() {
         {/* Bottom CTA */}
         <MotionSection className="mt-12 text-center">
           <motion.a
-            href="https://wa.me/528183600414?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n"
+            href="https://wa.me/528115115660?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Solicitar cotización por WhatsApp"

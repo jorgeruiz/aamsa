@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async redirects() {
+    return [
+      {
+        source: "/servicios/corte-plasma",
+        destination: "/servicios/corte-plasma-cnc",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
