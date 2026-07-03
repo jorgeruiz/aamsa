@@ -33,12 +33,12 @@ export function Hero() {
             src="/planta-interior.png"
             alt=""
             fill
-            className="object-cover opacity-40"
+            className="object-cover opacity-60"
             priority
           />
         </div>
         <div
-          className="absolute inset-0 bg-gradient-to-br from-[#2261AE]/40 via-[#1B4375]/70 to-transparent"
+          className="absolute inset-0 bg-gradient-to-br from-[#2261AE]/30 via-[#1B4375]/40 to-transparent"
           style={{ clipPath: "polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
         />
         {/* Diagonal orange hairline */}
