@@ -88,7 +88,7 @@ export function Products() {
     <section ref={sectionRef} className="relative py-24 lg:py-32 bg-[#0047AB]">
       {/* Fade-in overlay that transitions to #0F2440 */}
       <motion.div
-        className="absolute inset-0 bg-[#0F2440] pointer-events-none"
+        className="absolute inset-0 bg-[#245a9c] pointer-events-none"
         style={{ opacity: overlayOpacity }}
       />
 

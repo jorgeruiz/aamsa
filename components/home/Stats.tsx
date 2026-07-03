@@ -33,7 +33,7 @@ export function Stats() {
   const shouldReduce = useReducedMotion();
 
   return (
-    <section className="relative py-24 lg:py-32 bg-[#0F2440] overflow-hidden">
+    <section className="relative py-24 lg:py-32 bg-[#245a9c] overflow-hidden">
       <div className="absolute inset-0 dot-grid opacity-20" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#FF7F00]/40 to-transparent" />
 
@@ -60,7 +60,7 @@ export function Stats() {
         </MotionSection>
 
         {/* Stats — separated by 1px lines, no card boxes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#1A4070]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#3a72b5]">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
@@ -68,7 +68,7 @@ export function Stats() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: [0.23, 1, 0.32, 1] }}
               viewport={{ once: true }}
-              className="bg-[#0F2440] p-8 lg:p-10 group"
+              className="bg-[#245a9c] p-8 lg:p-10 group"
             >
               {/* Animated orange underline on hover */}
               <div className="relative mb-2">
