@@ -65,7 +65,7 @@ export function ContactCTA() {
   const shouldReduce = useReducedMotion();
 
   return (
-    <section className="py-24 lg:py-32 bg-[#245a9c] relative overflow-hidden">
+    <section className="py-24 lg:py-32 bg-[#1B4375] relative overflow-hidden">
       {/* Large background text */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
@@ -153,7 +153,7 @@ export function ContactCTA() {
                   className={`group flex items-center gap-5 p-6 border transition-colors duration-200 ${
                     method.primary
                       ? "bg-[#FF7F00] border-[#FF7F00] hover:bg-[#CC6600] hover:border-[#CC6600] text-white"
-                      : "bg-[#1e4d85] border-[#3a72b5] hover:border-[#FF7F00]/40 text-[#F0F2FF]"
+                      : "bg-[#153460] border-[#2261AE] hover:border-[#FF7F00]/40 text-[#F0F2FF]"
                   }`}
                 >
                   <div

@@ -160,7 +160,7 @@ export default function PlacaPage() {
         />
 
         {/* Intro */}
-        <section className="py-16 bg-[#0F2440]">
+        <section className="py-16 bg-[#1B4375]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <p className="font-[family-name:var(--font-inter)] text-lg text-[#B0C4DE] leading-relaxed max-w-3xl">
               En Aamsa contamos con venta de placa y planchones de acero. Manejamos varios grados como Acero A-36, AR-400, SAE 1045, SAE 4140, A572 GR-50, Hardox y Strenx, entre otros, con un gran inventario para entrega inmediata en Nuevo Leon.
@@ -169,7 +169,7 @@ export default function PlacaPage() {
         </section>
 
         {/* Corte a la medida */}
-        <section id="placa_corte_medida" className="py-20 lg:py-28 bg-[#0A1A2E]">
+        <section id="placa_corte_medida" className="py-20 lg:py-28 bg-[#153460]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -186,7 +186,7 @@ export default function PlacaPage() {
         </section>
 
         {/* Tabla completa 23 filas */}
-        <section id="placa_tabla" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="placa_tabla" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-10"
@@ -210,7 +210,7 @@ export default function PlacaPage() {
                 </thead>
                 <tbody>
                   {placaData.map((row) => (
-                    <tr key={row.pulg} className="border-b border-[#1A4070] hover:bg-[#0A1A2E]/50">
+                    <tr key={row.pulg} className="border-b border-[#2261AE] hover:bg-[#153460]/50">
                       <td className="font-[family-name:var(--font-inter)] text-sm text-white py-3 px-3 font-medium">{row.pulg}</td>
                       <td className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] py-3 px-3">{row.mm}</td>
                       <td className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] py-3 px-3">{row.kgm2}</td>
@@ -229,7 +229,7 @@ export default function PlacaPage() {
         </section>
 
         {/* Grados de placa */}
-        <section id="placa_grados" className="py-20 lg:py-28 bg-[#0A1A2E]">
+        <section id="placa_grados" className="py-20 lg:py-28 bg-[#153460]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-12"
@@ -241,7 +241,7 @@ export default function PlacaPage() {
               {grades.map((grade) => (
                 <div
                   key={grade.title}
-                  className="bg-[#0F2440] border border-[#1A4070] border-t-[3px] border-t-[#FF7F00] p-8"
+                  className="bg-[#1B4375] border border-[#2261AE] border-t-[3px] border-t-[#FF7F00] p-8"
                 >
                   <h3 className="font-[family-name:var(--font-barlow)] text-lg font-bold uppercase text-white mb-4">
                     {grade.title}
@@ -254,13 +254,13 @@ export default function PlacaPage() {
             </div>
             {/* Internal links */}
             <div className="mt-12 flex flex-wrap gap-3">
-              <Link href="/servicios/corte-pantografo" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/servicios/corte-pantografo" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Corte pantografo de placa gruesa
               </Link>
-              <Link href="/servicios/corte-plasma-cnc" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/servicios/corte-plasma-cnc" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Corte plasma CNC de placa
               </Link>
-              <Link href="/servicios/rolado" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/servicios/rolado" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Rolado de placa
               </Link>
             </div>
@@ -268,7 +268,7 @@ export default function PlacaPage() {
         </section>
 
         {/* FAQ */}
-        <section id="placa_faq" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="placa_faq" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-3xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-10"

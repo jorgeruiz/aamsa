@@ -95,7 +95,7 @@ export default function RoladoPage() {
           imageAlt="Roladora CNC en planta Aamsa"
         />
 
-        <section id="rolado_precision" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="rolado_precision" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -114,17 +114,17 @@ export default function RoladoPage() {
               </p>
             </div>
             <div className="mt-12 flex flex-wrap gap-3">
-              <Link href="/productos/placa" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/productos/placa" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Placa de acero para rolado
               </Link>
-              <Link href="/servicios/doblez-cnc" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/servicios/doblez-cnc" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Doblez CNC de alta capacidad
               </Link>
             </div>
           </div>
         </section>
 
-        <section id="rolado_equipos" className="py-20 lg:py-28 bg-[#0A1A2E]">
+        <section id="rolado_equipos" className="py-20 lg:py-28 bg-[#153460]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -140,7 +140,7 @@ export default function RoladoPage() {
           </div>
         </section>
 
-        <section id="rolado_faq" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="rolado_faq" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-3xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-10"

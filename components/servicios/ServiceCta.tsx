@@ -7,7 +7,7 @@ interface ServiceCtaProps {
 
 export function ServiceCta({ headline, id }: ServiceCtaProps) {
   return (
-    <section id={id} className="py-20 lg:py-28 bg-[#0A1A2E] relative overflow-hidden">
+    <section id={id} className="py-20 lg:py-28 bg-[#1B4375] relative overflow-hidden">
       <div className="absolute inset-0 dot-grid opacity-20 pointer-events-none" />
       <div className="relative max-w-4xl mx-auto px-6 lg:px-10 text-center">
         <h2
@@ -30,7 +30,7 @@ export function ServiceCta({ headline, id }: ServiceCtaProps) {
           </a>
           <Link
             href="/contacto"
-            className="inline-flex items-center gap-2 border border-[#1A4070] hover:border-[#FF7F00]/50 text-[#B0C4DE] hover:text-white font-[family-name:var(--font-barlow)] text-base font-bold uppercase tracking-widest px-8 py-4 transition-colors duration-200"
+            className="inline-flex items-center gap-2 border border-[#2261AE] hover:border-[#FF7F00]/50 text-[#B0C4DE] hover:text-white font-[family-name:var(--font-barlow)] text-base font-bold uppercase tracking-widest px-8 py-4 transition-colors duration-200"
           >
             Contacto
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">

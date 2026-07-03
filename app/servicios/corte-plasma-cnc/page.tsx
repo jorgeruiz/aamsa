@@ -101,7 +101,7 @@ export default function CortePlasmaCncPage() {
         />
 
         {/* Que es el corte plasma CNC */}
-        <section id="corte_plasma_que_es" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="corte_plasma_que_es" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -120,13 +120,13 @@ export default function CortePlasmaCncPage() {
               </div>
             </div>
             <div className="mt-12 flex flex-wrap gap-3">
-              <Link href="/servicios/corte-laser" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/servicios/corte-laser" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Corte laser CNC para espesores delgados
               </Link>
-              <Link href="/servicios/corte-pantografo" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/servicios/corte-pantografo" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Corte pantografo para maximo espesor
               </Link>
-              <Link href="/productos/placa" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/productos/placa" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Placa de acero para corte industrial
               </Link>
             </div>
@@ -134,7 +134,7 @@ export default function CortePlasmaCncPage() {
         </section>
 
         {/* Equipos */}
-        <section id="corte_plasma_equipos" className="py-20 lg:py-28 bg-[#0A1A2E]">
+        <section id="corte_plasma_equipos" className="py-20 lg:py-28 bg-[#153460]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -143,7 +143,7 @@ export default function CortePlasmaCncPage() {
               Contamos con 2 equipos de corte plasma
             </h2>
             <div className="max-w-xl">
-              <div className="bg-[#0F2440] border border-[#1A4070] border-t-[3px] border-t-[#FF7F00] p-8">
+              <div className="bg-[#1B4375] border border-[#2261AE] border-t-[3px] border-t-[#FF7F00] p-8">
                 <h3 className="font-[family-name:var(--font-barlow)] text-lg font-bold uppercase text-white mb-4">
                   Plasma CNC de 400 Amp
                 </h3>
@@ -167,7 +167,7 @@ export default function CortePlasmaCncPage() {
         </section>
 
         {/* FAQ */}
-        <section id="corte_plasma_faq" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="corte_plasma_faq" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-3xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-10"

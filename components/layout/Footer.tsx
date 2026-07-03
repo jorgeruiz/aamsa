@@ -19,7 +19,7 @@ const links = [
 
 export function Footer() {
   return (
-    <footer className="bg-[#071422] border-t border-[#1A4070]">
+    <footer className="bg-[#122d52] border-t border-[#2261AE]">
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
@@ -63,7 +63,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook de Aamsa"
-                className="w-9 h-9 bg-[#0F2440] border border-[#1A4070] flex items-center justify-center text-[#7A9CC0] hover:text-[#FF7F00] hover:border-[#FF7F00]/40 transition-colors"
+                className="w-9 h-9 bg-[#153460] border border-[#2261AE] flex items-center justify-center text-[#7A9CC0] hover:text-[#FF7F00] hover:border-[#FF7F00]/40 transition-colors"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
@@ -74,7 +74,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram de Aamsa"
-                className="w-9 h-9 bg-[#0F2440] border border-[#1A4070] flex items-center justify-center text-[#7A9CC0] hover:text-[#FF7F00] hover:border-[#FF7F00]/40 transition-colors"
+                className="w-9 h-9 bg-[#153460] border border-[#2261AE] flex items-center justify-center text-[#7A9CC0] hover:text-[#FF7F00] hover:border-[#FF7F00]/40 transition-colors"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
                   <rect x="2" y="2" width="20" height="20" rx="5" />
@@ -178,7 +178,7 @@ export function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-[#1A4070]">
+      <div className="border-t border-[#2261AE]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="font-[family-name:var(--font-inter)] text-xs text-[#7A9CC0]">
             © {new Date().getFullYear()} Aamsa — Abastecedora de Aceros y

@@ -99,7 +99,7 @@ export default function DoblezCncPage() {
           imageAlt="Prensa de doblez CNC en planta Aamsa"
         />
 
-        <section id="doblez_cnc_precision" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="doblez_cnc_precision" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -118,17 +118,17 @@ export default function DoblezCncPage() {
               </p>
             </div>
             <div className="mt-12 flex flex-wrap gap-3">
-              <Link href="/productos/lamina" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/productos/lamina" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Lamina de acero para doblez
               </Link>
-              <Link href="/servicios/rolado" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/servicios/rolado" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Rolado de placa y perfiles
               </Link>
             </div>
           </div>
         </section>
 
-        <section id="doblez_cnc_equipos" className="py-20 lg:py-28 bg-[#0A1A2E]">
+        <section id="doblez_cnc_equipos" className="py-20 lg:py-28 bg-[#153460]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-12"
@@ -153,7 +153,7 @@ export default function DoblezCncPage() {
               ].map((equipo) => (
                 <div
                   key={equipo.title}
-                  className="bg-[#0F2440] border border-[#1A4070] border-t-[3px] border-t-[#FF7F00] p-8"
+                  className="bg-[#1B4375] border border-[#2261AE] border-t-[3px] border-t-[#FF7F00] p-8"
                 >
                   <h3 className="font-[family-name:var(--font-barlow)] text-lg font-bold uppercase text-white mb-4">
                     {equipo.title}
@@ -167,7 +167,7 @@ export default function DoblezCncPage() {
           </div>
         </section>
 
-        <section id="doblez_cnc_faq" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="doblez_cnc_faq" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-3xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-10"

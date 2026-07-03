@@ -162,7 +162,7 @@ export function Services() {
   const shouldReduce = useReducedMotion();
 
   return (
-    <section className="relative py-24 lg:py-32 bg-[#0047AB]">
+    <section className="relative py-24 lg:py-32 bg-[#2261AE]">
       {/* Section header */}
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <MotionSection className="mb-16">
@@ -206,7 +206,7 @@ export function Services() {
             >
               <Link
                 href={service.href}
-                className="group block bg-[#003885] border border-white/10 border-t-[3px] border-t-[#FF7F00] h-full transition-colors duration-200 hover:border-[#FF7F00]/40 hover:bg-[#004ABC] overflow-hidden"
+                className="group block bg-[#1B4375] border border-white/10 border-t-[3px] border-t-[#FF7F00] h-full transition-colors duration-200 hover:border-[#FF7F00]/40 hover:bg-[#2261AE] overflow-hidden"
               >
                 {/* Service photo */}
                 <div className="relative w-full h-40 overflow-hidden">
@@ -216,7 +216,7 @@ export function Services() {
                     fill
                     className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#003885] via-[#003885]/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1B4375] via-[#1B4375]/30 to-transparent" />
                 </div>
 
                 <div className="p-8 pt-4">

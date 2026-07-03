@@ -45,10 +45,10 @@ export function Process() {
   const overlayOpacity = useTransform(scrollYProgress, [0.25, 0.45], [0, 1]);
 
   return (
-    <section ref={sectionRef} className="relative py-24 lg:py-32 bg-[#0F2440]">
+    <section ref={sectionRef} className="relative py-24 lg:py-32 bg-[#1B4375]">
       {/* Fade-in overlay to light gray-blue */}
       <motion.div
-        className="absolute inset-0 bg-[#EDF1F7] pointer-events-none"
+        className="absolute inset-0 bg-[#D8E6F1] pointer-events-none"
         style={{ opacity: overlayOpacity }}
       />
 
@@ -62,7 +62,7 @@ export function Process() {
               </span>
             </div>
             <h2
-              className="font-[family-name:var(--font-barlow)] font-black uppercase leading-none text-[#0A1A2E]"
+              className="font-[family-name:var(--font-barlow)] font-black uppercase leading-none text-[#1B4375]"
               style={{ fontSize: "clamp(36px, 5vw, 60px)" }}
             >
               Cotizar es sencillo.
@@ -82,7 +82,7 @@ export function Process() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#EDF1F7]/60" />
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#D8E6F1]/60" />
             </div>
           </MotionSection>
         </div>
@@ -107,7 +107,7 @@ export function Process() {
                   )}
                 </div>
 
-                <h3 className="font-[family-name:var(--font-barlow)] text-xl font-bold uppercase text-[#0A1A2E] mb-3 leading-tight">
+                <h3 className="font-[family-name:var(--font-barlow)] text-xl font-bold uppercase text-[#1B4375] mb-3 leading-tight">
                   {step.title}
                 </h3>
                 <p className="font-[family-name:var(--font-inter)] text-sm text-[#4A5B75] leading-relaxed">
@@ -151,7 +151,7 @@ export function Process() {
             whileHover={shouldReduce ? {} : { y: -2 }}
             whileTap={shouldReduce ? {} : { scale: 0.96, y: 0 }}
             transition={{ duration: 0.18, ease: [0.23, 1, 0.32, 1] }}
-            className="inline-flex items-center gap-2 border border-[#0A1A2E]/20 hover:border-[#FF7F00]/50 text-[#0A1A2E] hover:text-[#FF7F00] font-[family-name:var(--font-barlow)] text-base font-bold uppercase tracking-widest px-8 py-4 transition-colors duration-200 cursor-pointer"
+            className="inline-flex items-center gap-2 border border-[#1B4375]/20 hover:border-[#FF7F00]/50 text-[#1B4375] hover:text-[#FF7F00] font-[family-name:var(--font-barlow)] text-base font-bold uppercase tracking-widest px-8 py-4 transition-colors duration-200 cursor-pointer"
           >
             <svg
               width="16"

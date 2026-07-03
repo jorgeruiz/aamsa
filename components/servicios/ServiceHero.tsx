@@ -10,16 +10,17 @@ interface ServiceHeroProps {
 
 export function ServiceHero({ eyebrow, title, id, image, imageAlt }: ServiceHeroProps) {
   return (
-    <section id={id} className="relative pt-36 pb-20 lg:pt-44 lg:pb-28 bg-[#0A1A2E] overflow-hidden">
+    <section id={id} className="relative pt-36 pb-20 lg:pt-44 lg:pb-28 bg-[#1B4375] overflow-hidden">
       {/* Background image */}
       <Image
         src={image}
         alt={imageAlt ?? ""}
         fill
-        className="object-cover opacity-20"
+        className="object-cover opacity-40"
+        style={{ objectPosition: 'center' }}
         priority
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0A1A2E] via-[#0A1A2E]/85 to-[#0A1A2E]/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#1B4375] via-[#1B4375]/85 to-[#1B4375]/60" />
       <div className="absolute inset-0 dot-grid opacity-30 pointer-events-none" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#FF7F00]/40 to-transparent" />
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10">

@@ -18,7 +18,7 @@ export function Hero() {
   });
 
   return (
-    <section className="relative min-h-[100dvh] flex items-center overflow-hidden bg-[#245a9c]">
+    <section className="relative min-h-[100dvh] flex items-center overflow-hidden bg-[#1B4375]">
       {/* Dot grid */}
       <div className="absolute inset-0 dot-grid opacity-40 pointer-events-none" />
 
@@ -33,12 +33,12 @@ export function Hero() {
             src="/planta-interior.png"
             alt=""
             fill
-            className="object-cover opacity-25"
+            className="object-cover opacity-40"
             priority
           />
         </div>
         <div
-          className="absolute inset-0 bg-gradient-to-br from-[#0047AB]/40 via-[#245a9c]/70 to-transparent"
+          className="absolute inset-0 bg-gradient-to-br from-[#2261AE]/40 via-[#1B4375]/70 to-transparent"
           style={{ clipPath: "polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
         />
         {/* Diagonal orange hairline */}
@@ -150,7 +150,7 @@ export function Hero() {
                 whileHover={shouldReduce ? {} : { y: -2 }}
                 whileTap={shouldReduce ? {} : { scale: 0.96, y: 0 }}
                 transition={{ duration: 0.18, ease: [0.23, 1, 0.32, 1] }}
-                className="inline-flex items-center gap-2 border border-[#3a72b5] hover:border-[#FF7F00]/50 text-[#B0C4DE] hover:text-white font-[family-name:var(--font-barlow)] text-base font-bold uppercase tracking-widest px-8 py-4 transition-colors duration-200 cursor-pointer"
+                className="inline-flex items-center gap-2 border border-[#2261AE] hover:border-[#FF7F00]/50 text-[#B0C4DE] hover:text-white font-[family-name:var(--font-barlow)] text-base font-bold uppercase tracking-widest px-8 py-4 transition-colors duration-200 cursor-pointer"
               >
                 Ver Servicios
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
@@ -162,7 +162,7 @@ export function Hero() {
             {/* Trust strip */}
             <motion.div
               {...fadeUp(0.75)}
-              className="mt-12 pt-8 border-t border-[#3a72b5] flex flex-wrap gap-8"
+              className="mt-12 pt-8 border-t border-[#2261AE] flex flex-wrap gap-8"
             >
               {[
                 { value: "+45", label: "Años de operación" },
@@ -187,8 +187,8 @@ export function Hero() {
             className="lg:col-span-5 relative hidden lg:block"
           >
             <div className="relative">
-              <div className="absolute top-5 right-5 w-full h-full bg-[#0047AB]/15 border border-[#0047AB]/40" />
-              <div className="relative bg-[#1e4d85] border border-[#3a72b5] border-t-[3px] border-t-[#FF7F00] p-8">
+              <div className="absolute top-5 right-5 w-full h-full bg-[#2261AE]/15 border border-[#2261AE]/40" />
+              <div className="relative bg-[#153460] border border-[#2261AE] border-t-[3px] border-t-[#FF7F00] p-8">
                 <div className="font-[family-name:var(--font-barlow)] text-[11px] font-bold uppercase tracking-[0.2em] text-[#FF7F00] mb-6">
                   Capacidades de planta
                 </div>
@@ -205,7 +205,7 @@ export function Hero() {
                     initial={shouldReduce ? false : { opacity: 0, x: -12 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.5 + i * 0.06, duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
-                    className={`flex items-center justify-between py-3 ${i < 5 ? "border-b border-[#3a72b5]" : ""}`}
+                    className={`flex items-center justify-between py-3 ${i < 5 ? "border-b border-[#2261AE]" : ""}`}
                   >
                     <span className="font-[family-name:var(--font-inter)] text-sm font-medium text-[#F0F2FF]">
                       {item.process}

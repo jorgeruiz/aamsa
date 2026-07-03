@@ -85,10 +85,10 @@ export function Products() {
   const overlayOpacity = useTransform(scrollYProgress, [0.25, 0.45], [0, 1]);
 
   return (
-    <section ref={sectionRef} className="relative py-24 lg:py-32 bg-[#0047AB]">
+    <section ref={sectionRef} className="relative py-24 lg:py-32 bg-[#2261AE]">
       {/* Fade-in overlay that transitions to #0F2440 */}
       <motion.div
-        className="absolute inset-0 bg-[#245a9c] pointer-events-none"
+        className="absolute inset-0 bg-[#1B4375] pointer-events-none"
         style={{ opacity: overlayOpacity }}
       />
 

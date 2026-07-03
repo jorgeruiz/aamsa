@@ -99,7 +99,7 @@ export default function CortePantografoPage() {
           imageAlt="Equipo de corte pantografo CNC en planta Aamsa"
         />
 
-        <section id="corte_pantografo_que_es" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="corte_pantografo_que_es" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -113,17 +113,17 @@ export default function CortePantografoPage() {
               </p>
             </div>
             <div className="mt-12 flex flex-wrap gap-3">
-              <Link href="/servicios/corte-laser" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/servicios/corte-laser" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Corte laser CNC para mayor precision en espesores delgados
               </Link>
-              <Link href="/productos/placa" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/productos/placa" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Placa de acero para corte industrial en NL
               </Link>
             </div>
           </div>
         </section>
 
-        <section id="corte_pantografo_equipos" className="py-20 lg:py-28 bg-[#0A1A2E]">
+        <section id="corte_pantografo_equipos" className="py-20 lg:py-28 bg-[#153460]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -139,7 +139,7 @@ export default function CortePantografoPage() {
           </div>
         </section>
 
-        <section id="corte_pantografo_faq" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="corte_pantografo_faq" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-3xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-10"

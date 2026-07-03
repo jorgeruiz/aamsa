@@ -107,7 +107,7 @@ export default function LaminaPage() {
         />
 
         {/* Intro */}
-        <section className="py-16 bg-[#0F2440]">
+        <section className="py-16 bg-[#1B4375]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <p className="font-[family-name:var(--font-inter)] text-lg text-[#B0C4DE] leading-relaxed max-w-3xl">
               Venta de laminas de acero rolado en caliente, rolado en frio y antiderrapante, con disponibilidad inmediata y servicio de corte a la medida en Nuevo Leon.
@@ -116,7 +116,7 @@ export default function LaminaPage() {
         </section>
 
         {/* Lamina Antiderrapante con tabla */}
-        <section id="lamina_antiderrapante" className="py-20 lg:py-28 bg-[#0A1A2E]">
+        <section id="lamina_antiderrapante" className="py-20 lg:py-28 bg-[#153460]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -143,7 +143,7 @@ export default function LaminaPage() {
                 </thead>
                 <tbody>
                   {antiderrapanteData.map((row) => (
-                    <tr key={row.calibre} className="border-b border-[#1A4070] hover:bg-[#0F2440]/50">
+                    <tr key={row.calibre} className="border-b border-[#2261AE] hover:bg-[#1B4375]/50">
                       <td className="font-[family-name:var(--font-inter)] text-sm text-white py-3 px-3 font-medium">{row.calibre}</td>
                       <td className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] py-3 px-3">{row.pulg}</td>
                       <td className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] py-3 px-3">{row.mm}</td>
@@ -161,7 +161,7 @@ export default function LaminaPage() {
         </section>
 
         {/* Rolado en frio */}
-        <section id="lamina_rolado_frio" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="lamina_rolado_frio" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -178,7 +178,7 @@ export default function LaminaPage() {
         </section>
 
         {/* Rolado en caliente */}
-        <section id="lamina_rolado_caliente" className="py-20 lg:py-28 bg-[#0A1A2E]">
+        <section id="lamina_rolado_caliente" className="py-20 lg:py-28 bg-[#153460]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -200,7 +200,7 @@ export default function LaminaPage() {
         </section>
 
         {/* A-572 GR 50 */}
-        <section id="lamina_a572" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="lamina_a572" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -220,16 +220,16 @@ export default function LaminaPage() {
             </div>
             {/* Internal links */}
             <div className="mt-12 flex flex-wrap gap-3">
-              <Link href="/servicios/corte-laser" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/servicios/corte-laser" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Corte laser de lamina
               </Link>
-              <Link href="/servicios/corte-guillotina" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/servicios/corte-guillotina" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Corte guillotina de lamina
               </Link>
-              <Link href="/servicios/doblez-cnc" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/servicios/doblez-cnc" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Doblez CNC de lamina
               </Link>
-              <Link href="/servicios/rolado" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/servicios/rolado" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Rolado de lamina
               </Link>
             </div>
@@ -237,7 +237,7 @@ export default function LaminaPage() {
         </section>
 
         {/* FAQ */}
-        <section id="lamina_faq" className="py-20 lg:py-28 bg-[#0A1A2E]">
+        <section id="lamina_faq" className="py-20 lg:py-28 bg-[#153460]">
           <div className="max-w-3xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-10"

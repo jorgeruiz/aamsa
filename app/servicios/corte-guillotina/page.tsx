@@ -94,7 +94,7 @@ export default function CorteGuillotinaPage() {
           imageAlt="Equipo de corte guillotina en planta Aamsa"
         />
 
-        <section id="corte_guillotina_servicio" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="corte_guillotina_servicio" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -108,17 +108,17 @@ export default function CorteGuillotinaPage() {
               </p>
             </div>
             <div className="mt-12 flex flex-wrap gap-3">
-              <Link href="/productos/lamina" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/productos/lamina" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Lamina de acero en varios calibres
               </Link>
-              <Link href="/servicios/corte-laser" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/servicios/corte-laser" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Corte laser CNC de alta precision
               </Link>
             </div>
           </div>
         </section>
 
-        <section id="corte_guillotina_equipos" className="py-20 lg:py-28 bg-[#0A1A2E]">
+        <section id="corte_guillotina_equipos" className="py-20 lg:py-28 bg-[#153460]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -134,7 +134,7 @@ export default function CorteGuillotinaPage() {
           </div>
         </section>
 
-        <section id="corte_guillotina_faq" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="corte_guillotina_faq" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-3xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-10"

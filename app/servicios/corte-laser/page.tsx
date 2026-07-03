@@ -109,7 +109,7 @@ export default function CorteLaserPage() {
         />
 
         {/* Que es el corte con laser */}
-        <section id="corte_laser_que_es" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="corte_laser_que_es" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -133,10 +133,10 @@ export default function CorteLaserPage() {
 
             {/* Internal links */}
             <div className="mt-12 flex flex-wrap gap-3">
-              <Link href="/productos/placa" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/productos/placa" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Placa de acero en Monterrey
               </Link>
-              <Link href="/servicios/corte-pantografo" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#1A4070] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
+              <Link href="/servicios/corte-pantografo" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Corte pantografo CNC para mayor espesor
               </Link>
             </div>
@@ -144,7 +144,7 @@ export default function CorteLaserPage() {
         </section>
 
         {/* Equipos */}
-        <section id="corte_laser_equipos" className="py-20 lg:py-28 bg-[#0A1A2E]">
+        <section id="corte_laser_equipos" className="py-20 lg:py-28 bg-[#153460]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-12"
@@ -169,7 +169,7 @@ export default function CorteLaserPage() {
               ].map((equipo) => (
                 <div
                   key={equipo.title}
-                  className="bg-[#0F2440] border border-[#1A4070] border-t-[3px] border-t-[#FF7F00] p-8"
+                  className="bg-[#1B4375] border border-[#2261AE] border-t-[3px] border-t-[#FF7F00] p-8"
                 >
                   <h3 className="font-[family-name:var(--font-barlow)] text-lg font-bold uppercase text-white mb-4">
                     {equipo.title}
@@ -184,7 +184,7 @@ export default function CorteLaserPage() {
         </section>
 
         {/* Industrias */}
-        <section id="corte_laser_industrias" className="py-20 lg:py-28 bg-[#0F2440]">
+        <section id="corte_laser_industrias" className="py-20 lg:py-28 bg-[#1B4375]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
@@ -201,7 +201,7 @@ export default function CorteLaserPage() {
         </section>
 
         {/* FAQ */}
-        <section id="corte_laser_faq" className="py-20 lg:py-28 bg-[#0A1A2E]">
+        <section id="corte_laser_faq" className="py-20 lg:py-28 bg-[#153460]">
           <div className="max-w-3xl mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-10"

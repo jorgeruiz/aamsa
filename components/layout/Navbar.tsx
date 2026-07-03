@@ -67,13 +67,13 @@ function DropdownMenu({
         </svg>
       </button>
       {open && (
-        <div className="absolute top-full left-0 mt-3 bg-[#0A1A2E]/95 backdrop-blur-md border border-[#1A4070] min-w-[220px] py-2 z-50">
+        <div className="absolute top-full left-0 mt-3 bg-[#1B4375]/95 backdrop-blur-md border border-[#2261AE] min-w-[220px] py-2 z-50">
           {items.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               onClick={onToggle}
-              className="block px-5 py-2.5 font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] hover:text-[#FF7F00] hover:bg-[#0F2440] transition-colors"
+              className="block px-5 py-2.5 font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] hover:text-[#FF7F00] hover:bg-[#153460] transition-colors"
             >
               {item.label}
             </Link>
@@ -100,7 +100,7 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0A1A2E]/95 backdrop-blur-md border-b border-[#1A4070]"
+          ? "bg-[#1B4375]/95 backdrop-blur-md border-b border-[#2261AE]"
           : "bg-transparent"
       }`}
     >
@@ -193,10 +193,10 @@ export function Navbar() {
       {/* Mobile menu */}
       <div
         className={`md:hidden transition-all duration-300 overflow-hidden ${
-          menuOpen ? "max-h-[600px] border-b border-[#1A4070]" : "max-h-0"
+          menuOpen ? "max-h-[600px] border-b border-[#2261AE]" : "max-h-0"
         }`}
       >
-        <nav className="bg-[#0A1A2E] px-6 py-4 flex flex-col gap-2">
+        <nav className="bg-[#1B4375] px-6 py-4 flex flex-col gap-2">
           {/* Servicios accordion */}
           <button
             onClick={() =>
