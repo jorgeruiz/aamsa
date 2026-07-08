@@ -26,9 +26,9 @@ const steps = [
   },
   {
     number: "04",
-    title: "Fabricación y control de calidad",
+    title: "Procesado y control de calidad",
     description:
-      "Producimos tu orden con equipos CNC de última generación.",
+      "Procesamos tu orden con equipos CNC de última generación.",
   },
 ];
 

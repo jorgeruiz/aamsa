@@ -95,8 +95,8 @@ export default function DoblezCncPage() {
           eyebrow="Servicios"
           title="Doblez CNC de Acero de Alta Capacidad en Monterrey"
           id="doblez_cnc_hero"
-          image="/doblez-cnc.png"
-          imageAlt="Prensa de doblez CNC en planta Aamsa"
+          image="/doblez-cnc-prensa-yawei-aamsa.webp"
+          imageAlt="Prensa de doblez CNC Yawei de alta capacidad en planta Aamsa"
         />
 
         <section id="doblez_cnc_precision" className="py-20 lg:py-28 bg-[#1B4375]">

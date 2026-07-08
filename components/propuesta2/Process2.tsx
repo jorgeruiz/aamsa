@@ -25,7 +25,7 @@ const steps = [
     number: "04",
     title: "Entrega puntual",
     description:
-      "Fabricación con control dimensional pieza a pieza. Tolerancias garantizadas.",
+      "Procesado con control dimensional pieza a pieza. Tolerancias garantizadas.",
   },
 ];
 

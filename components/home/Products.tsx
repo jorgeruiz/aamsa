@@ -105,9 +105,9 @@ export function Products() {
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-none text-white"
               style={{ fontSize: "clamp(36px, 5vw, 60px)" }}
             >
-              Lo que
+              Nuestros
               <br />
-              Fabricamos
+              Productos
             </h2>
             <p className="font-[family-name:var(--font-inter)] text-white/70 max-w-md leading-relaxed text-sm md:text-base">
               Acero habilitado y procesado para la industria. Lámina, placa y
