@@ -30,8 +30,8 @@ export function Hero() {
           style={{ clipPath: "polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
         >
           <Image
-            src="/planta-interior.png"
-            alt=""
+            src="/corte-laser-lamina-acero-aamsa.webp"
+            alt="Corte láser de lámina de acero en planta industrial Aamsa Nuevo León"
             fill
             className="object-cover opacity-60"
             priority
@@ -193,12 +193,12 @@ export function Hero() {
                   Capacidades de planta
                 </div>
                 {[
-                  { process: "Corte Láser", spec: "Hasta 25mm acero" },
-                  { process: "Corte Plasma CNC", spec: "Hasta 50mm acero" },
-                  { process: "Doblez CNC", spec: "Hasta 6m longitud" },
-                  { process: "Corte Guillotina", spec: "Lámina hasta 10mm" },
-                  { process: "Corte Pantógrafo", spec: "Formatos irregulares" },
-                  { process: "Rolado", spec: "Perfiles y tubería" },
+                  { process: "Corte Láser CNC", spec: "2,500 x 12,000 mm" },
+                  { process: "Corte Plasma CNC", spec: "3 x 15 m" },
+                  { process: "Doblez CNC", spec: "16 m longitud" },
+                  { process: "Corte Guillotina", spec: "¾\" x 22'" },
+                  { process: "Corte Pantógrafo", spec: "3 x 15 m" },
+                  { process: "Rolado", spec: "Desde Ø 2 m" },
                 ].map((item, i) => (
                   <motion.div
                     key={item.process}

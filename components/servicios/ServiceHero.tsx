@@ -6,7 +6,7 @@ interface ServiceHeroProps {
   imageAlt?: string;
 }
 
-export function ServiceHero({ eyebrow, title, id, image }: ServiceHeroProps) {
+export function ServiceHero({ eyebrow, title, id, image, imageAlt }: ServiceHeroProps) {
   return (
     <section id={id} className="relative pt-36 pb-20 lg:pt-44 lg:pb-28 bg-[#1B4375] overflow-hidden">
       {/* Background image with fixed parallax effect */}

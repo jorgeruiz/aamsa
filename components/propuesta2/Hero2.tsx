@@ -38,8 +38,8 @@ export function Hero2() {
         aria-hidden="true"
       >
         <Image
-          src="/planta-general.png"
-          alt=""
+          src="/corte-laser-lamina-acero-aamsa.webp"
+          alt="Corte láser de lámina de acero en planta industrial Aamsa Nuevo León"
           fill
           className="object-cover opacity-20"
           priority

@@ -90,8 +90,8 @@ export default function CorteGuillotinaPage() {
           eyebrow="Servicios"
           title="Corte Guillotina de Lamina de Acero en Monterrey"
           id="corte_guillotina_hero"
-          image="/corte-guillotina.png"
-          imageAlt="Equipo de corte guillotina en planta Aamsa"
+          image="/corte-guillotina-lamina-aamsa.webp"
+          imageAlt="Cizalla guillotina industrial con piezas de lamina de acero cortadas en planta Aamsa Nuevo Leon"
         />
 
         <section id="corte_guillotina_servicio" className="py-20 lg:py-28 bg-[#1B4375]">

@@ -91,8 +91,8 @@ export default function RoladoPage() {
           eyebrow="Servicios"
           title="Rolado de Acero para Piezas Curvas en Monterrey"
           id="rolado_hero"
-          image="/rolado.png"
-          imageAlt="Roladora CNC en planta Aamsa"
+          image="/rolado-lamina-acero-aamsa.webp"
+          imageAlt="Roladora industrial formando lamina de acero en curva en planta Aamsa Nuevo Leon"
         />
 
         <section id="rolado_precision" className="py-20 lg:py-28 bg-[#1B4375]">

@@ -8,11 +8,11 @@ import { MotionSection } from "@/components/ui/MotionSection";
 const services = [
   {
     id: "corte-laser",
-    image: "/corte-laser.png",
+    image: "/corte-laser-lamina-acero-aamsa.webp",
     title: "Corte Láser",
     description:
-      "Corte de lámina y placa de acero con calidad superior. Ideal para piezas con tolerancias estrictas y acabados de calidad en series medianas y grandes.",
-    spec: "Hasta 25mm · Acero, Inox, Aluminio",
+      "Potencia de 6,000 W con área máxima de 2,500 x 12,000 mm. Precisión superior para piezas con tolerancias estrictas en series medianas y grandes.",
+    spec: "6,000 W · 2,500 x 12,000 mm",
     icon: (
       <svg
         width="28"
@@ -30,11 +30,11 @@ const services = [
   },
   {
     id: "corte-plasma-cnc",
-    image: "/corte-plasma-cnc.png",
+    image: "/corte-plasma-cnc-acero-aamsa.webp",
     title: "Corte Plasma CNC",
     description:
-      "Para placa gruesa de acero al carbón. Control numérico computarizado garantiza repetibilidad en producciones de alto volumen.",
-    spec: "Hasta 50mm · Acero al carbón",
+      "Corriente de 400 A con área máxima de 3 x 15 m. Menos deformación térmica para placa gruesa con repetibilidad en alto volumen.",
+    spec: "400 A · 3 x 15 m",
     icon: (
       <svg
         width="28"
@@ -56,8 +56,8 @@ const services = [
     image: "/doblez-cnc.png",
     title: "Doblez CNC",
     description:
-      "Doblado con prensa hidráulica y control numérico. Ángulos controlados, radios consistentes y dimensiones reproducibles en cada pieza.",
-    spec: "Hasta 6m longitud · Múltiples calibres",
+      "Prensa de 2,000 toneladas con longitud de 16 m. Dobleces exactos y repetibles con ángulos controlados en cada pieza.",
+    spec: "2,000 ton · 16 m",
     icon: (
       <svg
         width="28"
@@ -75,11 +75,11 @@ const services = [
   },
   {
     id: "corte-guillotina",
-    image: "/corte-guillotina.png",
+    image: "/corte-guillotina-lamina-aamsa.webp",
     title: "Corte Guillotina",
     description:
-      "Corte recto de lámina en grandes formatos. Velocidad y economía para troquelería, habilitado de material y producción de blancos en serie.",
-    spec: "Lámina hasta 10mm · Corte recto",
+      "Espesor hasta ¾\" con longitud de 22'. Alto volumen y cortes rectos para troquelería, habilitado de material y producción de blancos en serie.",
+    spec: "¾\" espesor · 22' longitud",
     icon: (
       <svg
         width="28"
@@ -99,11 +99,11 @@ const services = [
   },
   {
     id: "corte-pantografo",
-    image: "/corte-pantografo.png",
+    image: "/corte-pantografo-metal-aamsa.webp",
     title: "Corte Pantógrafo",
     description:
-      "Versatilidad para piezas de geometría irregular y formatos especiales. Opción económica para prototipos y lotes pequeños con perfil complejo.",
-    spec: "Formatos irregulares · Acero",
+      "Oxicorte con 4 antorchas y área máxima de 3 x 15 m. Cortes rectos y figuras para piezas de geometría irregular y formatos especiales.",
+    spec: "4 antorchas · 3 x 15 m",
     icon: (
       <svg
         width="28"
@@ -122,11 +122,11 @@ const services = [
   },
   {
     id: "rolado",
-    image: "/rolado.png",
+    image: "/rolado-lamina-acero-aamsa.webp",
     title: "Rolado",
     description:
-      "Formado curvo de lámina, placa y perfiles metálicos. Arcos, cilindros y formas cónicas para proyectos de construcción, instalaciones y manufactura.",
-    spec: "Lámina, placa y perfiles · Curvas y arcos",
+      "Espesor hasta 10 mm con diámetro desde 2 m. Curvado para múltiples industrias: construcción, instalaciones y manufactura.",
+    spec: "10 mm espesor · Desde Ø 2 m",
     icon: (
       <svg
         width="28"

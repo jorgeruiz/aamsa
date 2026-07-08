@@ -104,8 +104,8 @@ export default function CorteLaserPage() {
           eyebrow="Servicios"
           title="Corte Laser CNC de Acero en Monterrey"
           id="corte_laser_hero"
-          image="/corte-laser.png"
-          imageAlt="Equipo de corte laser CNC en planta Aamsa"
+          image="/corte-laser-lamina-acero-aamsa.webp"
+          imageAlt="Maquina de corte laser CNC cortando lamina de acero con chispas en planta Aamsa Nuevo Leon"
         />
 
         {/* Que es el corte con laser */}

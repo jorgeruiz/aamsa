@@ -95,8 +95,8 @@ export default function CortePantografoPage() {
           eyebrow="Servicios"
           title="Corte Pantografo CNC en Monterrey"
           id="corte_pantografo_hero"
-          image="/corte-pantografo.png"
-          imageAlt="Equipo de corte pantografo CNC en planta Aamsa"
+          image="/corte-pantografo-metal-aamsa.webp"
+          imageAlt="Antorchas de corte pantografo CNC cortando placa de acero con chispas en planta Aamsa Nuevo Leon"
         />
 
         <section id="corte_pantografo_que_es" className="py-20 lg:py-28 bg-[#1B4375]">
