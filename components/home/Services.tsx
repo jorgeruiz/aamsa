@@ -53,7 +53,7 @@ const services = [
   },
   {
     id: "doblez-cnc",
-    image: "/doblez-cnc.png",
+    image: "/doblez-cnc-prensa-yawei-aamsa.webp",
     title: "Doblez CNC",
     description:
       "Prensa de 2,000 toneladas con longitud de 16 m. Dobleces exactos y repetibles con ángulos controlados en cada pieza.",
