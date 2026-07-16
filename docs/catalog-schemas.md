@@ -7,13 +7,33 @@ Code lo lee para saber que plantillas existen y como agregar nuevos items.
 
 ## Blog
 
-**Estado:** No implementado. El Footer tiene un link a `/blog` pero la ruta no existe.
+**Estado:** Implementado (SOL-2026-07-002)
 
-**Rutas (al implementar):**
-- Listing: `/blog` — grid editorial con paginacion y filtro por categoria
-- Detalle: `/blog/[slug]` — articulo completo
+**Rutas:**
+- Listing: `/blog` - grid editorial con paginacion y filtro por categoria
+- Detalle: `/blog/[slug]` - articulo completo con MDX
 
-**Schema del articulo:**
+**Arquitectura de contenido:**
+- Archivos MDX en `content/blog/[slug].mdx`
+- Imagenes de portada en `public/blog/[slug]/portada.webp`
+- Lector: `lib/blog.ts` (filesystem con `gray-matter`)
+- Renderizado: `next-mdx-remote/rsc` (Server Components)
+- Publicar un articulo = agregar archivo MDX + imagen, sin tocar codigo
+
+**Frontmatter YAML (contrato de campos):**
+
+```yaml
+---
+titulo: "string"
+slug: kebab-case-sin-comillas
+categoria: "string"
+tags: ["tag1", "tag2"]
+extracto: "string, max 160 chars, usado como meta description"
+imagen_portada: "/blog/[slug]/portada.webp"
+autor: "string"
+fecha_publicacion: YYYY-MM-DD
+---
+```
 
 | Campo | Tipo | Requerido |
 |---|---|---|
@@ -21,29 +41,21 @@ Code lo lee para saber que plantillas existen y como agregar nuevos items.
 | slug | string (kebab-case, sin acentos, inmutable) | si |
 | categoria | string (una principal) | si |
 | tags | string[] | no |
-| extracto | string (max 200, usado como meta description) | si |
-| cuerpo | markdown | si |
-| imagen_portada | image (1 requerida) | si |
-| imagenes_apoyo | image[] | no |
-| autor | string (default: Aamsa) | si |
-| fecha_publicacion | date (fecha de push) | si |
+| extracto | string (max 160, usado como meta description) | si |
+| imagen_portada | string (ruta relativa a public/) | si |
+| autor | string (default: Click Society) | si |
+| fecha_publicacion | date (YYYY-MM-DD) | si |
 
 **Categorias existentes:**
-<!-- Code actualiza esta lista al agregar articulos con categorias nuevas -->
-- (ninguna todavia)
+- Informativo
 
-**Reglas SEO:**
+**Reglas SEO (implementadas):**
 - Un solo H1 por articulo (= titulo)
 - `<title>`: "{titulo} | Aamsa"
 - `meta description`: extracto (max 160 chars)
 - Schema.org Article: headline, author, datePublished, image
-- Alt text descriptivo en portada y todas las imagenes
+- Open Graph tags (og:title, og:description, og:image, og:type article)
+- Alt text descriptivo en portada
 - Slug limpio, inmutable post-publicacion
-- Open Graph tags (og:title, og:description, og:image)
-- Entrada en sitemap.xml
-- Enlazado interno sugerido entre articulos de la misma categoria
-
-**Contenido MDX:**
-- Archivos en `content/blog/[slug].mdx` (o `app/blog/[slug]/page.tsx` con MDX embebido)
-- Imagenes en `public/blog/[slug]/`
-- Frontmatter con todos los campos del schema
+- Entrada automatica en sitemap.xml
+- Articulos relacionados por coincidencia de categoria
