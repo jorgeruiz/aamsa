@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Barlow_Condensed, Inter } from "next/font/google";
 import "./globals.css";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
-import { ProposalSwitcher } from "@/components/layout/ProposalSwitcher";
 
 const barlowCondensed = Barlow_Condensed({
   variable: "--font-barlow",
@@ -49,7 +48,6 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <SmoothScrollProvider>{children}</SmoothScrollProvider>
-        <ProposalSwitcher />
       </body>
     </html>
   );

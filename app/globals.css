@@ -158,8 +158,3 @@ body {
   margin: 1.5rem 0;
 }
 
-/* Propuesta 2 light body override — applied via class on html */
-.theme-light body {
-  background-color: #ffffff;
-  color: #0D0F1A;
-}
