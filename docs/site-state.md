@@ -38,4 +38,10 @@
 
 ## Historial de cambios
 
-_Sin cambios registrados aun._
+### 2026-07-18 — SOL-2026-07-006
+
+**Cambios aplicados:**
+- Articulo de blog publicado: "Corte Láser vs Plasma: Diferencias Clave en Acero Industrial" (/blog/corte-laser-vs-plasma-diferencias-clave-en-acero-industrial)
+
+**Aplicado por:** Constructor (publicacion directa)
+
