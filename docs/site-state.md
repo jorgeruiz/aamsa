@@ -51,3 +51,10 @@
 - Articulo de blog publicado: "Prueba desde Cerebro" (/blog/prueba-desde-cerebro)
 
 **Aplicado por:** Constructor (publicacion directa)
+
+### 2026-07-19 — CEREBRO-2026-07-19T06-17-59-prueba-desde-cerebro
+
+**Cambios aplicados:**
+- Articulo de blog publicado: "Prueba desde Cerebro" (/blog/prueba-desde-cerebro)
+
+**Aplicado por:** Constructor (publicacion directa)
