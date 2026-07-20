@@ -65,3 +65,10 @@
 - Articulo de blog publicado: "Cómo Elegir un Proveedor de Acero Industrial (Checklist Completo)" (/blog/como-elegir-un-proveedor-de-acero-industrial-checklist-completo)
 
 **Aplicado por:** Constructor (publicacion directa)
+
+### 2026-07-20 — CEREBRO-2026-07-20T23-09-36-como-elegir-un-proveedor-de-acero-indust
+
+**Cambios aplicados:**
+- Articulo de blog publicado: "Cómo Elegir un Proveedor de Acero Industrial (Checklist Completo)" (/blog/como-elegir-un-proveedor-de-acero-industrial-checklist-completo)
+
+**Aplicado por:** Constructor (publicacion directa)
