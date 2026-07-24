@@ -86,3 +86,10 @@
 - Articulo de blog publicado: "Procesos de Manufactura Metálica" (/blog/procesos-de-manufactura-metalica)
 
 **Aplicado por:** Constructor (publicacion directa)
+
+### 2026-07-24 — CEREBRO-2026-07-24T20-22-51-acero-estructural-tipos-y-aplicaciones-p
+
+**Cambios aplicados:**
+- Articulo de blog publicado: "Acero Estructural: Tipos y Aplicaciones para Proyectos Industriales en Monterrey" (/blog/acero-estructural-tipos-y-aplicaciones-para-proyectos-industriales-en-monterrey)
+
+**Aplicado por:** Constructor (publicacion directa)
