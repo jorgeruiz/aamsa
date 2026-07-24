@@ -79,3 +79,10 @@
 - Articulo de blog publicado: "Cómo Elegir un Proveedor de Acero Industrial (Checklist Completo)" (/blog/como-elegir-un-proveedor-de-acero-industrial-checklist-completo)
 
 **Aplicado por:** Constructor (publicacion directa)
+
+### 2026-07-24 — CEREBRO-2026-07-24T19-23-48-procesos-de-manufactura-metalica
+
+**Cambios aplicados:**
+- Articulo de blog publicado: "Procesos de Manufactura Metálica" (/blog/procesos-de-manufactura-metalica)
+
+**Aplicado por:** Constructor (publicacion directa)
