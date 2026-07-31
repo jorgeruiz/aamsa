@@ -51,7 +51,7 @@ function DropdownMenu({
     <div ref={ref} className="relative">
       <button
         onClick={onToggle}
-        className="font-[family-name:var(--font-inter)] text-sm font-medium text-[#B0C4DE] hover:text-[#FF7F00] transition-colors duration-200 flex items-center gap-1"
+        className="font-[family-name:var(--font-inter)] text-sm font-medium text-[#1B4375] hover:text-[#FF7F00] transition-colors duration-200 flex items-center gap-1"
       >
         {label}
         <svg
@@ -68,13 +68,13 @@ function DropdownMenu({
         </svg>
       </button>
       {open && (
-        <div className="absolute top-full left-0 mt-3 bg-[#1B4375]/95 backdrop-blur-md border border-[#2261AE] min-w-[220px] py-2 z-50">
+        <div className="absolute top-full left-0 mt-3 bg-white/95 backdrop-blur-md border border-gray-200 shadow-lg min-w-[220px] py-2 z-50">
           {items.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               onClick={onToggle}
-              className="block px-5 py-2.5 font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] hover:text-[#FF7F00] hover:bg-[#153460] transition-colors"
+              className="block px-5 py-2.5 font-[family-name:var(--font-inter)] text-sm text-[#1B4375] hover:text-[#FF7F00] hover:bg-gray-50 transition-colors"
             >
               {item.label}
             </Link>
@@ -101,11 +101,11 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#1B4375]/95 backdrop-blur-md border-b border-[#2261AE]"
-          : "bg-transparent"
+          ? "bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm"
+          : "bg-white"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+      <div className="max-w-[1536px] mx-auto px-6 lg:px-12 xl:px-16">
         <div className="flex items-center justify-between h-24 md:h-28">
           {/* Logo + Razon Social */}
           <Link href="/" className="flex items-center gap-4">
@@ -117,8 +117,9 @@ export function Navbar() {
               className="h-24 w-auto"
               priority
             />
-            <span className="hidden sm:block font-[family-name:var(--font-barlow)] text-base font-semibold uppercase tracking-wide text-[#B0C4DE] leading-tight max-w-[240px]">
-              Abastecedora de Aceros y Maquilas, S.A. de C.V.
+            <span className="hidden sm:block font-[family-name:var(--font-barlow)] text-sm font-semibold uppercase tracking-wide text-[#1B4375] leading-tight max-w-[260px]">
+              ABASTECEDORAS DE ACEROS Y MAQUILAS
+              <span className="block text-xs font-medium text-[#2261AE] mt-0.5">Centro de Servicio Acero</span>
             </span>
           </Link>
 
@@ -145,7 +146,7 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-[family-name:var(--font-inter)] text-sm font-medium text-[#B0C4DE] hover:text-[#FF7F00] transition-colors duration-200"
+                  className="font-[family-name:var(--font-inter)] text-sm font-medium text-[#1B4375] hover:text-[#FF7F00] transition-colors duration-200"
                 >
                   {link.label}
                 </Link>
@@ -155,7 +156,7 @@ export function Navbar() {
             <div className="flex items-center gap-6">
               <a
                 href="tel:80011acero"
-                className="font-[family-name:var(--font-inter)] text-sm font-medium text-[#B0C4DE] hover:text-white transition-colors"
+                className="font-[family-name:var(--font-inter)] text-sm font-medium text-[#1B4375] hover:text-[#FF7F00] transition-colors"
               >
                 800 11 Acero
               </a>
@@ -179,13 +180,13 @@ export function Navbar() {
             aria-label="Abrir menu de navegacion"
           >
             <span
-              className={`block w-6 h-0.5 bg-[#F0F2FF] transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
+              className={`block w-6 h-0.5 bg-[#1B4375] transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
             />
             <span
-              className={`block w-6 h-0.5 bg-[#F0F2FF] transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`}
+              className={`block w-6 h-0.5 bg-[#1B4375] transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`}
             />
             <span
-              className={`block w-6 h-0.5 bg-[#F0F2FF] transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+              className={`block w-6 h-0.5 bg-[#1B4375] transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
             />
           </button>
         </div>
@@ -194,16 +195,16 @@ export function Navbar() {
       {/* Mobile menu */}
       <div
         className={`md:hidden transition-all duration-300 overflow-hidden ${
-          menuOpen ? "max-h-[600px] border-b border-[#2261AE]" : "max-h-0"
+          menuOpen ? "max-h-[600px] border-b border-gray-200" : "max-h-0"
         }`}
       >
-        <nav className="bg-[#1B4375] px-6 py-4 flex flex-col gap-2">
+        <nav className="bg-white px-6 py-4 flex flex-col gap-2">
           {/* Servicios accordion */}
           <button
             onClick={() =>
               setMobileExpanded(mobileExpanded === "servicios" ? null : "servicios")
             }
-            className="flex items-center justify-between font-[family-name:var(--font-inter)] text-base font-medium text-[#B0C4DE] hover:text-[#FF7F00] transition-colors py-2"
+            className="flex items-center justify-between font-[family-name:var(--font-inter)] text-base font-medium text-[#1B4375] hover:text-[#FF7F00] transition-colors py-2"
           >
             Servicios
             <svg
@@ -225,7 +226,7 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-[family-name:var(--font-inter)] text-sm text-[#7A9CC0] hover:text-[#FF7F00] transition-colors py-1.5"
+                  className="font-[family-name:var(--font-inter)] text-sm text-[#5a7a9c] hover:text-[#FF7F00] transition-colors py-1.5"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}
@@ -239,7 +240,7 @@ export function Navbar() {
             onClick={() =>
               setMobileExpanded(mobileExpanded === "productos" ? null : "productos")
             }
-            className="flex items-center justify-between font-[family-name:var(--font-inter)] text-base font-medium text-[#B0C4DE] hover:text-[#FF7F00] transition-colors py-2"
+            className="flex items-center justify-between font-[family-name:var(--font-inter)] text-base font-medium text-[#1B4375] hover:text-[#FF7F00] transition-colors py-2"
           >
             Productos
             <svg
@@ -261,7 +262,7 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-[family-name:var(--font-inter)] text-sm text-[#7A9CC0] hover:text-[#FF7F00] transition-colors py-1.5"
+                  className="font-[family-name:var(--font-inter)] text-sm text-[#5a7a9c] hover:text-[#FF7F00] transition-colors py-1.5"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}
@@ -274,7 +275,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-[family-name:var(--font-inter)] text-base font-medium text-[#B0C4DE] hover:text-[#FF7F00] transition-colors py-2"
+              className="font-[family-name:var(--font-inter)] text-base font-medium text-[#1B4375] hover:text-[#FF7F00] transition-colors py-2"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
@@ -291,7 +292,7 @@ export function Navbar() {
           </a>
           <a
             href="tel:80011acero"
-            className="font-[family-name:var(--font-inter)] text-sm text-center text-[#7A9CC0]"
+            className="font-[family-name:var(--font-inter)] text-sm text-center text-[#5a7a9c]"
           >
             800 11 Acero
           </a>

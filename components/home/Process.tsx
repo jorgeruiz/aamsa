@@ -52,7 +52,7 @@ export function Process() {
         style={{ opacity: overlayOpacity }}
       />
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
+      <div className="relative max-w-[1536px] mx-auto px-6 lg:px-12 xl:px-16">
         <div className="grid lg:grid-cols-2 gap-10 items-center mb-16">
           <MotionSection>
             <div className="flex items-center gap-3 mb-5">

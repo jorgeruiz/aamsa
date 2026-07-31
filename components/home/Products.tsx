@@ -6,11 +6,11 @@ import { MotionSection } from "@/components/ui/MotionSection";
 
 const products = [
   {
-    id: "acero",
-    title: "Acero",
+    id: "placas",
+    title: "Placas de Acero",
     description:
-      "Acero al carbón e inoxidable en diversas presentaciones, cortado y habilitado según las necesidades de tu proyecto industrial.",
-    href: "/productos/acero",
+      "Placa de acero al carbón y resistentes a la abrasión, incluyendo A36, SAE1045, SAE4140, A572 Gr. 50, Brinar, Maxil, Hardox y Strenx.",
+    href: "/productos/placa",
     icon: (
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
@@ -21,7 +21,7 @@ const products = [
     id: "lamina",
     title: "Lámina",
     description:
-      "Lámina de acero en diversos calibres y acabados, cortada y habilitada según las especificaciones de tu proyecto.",
+      "Lámina de acero en diversos calibres y acabados.",
     href: "/productos/lamina",
     icon: (
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
@@ -31,29 +31,29 @@ const products = [
     ),
   },
   {
-    id: "placa",
-    title: "Placa",
-    description:
-      "Placa de acero al carbón en diferentes espesores, con corte y procesamiento a medida para aplicaciones industriales.",
-    href: "/productos/placa",
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-        <path d="M3 8l4-4h10l4 4v12H3z" />
-        <path d="M3 8h18" />
-        <path d="M7 4v4" strokeOpacity="0.4" />
-      </svg>
-    ),
-  },
-  {
     id: "perfiles",
     title: "Perfiles",
     description:
-      "Perfiles metálicos ligeros y estructurales para construcción, herrería, naves industriales y proyectos de ingeniería.",
+      "Perfiles metálicos ligeros y estructurales.",
     href: "/productos/perfiles",
     icon: (
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M5 4h14v2H13v12h6v2H5v-2h6V6H5z" />
         <path d="M8 10h8" strokeOpacity="0.4" />
+      </svg>
+    ),
+  },
+  {
+    id: "joist-girders",
+    title: "Joist & Girders",
+    description:
+      "Vigas de alma abierta y cabrillas diseñadas y fabricadas conforme a las especificaciones de ingeniería de cada proyecto.",
+    href: "/productos/joist-girders",
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+        <path d="M3 8l4-4h10l4 4v12H3z" />
+        <path d="M3 8h18" />
+        <path d="M7 4v4" strokeOpacity="0.4" />
       </svg>
     ),
   },
@@ -92,7 +92,7 @@ export function Products() {
         style={{ opacity: overlayOpacity }}
       />
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
+      <div className="relative max-w-[1536px] mx-auto px-6 lg:px-12 xl:px-16">
         <MotionSection className="mb-16">
           <div className="flex items-center gap-3 mb-5">
             <span className="block w-12 h-[3px] bg-[#FF7F00]" />
@@ -110,9 +110,7 @@ export function Products() {
               Productos
             </h2>
             <p className="font-[family-name:var(--font-inter)] text-white/70 max-w-md leading-relaxed text-sm md:text-base">
-              Acero habilitado y procesado para la industria. Lámina, placa y
-              perfiles listos para tu línea de producción o proyecto de
-              construcción.
+              Amplia variedad de aceros para las necesidades de la industria, en diferentes grados y especificaciones.
             </p>
           </div>
         </MotionSection>
