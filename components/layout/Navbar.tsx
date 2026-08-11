@@ -106,7 +106,7 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
-        <div className="flex items-center justify-between h-24 md:h-28">
+        <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? "h-16 md:h-18" : "h-24 md:h-28"}`}>
           {/* Logo + Razon Social */}
           <Link href="/" className="flex items-center gap-4">
             <Image
@@ -114,17 +114,19 @@ export function Navbar() {
               alt="AAMSA -- Abastecedora de Aceros y Maquilas"
               width={200}
               height={220}
-              className="h-24 w-auto"
+              className={`w-auto transition-all duration-300 ${scrolled ? "h-12" : "h-24"}`}
               priority
             />
-            <div className="hidden sm:flex flex-col items-center">
-              <span className="font-[family-name:var(--font-barlow)] text-xl lg:text-2xl font-bold uppercase tracking-wide text-[#1B4375] leading-tight text-center">
-                Abastecedora de Aceros y Maquilas S.A. de C.V.
-              </span>
-              <span className="font-[family-name:var(--font-barlow)] text-xs font-semibold uppercase tracking-[0.14em] text-[#2261AE] mt-1 text-center">
-                Centro de servicio acero
-              </span>
-            </div>
+            {!scrolled && (
+              <div className="hidden sm:flex flex-col items-center">
+                <span className="font-[family-name:var(--font-barlow)] text-xl lg:text-2xl font-bold uppercase tracking-wide text-[#1B4375] leading-tight text-center">
+                  Abastecedora de Aceros y Maquilas S.A. de C.V.
+                </span>
+                <span className="font-[family-name:var(--font-barlow)] text-xs font-semibold uppercase tracking-[0.14em] text-[#2261AE] mt-1 text-center">
+                  Centro de servicio acero
+                </span>
+              </div>
+            )}
           </Link>
 
           {/* Desktop Nav */}
