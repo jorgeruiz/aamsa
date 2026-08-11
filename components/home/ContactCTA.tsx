@@ -17,7 +17,7 @@ const contactMethods = [
       </svg>
     ),
     label: "WhatsApp",
-    value: "8115115660",
+    value: "+52 81-1511-5660",
     href: "https://wa.me/528115115660?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n",
     primary: true,
   },
@@ -35,8 +35,8 @@ const contactMethods = [
         <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
       </svg>
     ),
-    label: "Teléfono",
-    value: "800 11 Acero",
+    label: "Teléfono 800",
+    value: "+52 800-11 ACERO",
     href: "tel:80011acero",
     primary: false,
   },
@@ -54,8 +54,8 @@ const contactMethods = [
         <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
       </svg>
     ),
-    label: "Teléfono",
-    value: "8183600414",
+    label: "Teléfono directo",
+    value: "+52 81-8360-0414",
     href: "tel:8183600414",
     primary: false,
   },
@@ -123,7 +123,7 @@ export function ContactCTA() {
                 <div className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] leading-relaxed">
                   Av. Benito Juárez Km 7.5 S/N Col. Los Lermas
                   <br />
-                  Guadalupe, Nuevo León, C.P. 67188
+                  Guadalupe, Nuevo León, C.P. 67188, México
                 </div>
               </div>
             </div>
