@@ -12,7 +12,7 @@ const services = [
     title: "Corte Láser",
     description:
       "Tecnología de alta precisión con potencia de 12,000 W y capacidad de corte de hasta 2.5m × 24m. Ideal para piezas que requieren calidad de acabado y alta repetibilidad, desde proyectos especiales hasta producción en serie.",
-    spec: "12,000 W · Hasta 2.5m × 24m",
+    spec: "12,000\u00a0W · Hasta\u00a02.5m\u00a0×\u00a024m",
     icon: (
       <svg
         width="28"
@@ -34,7 +34,7 @@ const services = [
     title: "Corte Plasma CNC",
     description:
       "Tecnología de corte con corriente de 400 A y capacidad de hasta 3m × 16m. Ideal para placa gruesa con menor deformación térmica y eficiencia en el corte.",
-    spec: "400 A · Hasta 3m × 16m",
+    spec: "400\u00a0A · Hasta\u00a03m\u00a0×\u00a016m",
     icon: (
       <svg
         width="28"
@@ -57,7 +57,7 @@ const services = [
     title: "Doblez CNC",
     description:
       "Prensa con capacidad de 4,000 toneladas y longitud de trabajo de hasta 24.4m. Ideal para dobleces de gran formato que requieren uniformidad.",
-    spec: "4,000 ton · Hasta 24.4m",
+    spec: "4,000\u00a0ton · Hasta\u00a024.4m",
     icon: (
       <svg
         width="28"
@@ -79,7 +79,7 @@ const services = [
     title: "Corte Guillotina",
     description:
       "Capacidad de corte de hasta 1\" de espesor X 22' de longitud. Cortes rectos para una amplia variedad de aplicaciones industriales y producción en serie.",
-    spec: "Hasta 1\" × 22'",
+    spec: "Hasta\u00a01\"\u00a0×\u00a022'",
     icon: (
       <svg
         width="28"
@@ -103,7 +103,7 @@ const services = [
     title: "Corte Pantógrafo",
     description:
       "Oxicorte con 4 antorchas y capacidad de hasta 3m × 15m. Diseñado para el corte de placa y piezas de gran formato, con versatilidad y eficiencia.",
-    spec: "4 antorchas · Hasta 3m × 15m",
+    spec: "4\u00a0antorchas · Hasta\u00a03m\u00a0×\u00a015m",
     icon: (
       <svg
         width="28"
@@ -126,7 +126,7 @@ const services = [
     title: "Rolado",
     description:
       "Capacidad para rolar placa de hasta 1 ¼\" de espesor y 10' de ancho. Soluciones de curvado para piezas metálicas en múltiples industrias.",
-    spec: "Hasta 1 ¼\" × 10'",
+    spec: "Hasta\u00a01\u00a0¼\"\u00a0×\u00a010'",
     icon: (
       <svg
         width="28"

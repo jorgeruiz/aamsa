@@ -59,9 +59,8 @@ export function Stats() {
             Manufactura industrial
             <br />
             respaldada por más de{" "}
-            <span className="text-[#FF7F00]">cuatro décadas</span>
-            <br />
-            de experiencia
+            <span className="text-[#FF7F00] whitespace-nowrap">cuatro décadas</span>
+            {" "}de experiencia
           </h2>
         </MotionSection>
 

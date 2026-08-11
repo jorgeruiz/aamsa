@@ -188,7 +188,7 @@ export function Hero() {
               {...fadeUp(0.5)}
               className="font-[family-name:var(--font-inter)] text-lg text-[#B0C4DE] max-w-[42ch] leading-relaxed mb-10"
             >
-              Capacidad, inventario y experiencia bajo un mismo techo.
+              720 paneles solares forman parte de nuestro compromiso por reducir el impacto ambiental de nuestras operaciones y avanzar hacia una industria más sustentable.
             </motion.p>
 
             {/* CTAs */}
@@ -257,12 +257,12 @@ export function Hero() {
                   Capacidades de planta
                 </div>
                 {[
-                  { process: "Corte Láser CNC", spec: "2.5m × 24m" },
-                  { process: "Corte Plasma CNC", spec: "3m × 16m" },
-                  { process: "Doblez CNC", spec: "24.4m longitud" },
-                  { process: "Corte Guillotina", spec: "1\" de espesor × 22' de longitud" },
-                  { process: "Corte Pantógrafo", spec: "3m × 15m" },
-                  { process: "Rolado", spec: "1 ¼\" de espesor y 10' de ancho" },
+                  { process: "Corte Láser CNC", spec: "2.5m\u00a0×\u00a024m" },
+                  { process: "Corte Plasma CNC", spec: "3m\u00a0×\u00a016m" },
+                  { process: "Doblez CNC", spec: "24.4m\u00a0longitud" },
+                  { process: "Corte Guillotina", spec: "1\"\u00a0de\u00a0espesor\u00a0×\u00a022'\u00a0de\u00a0longitud" },
+                  { process: "Corte Pantógrafo", spec: "3m\u00a0×\u00a015m" },
+                  { process: "Rolado", spec: "1\u00a0¼\"\u00a0de\u00a0espesor\u00a0y\u00a010'\u00a0de\u00a0ancho" },
                 ].map((item, i) => (
                   <motion.div
                     key={item.process}
