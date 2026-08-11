@@ -43,7 +43,7 @@ export function Testimonials() {
       {/* Top border accent */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#FF7F00] via-transparent to-transparent" />
 
-      <div className="relative max-w-[1536px] mx-auto px-6 lg:px-12 xl:px-16">
+      <div className="relative max-w-[1440px] mx-auto px-6 lg:px-10">
         <MotionSection className="mb-16">
           <div className="flex items-center gap-3 mb-5">
             <span className="block w-12 h-[3px] bg-[#FF7F00]" />

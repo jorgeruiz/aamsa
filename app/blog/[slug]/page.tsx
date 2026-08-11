@@ -89,7 +89,6 @@ export default async function BlogPostPage({
               backgroundImage: `url(${post.imagen_portada})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
-              backgroundAttachment: "fixed",
               opacity: 0.4,
             }}
             aria-hidden="true"
@@ -196,7 +195,7 @@ export default async function BlogPostPage({
         {/* Related articles */}
         {related.length > 0 && (
           <section className="py-16 lg:py-24 bg-[#1B4375]">
-            <div className="max-w-7xl mx-auto px-6 lg:px-10">
+            <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
               <h2
                 className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-10"
                 style={{ fontSize: "clamp(24px, 3vw, 40px)" }}

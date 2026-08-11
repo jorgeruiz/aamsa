@@ -11,8 +11,8 @@ const services = [
     image: "/corte-laser-lamina-acero-aamsa.webp",
     title: "Corte Láser",
     description:
-      "Tecnología de alta precisión con potencia de 12,000 W y capacidad de corte de hasta 2.5m × 24m. Ideal para piezas que requieren calidad de acabado y alta repetibilidad, desde proyectos especiales hasta producción en serie.",
-    spec: "12,000 W · Hasta 2.5m × 24m",
+      "Potencia de 6,000 W con área máxima de 2,500 x 12,000 mm. Precisión superior para piezas con tolerancias estrictas en series medianas y grandes.",
+    spec: "6,000 W · 2,500 x 12,000 mm",
     icon: (
       <svg
         width="28"
@@ -33,8 +33,8 @@ const services = [
     image: "/corte-plasma-cnc-acero-aamsa.webp",
     title: "Corte Plasma CNC",
     description:
-      "Tecnología de corte con corriente de 400 A y capacidad de hasta 3m × 16m. Ideal para placa gruesa con menor deformación térmica y eficiencia en el corte.",
-    spec: "400 A · Hasta 3m × 16m",
+      "Corriente de 400 A con área máxima de 3 x 15 m. Menos deformación térmica para placa gruesa con repetibilidad en alto volumen.",
+    spec: "400 A · 3 x 15 m",
     icon: (
       <svg
         width="28"
@@ -56,8 +56,8 @@ const services = [
     image: "/doblez-cnc-prensa-yawei-aamsa.webp",
     title: "Doblez CNC",
     description:
-      "Prensa con capacidad de 4,000 toneladas y longitud de trabajo de hasta 24.4m. Ideal para dobleces de gran formato que requieren uniformidad.",
-    spec: "4,000 ton · Hasta 24.4m",
+      "Prensa de 2,000 toneladas con longitud de 16 m. Dobleces exactos y repetibles con ángulos controlados en cada pieza.",
+    spec: "2,000 ton · 16 m",
     icon: (
       <svg
         width="28"
@@ -78,8 +78,8 @@ const services = [
     image: "/corte-guillotina-lamina-aamsa.webp",
     title: "Corte Guillotina",
     description:
-      "Capacidad de corte de hasta 1\" de espesor X 22' de longitud. Cortes rectos para una amplia variedad de aplicaciones industriales y producción en serie.",
-    spec: "Hasta 1\" × 22'",
+      "Espesor hasta ¾\" con longitud de 22'. Alto volumen y cortes rectos para troquelería, habilitado de material y producción de blancos en serie.",
+    spec: "¾\" espesor · 22' longitud",
     icon: (
       <svg
         width="28"
@@ -102,8 +102,8 @@ const services = [
     image: "/corte-pantografo-metal-aamsa.webp",
     title: "Corte Pantógrafo",
     description:
-      "Oxicorte con 4 antorchas y capacidad de hasta 3m × 15m. Diseñado para el corte de placa y piezas de gran formato, con versatilidad y eficiencia.",
-    spec: "4 antorchas · Hasta 3m × 15m",
+      "Oxicorte con 4 antorchas y área máxima de 3 x 15 m. Cortes rectos y figuras para piezas de geometría irregular y formatos especiales.",
+    spec: "4 antorchas · 3 x 15 m",
     icon: (
       <svg
         width="28"
@@ -125,8 +125,8 @@ const services = [
     image: "/rolado-lamina-acero-aamsa.webp",
     title: "Rolado",
     description:
-      "Capacidad para rolar placa de hasta 1 ¼\" de espesor y 10' de ancho. Soluciones de curvado para piezas metálicas en múltiples industrias.",
-    spec: "Hasta 1 ¼\" × 10'",
+      "Espesor hasta 10 mm con diámetro desde 2 m. Curvado para múltiples industrias: construcción, instalaciones y manufactura.",
+    spec: "10 mm espesor · Desde Ø 2 m",
     icon: (
       <svg
         width="28"
@@ -164,7 +164,7 @@ export function Services() {
   return (
     <section className="relative py-24 lg:py-32 bg-[#2261AE]">
       {/* Section header */}
-      <div className="max-w-[1536px] mx-auto px-6 lg:px-12 xl:px-16">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
         <MotionSection className="mb-16">
           <div className="flex items-center gap-3 mb-5">
             <span className="block w-12 h-[3px] bg-[#FF7F00]" />
@@ -173,21 +173,17 @@ export function Services() {
             </span>
           </div>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-            <div>
-              <h2
-                className="font-[family-name:var(--font-barlow)] font-black uppercase leading-none text-white"
-                style={{ fontSize: "clamp(36px, 5vw, 60px)" }}
-              >
-                Soluciones Integrales
-                <br />
-                en Acero
-              </h2>
-              <p className="font-[family-name:var(--font-inter)] text-white/70 text-sm md:text-base mt-4">
-                Capacidad, inventario y experiencia bajo un mismo techo.
-              </p>
-            </div>
-            <p className="font-[family-name:var(--font-inter)] text-white/70 max-w-md leading-relaxed text-sm md:text-base">
-              Desde 1981, nuestra experiencia y capacidad nos han permitido atender las necesidades de múltiples sectores industriales, entre ellos el metalmecánico, automotriz, transporte, agropecuario, alimentario, petroquímico, energético, eólico, médico y arquitectónico, entre otros; con presencia en México y mercados internacionales.
+            <h2
+              className="font-[family-name:var(--font-barlow)] font-black uppercase leading-none text-white"
+              style={{ fontSize: "clamp(36px, 5vw, 60px)" }}
+            >
+              Transformación
+              <br />
+              de Acero Industrial
+            </h2>
+            <p className="font-[family-name:var(--font-inter)] text-white/70 max-w-sm leading-relaxed text-sm md:text-base">
+              Seis procesos integrados bajo un mismo techo. Habilitado de
+              material y maquila para la industria del noreste de México.
             </p>
           </div>
         </MotionSection>

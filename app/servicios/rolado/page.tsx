@@ -96,7 +96,7 @@ export default function RoladoPage() {
         />
 
         <section id="rolado_precision" className="py-20 lg:py-28 bg-[#1B4375]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
@@ -125,7 +125,7 @@ export default function RoladoPage() {
         </section>
 
         <section id="rolado_equipos" className="py-20 lg:py-28 bg-[#153460]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}

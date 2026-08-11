@@ -108,7 +108,7 @@ export default function LaminaPage() {
 
         {/* Intro */}
         <section className="py-16 bg-[#1B4375]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
             <p className="font-[family-name:var(--font-inter)] text-lg text-[#B0C4DE] leading-relaxed max-w-3xl">
               Venta de laminas de acero rolado en caliente, rolado en frio y antiderrapante, con disponibilidad inmediata y servicio de corte a la medida en Nuevo Leon.
             </p>
@@ -117,7 +117,7 @@ export default function LaminaPage() {
 
         {/* Lamina Antiderrapante con tabla */}
         <section id="lamina_antiderrapante" className="py-20 lg:py-28 bg-[#153460]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
@@ -162,7 +162,7 @@ export default function LaminaPage() {
 
         {/* Rolado en frio */}
         <section id="lamina_rolado_frio" className="py-20 lg:py-28 bg-[#1B4375]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
@@ -179,7 +179,7 @@ export default function LaminaPage() {
 
         {/* Rolado en caliente */}
         <section id="lamina_rolado_caliente" className="py-20 lg:py-28 bg-[#153460]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
@@ -201,7 +201,7 @@ export default function LaminaPage() {
 
         {/* A-572 GR 50 */}
         <section id="lamina_a572" className="py-20 lg:py-28 bg-[#1B4375]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}

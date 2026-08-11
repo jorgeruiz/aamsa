@@ -17,7 +17,7 @@ const contactMethods = [
       </svg>
     ),
     label: "WhatsApp",
-    value: "+52 81-1511-5660",
+    value: "8115115660",
     href: "https://wa.me/528115115660?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n",
     primary: true,
   },
@@ -36,7 +36,7 @@ const contactMethods = [
       </svg>
     ),
     label: "Teléfono",
-    value: "+52 800-11 ACERO",
+    value: "800 11 Acero",
     href: "tel:80011acero",
     primary: false,
   },
@@ -55,7 +55,7 @@ const contactMethods = [
       </svg>
     ),
     label: "Teléfono",
-    value: "+52 81-8360-0414",
+    value: "8183600414",
     href: "tel:8183600414",
     primary: false,
   },
@@ -79,7 +79,7 @@ export function ContactCTA() {
         </span>
       </div>
 
-      <div className="relative max-w-[1536px] mx-auto px-6 lg:px-12 xl:px-16">
+      <div className="relative max-w-[1440px] mx-auto px-6 lg:px-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left — headline */}
           <MotionSection>
@@ -123,7 +123,7 @@ export function ContactCTA() {
                 <div className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] leading-relaxed">
                   Av. Benito Juárez Km 7.5 S/N Col. Los Lermas
                   <br />
-                  Guadalupe, Nuevo León, C.P. 67188, México
+                  Guadalupe, Nuevo León, C.P. 67188
                 </div>
               </div>
             </div>

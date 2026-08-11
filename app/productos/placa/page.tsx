@@ -161,7 +161,7 @@ export default function PlacaPage() {
 
         {/* Intro */}
         <section className="py-16 bg-[#1B4375]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
             <p className="font-[family-name:var(--font-inter)] text-lg text-[#B0C4DE] leading-relaxed max-w-3xl">
               En Aamsa contamos con venta de placa y planchones de acero. Manejamos varios grados como Acero A-36, AR-400, SAE 1045, SAE 4140, A572 GR-50, Hardox y Strenx, entre otros, con un gran inventario para entrega inmediata en Nuevo Leon.
             </p>
@@ -170,7 +170,7 @@ export default function PlacaPage() {
 
         {/* Corte a la medida */}
         <section id="placa_corte_medida" className="py-20 lg:py-28 bg-[#153460]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
@@ -187,7 +187,7 @@ export default function PlacaPage() {
 
         {/* Tabla completa 23 filas */}
         <section id="placa_tabla" className="py-20 lg:py-28 bg-[#1B4375]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-10"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
@@ -230,7 +230,7 @@ export default function PlacaPage() {
 
         {/* Grados de placa */}
         <section id="placa_grados" className="py-20 lg:py-28 bg-[#153460]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
             <h2
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-12"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
