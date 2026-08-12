@@ -257,7 +257,7 @@ export function Hero() {
                   Capacidades de planta
                 </div>
                 {[
-                  { process: "Corte Láser CNC", spec: "2.5m\u00a0×\u00a024m" },
+                  { process: "Corte Láser CNC", spec: "3m\u00a0×\u00a024m" },
                   { process: "Corte Plasma CNC", spec: "3m\u00a0×\u00a016m" },
                   { process: "Doblez CNC", spec: "24.4m\u00a0longitud" },
                   { process: "Corte Guillotina", spec: "1\"\u00a0de\u00a0espesor\u00a0×\u00a022'\u00a0de\u00a0longitud" },

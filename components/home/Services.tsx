@@ -11,8 +11,8 @@ const services = [
     image: "/corte-laser-lamina-acero-aamsa.webp",
     title: "Corte Láser",
     description:
-      "Tecnología de alta precisión con potencia de 12,000 W y capacidad de corte de hasta 2.5m × 24m. Ideal para piezas que requieren calidad de acabado y alta repetibilidad, desde proyectos especiales hasta producción en serie.",
-    spec: "12,000\u00a0W · Hasta\u00a02.5m\u00a0×\u00a024m",
+      "Tecnología de alta precisión con potencia de 12,000 W y capacidad de corte de hasta 3m\u00a0×\u00a024m. Ideal para piezas que requieren calidad de acabado y alta repetibilidad, desde proyectos especiales hasta producción en serie.",
+    spec: "12,000\u00a0W · Hasta\u00a03m\u00a0×\u00a024m",
     icon: (
       <svg
         width="28"
