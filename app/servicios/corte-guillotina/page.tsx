@@ -8,9 +8,9 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Corte Guillotina de Lamina de Acero en Nuevo Leon | Aamsa",
+  title: "Corte Guillotina de Lámina de Acero en Nuevo León | Aamsa",
   description:
-    "Corte guillotina de lamina de acero con alta precision y rapidez en Monterrey y Guadalupe NL. Ideal para produccion en serie. Solicita tu cotizacion.",
+    "Corte guillotina de lámina de acero con alta precisión y rapidez en Monterrey y Guadalupe NL. Ideal para producción en serie. Solicita tu cotización.",
   alternates: {
     canonical: "https://aamsa.com/servicios/corte-guillotina",
     languages: {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Corte Guillotina de Lamina de Acero en Nuevo Leon | Aamsa",
+    title: "Corte Guillotina de Lámina de Acero en Nuevo León | Aamsa",
     description:
-      "Corte guillotina de lamina de acero con alta precision y rapidez en Monterrey y Guadalupe NL. Ideal para produccion en serie. Solicita tu cotizacion.",
+      "Corte guillotina de lámina de acero con alta precisión y rapidez en Monterrey y Guadalupe NL. Ideal para producción en serie. Solicita tu cotización.",
     url: "https://aamsa.com/servicios/corte-guillotina",
     images: [{ url: "https://aamsa.com/og/corte-guillotina.jpg" }],
     siteName: "Aamsa",
@@ -33,39 +33,39 @@ export const metadata: Metadata = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  serviceType: "Corte guillotina de lamina de acero",
+  serviceType: "Corte guillotina de lámina de acero",
   name: "Corte Guillotina",
   provider: {
     "@type": "LocalBusiness",
-    name: "Aamsa -- Abastecedora de Aceros y Maquilas S.A. de C.V.",
+    name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
     telephone: "+52-81-8360-0414",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Av. Benito Juarez Km 7.5 S/N Col. Los Lermas",
+      streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
       addressLocality: "Guadalupe",
-      addressRegion: "Nuevo Leon",
+      addressRegion: "Nuevo León",
       postalCode: "67190",
       addressCountry: "MX",
     },
   },
-  areaServed: { "@type": "State", name: "Nuevo Leon" },
+  areaServed: { "@type": "State", name: "Nuevo León" },
   description:
-    "Corte guillotina de lamina de acero desde 1/4\" hasta 1\" de espesor, ancho de 10' a 22'. 6 equipos disponibles.",
+    "Corte guillotina de lámina de acero desde 1/4\" hasta 1\" de espesor, ancho de 10' a 22'. 6 equipos disponibles.",
 };
 
 const faqItems = [
   {
-    question: "Que espesores maneja el corte guillotina?",
+    question: "¿Qué espesores maneja el corte guillotina?",
     answer: 'Desde 1/4" hasta 1" de espesor.',
   },
   {
-    question: "Que ancho de pieza pueden cortar con guillotina?",
+    question: "¿Qué ancho de pieza pueden cortar con guillotina?",
     answer: "Desde 10' hasta 22' de ancho.",
   },
   {
-    question: "Para que es ideal el corte guillotina?",
+    question: "¿Para qué es ideal el corte guillotina?",
     answer:
-      "Para piezas largas o cuadros de cualquier tamano y para produccion en serie con rapidez y precision.",
+      "Para piezas largas o cuadros de cualquier tamaño y para producción en serie con rapidez y precisión.",
   },
 ];
 
@@ -88,10 +88,10 @@ export default function CorteGuillotinaPage() {
       <main>
         <ServiceHero
           eyebrow="Servicios"
-          title="Corte Guillotina de Lamina de Acero en Monterrey"
+          title="Corte Guillotina de Lámina de Acero en Monterrey"
           id="corte_guillotina_hero"
           image="/corte-guillotina-lamina-aamsa.webp"
-          imageAlt="Cizalla guillotina industrial con piezas de lamina de acero cortadas en planta Aamsa Nuevo Leon"
+          imageAlt="Cizalla guillotina industrial con piezas de lámina de acero cortadas en planta Aamsa Nuevo León"
         />
 
         <section id="corte_guillotina_servicio" className="py-20 lg:py-28 bg-[#1B4375]">
@@ -104,15 +104,15 @@ export default function CorteGuillotinaPage() {
             </h2>
             <div className="max-w-3xl">
               <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
-                Contamos con servicio de corte por guillotina para piezas largas o cuadros de cualquier tamano, con alta precision y rapidez. Es la opcion ideal para produccion en serie de lamina de acero.
+                Contamos con servicio de corte por guillotina para piezas largas o cuadros de cualquier tamaño, con alta precisión y rapidez. Es la opción ideal para producción en serie de lámina de acero.
               </p>
             </div>
             <div className="mt-12 flex flex-wrap gap-3">
               <Link href="/productos/lamina" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
-                Lamina de acero en varios calibres
+                Lámina de acero en varios calibres
               </Link>
               <Link href="/servicios/corte-laser" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
-                Corte laser CNC de alta precision
+                Corte láser CNC de alta precisión
               </Link>
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function CorteGuillotinaPage() {
 
         <ServiceCta
           id="corte_guillotina_cta"
-          headline="Solicita tu cotizacion de corte guillotina en Monterrey"
+          headline="Solicita tu cotización de corte guillotina en Monterrey"
         />
       </main>
       <Footer />

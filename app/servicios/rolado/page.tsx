@@ -8,9 +8,9 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Rolado de Acero para Piezas Curvas en Nuevo Leon | Aamsa",
+  title: "Rolado de Acero para Piezas Curvas en Nuevo León | Aamsa",
   description:
-    "Servicio de rolado de lamina, placa y perfiles para cilindros, tanques y estructuras en Monterrey y Guadalupe NL. Roladora CNC de 4 rodillos. Cotiza ya.",
+    "Servicio de rolado de lámina, placa y perfiles para cilindros, tanques y estructuras en Monterrey y Guadalupe NL. Roladora CNC de 4 rodillos. Cotiza ya.",
   alternates: {
     canonical: "https://aamsa.com/servicios/rolado",
     languages: {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Rolado de Acero para Piezas Curvas en Nuevo Leon | Aamsa",
+    title: "Rolado de Acero para Piezas Curvas en Nuevo León | Aamsa",
     description:
-      "Servicio de rolado de lamina, placa y perfiles para cilindros, tanques y estructuras en Monterrey y Guadalupe NL. Roladora CNC de 4 rodillos. Cotiza ya.",
+      "Servicio de rolado de lámina, placa y perfiles para cilindros, tanques y estructuras en Monterrey y Guadalupe NL. Roladora CNC de 4 rodillos. Cotiza ya.",
     url: "https://aamsa.com/servicios/rolado",
     images: [{ url: "https://aamsa.com/og/rolado.jpg" }],
     siteName: "Aamsa",
@@ -37,36 +37,36 @@ const serviceSchema = {
   name: "Rolado",
   provider: {
     "@type": "LocalBusiness",
-    name: "Aamsa -- Abastecedora de Aceros y Maquilas S.A. de C.V.",
+    name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
     telephone: "+52-81-8360-0414",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Av. Benito Juarez Km 7.5 S/N Col. Los Lermas",
+      streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
       addressLocality: "Guadalupe",
-      addressRegion: "Nuevo Leon",
+      addressRegion: "Nuevo León",
       postalCode: "67190",
       addressCountry: "MX",
     },
   },
-  areaServed: { "@type": "State", name: "Nuevo Leon" },
+  areaServed: { "@type": "State", name: "Nuevo León" },
   description:
-    "Rolado de lamina, placa y perfiles hasta 1 1/4\" x 10' de ancho con roladora CNC de 4 rodillos. 7 roladoras disponibles.",
+    "Rolado de lámina, placa y perfiles hasta 1 1/4\" x 10' de ancho con roladora CNC de 4 rodillos. 7 roladoras disponibles.",
 };
 
 const faqItems = [
   {
-    question: "Que materiales pueden rolar?",
+    question: "¿Qué materiales pueden rolar?",
     answer:
-      'Lamina, placa y perfiles hasta 1 1/4" de espesor x 10\' de ancho.',
+      'Lámina, placa y perfiles hasta 1 1/4" de espesor x 10\' de ancho.',
   },
   {
-    question: "Para que se usa el servicio de rolado?",
+    question: "¿Para qué se usa el servicio de rolado?",
     answer:
       "Para fabricar cilindros, tanques y estructuras curvas en proyectos industriales.",
   },
   {
-    question: "Que ventaja tiene la roladora CNC de 4 rodillos?",
-    answer: "Mayor precision y menor desperdicio de material.",
+    question: "¿Qué ventaja tiene la roladora CNC de 4 rodillos?",
+    answer: "Mayor precisión y menor desperdicio de material.",
   },
 ];
 
@@ -92,7 +92,7 @@ export default function RoladoPage() {
           title="Rolado de Acero para Piezas Curvas en Monterrey"
           id="rolado_hero"
           image="/rolado-lamina-acero-aamsa.webp"
-          imageAlt="Roladora industrial formando lamina de acero en curva en planta Aamsa Nuevo Leon"
+          imageAlt="Roladora industrial formando lámina de acero en curva en planta Aamsa Nuevo León"
         />
 
         <section id="rolado_precision" className="py-20 lg:py-28 bg-[#1B4375]">
@@ -101,16 +101,16 @@ export default function RoladoPage() {
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
             >
-              Rolado CNC de precision
+              Rolado CNC de precisión
             </h2>
             <div className="max-w-3xl">
               <div className="border-l-[3px] border-[#FF7F00] pl-6 py-2 mb-8">
                 <p className="font-[family-name:var(--font-inter)] text-white italic leading-relaxed">
-                  Roladora CNC de 4 rodillos para mayor precision y menor desperdicio de material.
+                  Roladora CNC de 4 rodillos para mayor precisión y menor desperdicio de material.
                 </p>
               </div>
               <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
-                Ofrecemos servicio de rolado de acero para cilindros, tanques y estructuras, con precision y calidad en cada proyecto industrial.
+                Ofrecemos servicio de rolado de acero para cilindros, tanques y estructuras, con precisión y calidad en cada proyecto industrial.
               </p>
             </div>
             <div className="mt-12 flex flex-wrap gap-3">
@@ -134,7 +134,7 @@ export default function RoladoPage() {
             </h2>
             <div className="max-w-3xl">
               <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
-                Rolado de lamina, placa y perfiles hasta 1 1/4&quot; x 10&apos; de ancho.
+                Rolado de lámina, placa y perfiles hasta 1 1/4&quot; x 10&apos; de ancho.
               </p>
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function RoladoPage() {
 
         <ServiceCta
           id="rolado_cta"
-          headline="Solicita tu cotizacion de rolado en Monterrey"
+          headline="Solicita tu cotización de rolado en Monterrey"
         />
       </main>
       <Footer />

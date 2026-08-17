@@ -8,7 +8,7 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Placa de Acero en Diferentes Espesores en Nuevo Leon | Aamsa",
+  title: "Placa de Acero en Diferentes Espesores en Nuevo León | Aamsa",
   description:
     "Venta de placa y planchones de acero A-36, AR-400, SAE 1045, 4140, Hardox y Strenx en Monterrey y Guadalupe NL. Inventario inmediato y corte a la medida.",
   alternates: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Placa de Acero en Diferentes Espesores en Nuevo Leon | Aamsa",
+    title: "Placa de Acero en Diferentes Espesores en Nuevo León | Aamsa",
     description:
       "Venta de placa y planchones de acero A-36, AR-400, SAE 1045, 4140, Hardox y Strenx en Monterrey y Guadalupe NL. Inventario inmediato y corte a la medida.",
     url: "https://aamsa.com/productos/placa",
@@ -44,31 +44,31 @@ const productSchema = {
     priceCurrency: "MXN",
     seller: {
       "@type": "Organization",
-      name: "Aamsa -- Abastecedora de Aceros y Maquilas S.A. de C.V.",
+      name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
     },
   },
 };
 
 const faqItems = [
   {
-    question: "Que grados de placa de acero manejan?",
+    question: "¿Qué grados de placa de acero manejan?",
     answer:
       "A-36, AR-400, SAE 1045, SAE 4140, A572 GR-50, Hardox y Strenx, entre otros.",
   },
   {
-    question: "Que espesores de planchon venden?",
+    question: "¿Qué espesores de planchón venden?",
     answer:
       'Desde 3" hasta 8 3/4" de espesor; los mayores a 5" se importan, con certificado de calidad de molino.',
   },
   {
-    question: "Ofrecen corte de placa a la medida?",
+    question: "¿Ofrecen corte de placa a la medida?",
     answer:
-      "Si, ademas de placas completas ofrecemos corte y venta de acero a la medida.",
+      "Sí, además de placas completas ofrecemos corte y venta de acero a la medida.",
   },
   {
-    question: "Que placa conviene para resistencia a la abrasion?",
+    question: "¿Qué placa conviene para resistencia a la abrasión?",
     answer:
-      "Placa AR-400 (dureza 360-444 BHN) o Hardox, disenadas para resistir el desgaste.",
+      "Placa AR-400 (dureza 360-444 BHN) o Hardox, diseñadas para resistir el desgaste.",
   },
 ];
 
@@ -112,23 +112,23 @@ const placaData = [
 const grades = [
   {
     title: "Placa A-36",
-    desc: "El acero A36 tiene densidad de 7,860 kg/m3 (0.28 lb/in3). En espesores menores de 8\" el limite de fluencia minimo es 250 MPa (36 ksi) y el de rotura 400 MPa (58 ksi); para espesores mayores, la fluencia minima es 220 MPa (32 ksi). Por su composicion quimica simple, es facil de soldar, lo que lo hace atractivo para construccion.",
+    desc: "El acero A36 tiene densidad de 7,860 kg/m³ (0.28 lb/in³). En espesores menores de 8\" el límite de fluencia mínimo es 250 MPa (36 ksi) y el de rotura 400 MPa (58 ksi); para espesores mayores, la fluencia mínima es 220 MPa (32 ksi). Por su composición química simple, es fácil de soldar, lo que lo hace atractivo para construcción.",
   },
   {
     title: "Planchon",
-    desc: 'Venta de planchon de acero desde 3" hasta 8 3/4" de espesor. En el mercado nacional solo se fabrican planchones hasta 5"; los mas gruesos se importan. Contamos con certificado de calidad de molino.',
+    desc: 'Venta de planchón de acero desde 3" hasta 8 3/4" de espesor. En el mercado nacional solo se fabrican planchones hasta 5"; los más gruesos se importan. Contamos con certificado de calidad de molino.',
   },
   {
     title: "Placa SAE 1045",
-    desc: "Compuesta principalmente de carbono. Conocida por su buena resistencia y propiedades de impacto. Facil de soldar con cualquier tipo de soplete, ideal para constructoras.",
+    desc: "Compuesta principalmente de carbono. Conocida por su buena resistencia y propiedades de impacto. Fácil de soldar con cualquier tipo de soplete, ideal para constructoras.",
   },
   {
     title: "Placa SAE 4140",
-    desc: "Contiene cromo, molibdeno y hierro, proporcionando dureza uniforme y alta resistencia. Facil de mecanizar y responde bien al tratamiento termico.",
+    desc: "Contiene cromo, molibdeno y hierro, proporcionando dureza uniforme y alta resistencia. Fácil de mecanizar y responde bien al tratamiento térmico.",
   },
   {
     title: "Placa Comercial",
-    desc: "Acero economico sin certificado de calidad. Util para trabajos que no requieren alta calidad en el material.",
+    desc: "Acero económico sin certificado de calidad. Útil para trabajos que no requieren alta calidad en el material.",
   },
   {
     title: "Placa Hardox",
@@ -136,11 +136,11 @@ const grades = [
   },
   {
     title: "Placa Strenx",
-    desc: "Placa de acero fino, resistente y de alta prestacion que hace los productos mas ligeros y seguros.",
+    desc: "Placa de acero fino, resistente y de alta prestación que hace los productos más ligeros y seguros.",
   },
   {
     title: "Placa AR-400",
-    desc: "Acero de aleacion alto en carbono para aplicaciones resistentes a la abrasion y desgaste. Dureza de 360 a 444 BHN.",
+    desc: "Acero de aleación alto en carbono para aplicaciones resistentes a la abrasión y desgaste. Dureza de 360 a 444 BHN.",
   },
 ];
 
@@ -163,7 +163,7 @@ export default function PlacaPage() {
         <section className="py-16 bg-[#1B4375]">
           <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
             <p className="font-[family-name:var(--font-inter)] text-lg text-[#B0C4DE] leading-relaxed max-w-3xl">
-              En Aamsa contamos con venta de placa y planchones de acero. Manejamos varios grados como Acero A-36, AR-400, SAE 1045, SAE 4140, A572 GR-50, Hardox y Strenx, entre otros, con un gran inventario para entrega inmediata en Nuevo Leon.
+              En Aamsa contamos con venta de placa y planchones de acero. Manejamos varios grados como Acero A-36, AR-400, SAE 1045, SAE 4140, A572 GR-50, Hardox y Strenx, entre otros, con un gran inventario para entrega inmediata en Nuevo León.
             </p>
           </div>
         </section>
@@ -179,7 +179,7 @@ export default function PlacaPage() {
             </h2>
             <div className="max-w-3xl">
               <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
-                Ademas de vender las placas completas, ofrecemos el servicio de corte o venta de acero a la medida de tu requerimiento.
+                Además de vender las placas completas, ofrecemos el servicio de corte o venta de acero a la medida de tu requerimiento.
               </p>
             </div>
           </div>
@@ -255,7 +255,7 @@ export default function PlacaPage() {
             {/* Internal links */}
             <div className="mt-12 flex flex-wrap gap-3">
               <Link href="/servicios/corte-pantografo" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
-                Corte pantografo de placa gruesa
+                Corte pantógrafo de placa gruesa
               </Link>
               <Link href="/servicios/corte-plasma-cnc" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Corte plasma CNC de placa
@@ -282,7 +282,7 @@ export default function PlacaPage() {
 
         <ServiceCta
           id="placa_cta"
-          headline="Solicita tu cotizacion de placa de acero en Monterrey"
+          headline="Solicita tu cotización de placa de acero en Monterrey"
         />
       </main>
       <Footer />

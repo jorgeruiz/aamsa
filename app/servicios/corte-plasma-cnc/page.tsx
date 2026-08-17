@@ -8,9 +8,9 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Corte Plasma CNC de Acero Grueso en Nuevo Leon | Aamsa",
+  title: "Corte Plasma CNC de Acero Grueso en Nuevo León | Aamsa",
   description:
-    "Corte plasma CNC rapido y eficiente para acero de alto espesor en Monterrey y Guadalupe NL. Con biselado y taladro. Ideal para proyectos industriales.",
+    "Corte plasma CNC rápido y eficiente para acero de alto espesor en Monterrey y Guadalupe NL. Con biselado y taladro. Ideal para proyectos industriales.",
   alternates: {
     canonical: "https://aamsa.com/servicios/corte-plasma-cnc",
     languages: {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Corte Plasma CNC de Acero Grueso en Nuevo Leon | Aamsa",
+    title: "Corte Plasma CNC de Acero Grueso en Nuevo León | Aamsa",
     description:
-      "Corte plasma CNC rapido y eficiente para acero de alto espesor en Monterrey y Guadalupe NL. Con biselado y taladro. Ideal para proyectos industriales.",
+      "Corte plasma CNC rápido y eficiente para acero de alto espesor en Monterrey y Guadalupe NL. Con biselado y taladro. Ideal para proyectos industriales.",
     url: "https://aamsa.com/servicios/corte-plasma-cnc",
     images: [{ url: "https://aamsa.com/og/corte-plasma-cnc.jpg" }],
     siteName: "Aamsa",
@@ -37,41 +37,41 @@ const serviceSchema = {
   name: "Corte Plasma CNC",
   provider: {
     "@type": "LocalBusiness",
-    name: "Aamsa -- Abastecedora de Aceros y Maquilas S.A. de C.V.",
+    name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
     telephone: "+52-81-8360-0414",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Av. Benito Juarez Km 7.5 S/N Col. Los Lermas",
+      streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
       addressLocality: "Guadalupe",
-      addressRegion: "Nuevo Leon",
+      addressRegion: "Nuevo León",
       postalCode: "67190",
       addressCountry: "MX",
     },
   },
-  areaServed: { "@type": "State", name: "Nuevo Leon" },
+  areaServed: { "@type": "State", name: "Nuevo León" },
   description:
     "Corte plasma CNC de 400 Amp con biselado y taladro para acero de alto espesor. Cama de 3 m x 16 m.",
 };
 
 const faqItems = [
   {
-    question: "Para que tipo de acero conviene el corte plasma CNC?",
+    question: "¿Para qué tipo de acero conviene el corte plasma CNC?",
     answer:
       "Es ideal para acero de alto espesor donde se requiere rapidez y eficiencia en proyectos industriales.",
   },
   {
-    question: "Que capacidad tiene el equipo de plasma de Aamsa?",
+    question: "¿Qué capacidad tiene el equipo de plasma de Aamsa?",
     answer:
       "Corte plasma CNC de 400 Amp con biselado y taladro, en cama de 3 m x 16 m.",
   },
   {
-    question: "Cual es la ventaja del corte plasma frente a otros procesos?",
+    question: "¿Cuál es la ventaja del corte plasma frente a otros procesos?",
     answer:
-      "Menor riesgo de deformaciones gracias a la compactacion calorifica de la zona de corte.",
+      "Menor riesgo de deformaciones gracias a la compactación calorífica de la zona de corte.",
   },
   {
-    question: "Ofrecen maquila de corte plasma?",
-    answer: "Si, si el cliente cuenta con el material.",
+    question: "¿Ofrecen maquila de corte plasma?",
+    answer: "Sí, si el cliente cuenta con el material.",
   },
 ];
 
@@ -94,10 +94,10 @@ export default function CortePlasmaCncPage() {
       <main>
         <ServiceHero
           eyebrow="Servicios"
-          title="Corte Plasma CNC para Acero Grueso en Nuevo Leon"
+          title="Corte Plasma CNC para Acero Grueso en Nuevo León"
           id="corte_plasma_hero"
           image="/corte-plasma-cnc-acero-aamsa.webp"
-          imageAlt="Equipo de corte plasma CNC cortando placa de acero grueso con chispas en planta Aamsa Nuevo Leon"
+          imageAlt="Equipo de corte plasma CNC cortando placa de acero grueso con chispas en planta Aamsa Nuevo León"
         />
 
         {/* Que es el corte plasma CNC */}
@@ -107,24 +107,24 @@ export default function CortePlasmaCncPage() {
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
             >
-              Que es el corte con plasma CNC?
+              ¿Qué es el corte con plasma CNC?
             </h2>
             <div className="max-w-3xl">
               <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed mb-8">
-                El corte por plasma se basa en la accion termica y mecanica de un chorro de gas calentado por un arco electrico de corriente continua establecido entre un electrodo ubicado en la antorcha y la pieza a mecanizar. El chorro de plasma lanzado contra la pieza penetra la totalidad del espesor a cortar, fundiendo y expulsando el material.
+                El corte por plasma se basa en la acción térmica y mecánica de un chorro de gas calentado por un arco eléctrico de corriente continua establecido entre un electrodo ubicado en la antorcha y la pieza a mecanizar. El chorro de plasma lanzado contra la pieza penetra la totalidad del espesor a cortar, fundiendo y expulsando el material.
               </p>
               <div className="border-l-[3px] border-[#FF7F00] pl-6 py-2">
                 <p className="font-[family-name:var(--font-inter)] text-white italic leading-relaxed">
-                  La ventaja principal de este sistema radica en su reducido riesgo de deformaciones debido a la compactacion calorifica de la zona de corte.
+                  La ventaja principal de este sistema radica en su reducido riesgo de deformaciones debido a la compactación calorífica de la zona de corte.
                 </p>
               </div>
             </div>
             <div className="mt-12 flex flex-wrap gap-3">
               <Link href="/servicios/corte-laser" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
-                Corte laser CNC para espesores delgados
+                Corte láser CNC para espesores delgados
               </Link>
               <Link href="/servicios/corte-pantografo" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
-                Corte pantografo para maximo espesor
+                Corte pantógrafo para máximo espesor
               </Link>
               <Link href="/productos/placa" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Placa de acero para corte industrial
@@ -160,7 +160,7 @@ export default function CortePlasmaCncPage() {
                 Ideal para industria manufacturera
               </h2>
               <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
-                El corte plasma CNC es la mejor opcion para acero de alto espesor en proyectos industriales exigentes de la industria manufacturera en Monterrey y Nuevo Leon. Tambien ofrecemos servicio de <strong className="text-white">maquila</strong> si el cliente cuenta con el material.
+                El corte plasma CNC es la mejor opción para acero de alto espesor en proyectos industriales exigentes de la industria manufacturera en Monterrey y Nuevo León. También ofrecemos servicio de <strong className="text-white">maquila</strong> si el cliente cuenta con el material.
               </p>
             </div>
           </div>
@@ -181,7 +181,7 @@ export default function CortePlasmaCncPage() {
 
         <ServiceCta
           id="corte_plasma_cta"
-          headline="Solicita tu cotizacion de corte plasma CNC en Monterrey"
+          headline="Solicita tu cotización de corte plasma CNC en Monterrey"
         />
       </main>
       <Footer />

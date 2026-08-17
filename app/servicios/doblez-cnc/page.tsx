@@ -8,9 +8,9 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Doblez CNC de Acero de Alta Capacidad en Nuevo Leon | Aamsa",
+  title: "Doblez CNC de Acero de Alta Capacidad en Nuevo León | Aamsa",
   description:
-    "Doblez CNC preciso y repetible para piezas industriales en Monterrey y Guadalupe NL. Hasta 4,000 tons x 24.4 m. Industria energetica, eolica y transporte.",
+    "Doblez CNC preciso y repetible para piezas industriales en Monterrey y Guadalupe NL. Hasta 4,000 tons x 24.4 m. Industria energética, eólica y transporte.",
   alternates: {
     canonical: "https://aamsa.com/servicios/doblez-cnc",
     languages: {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Doblez CNC de Acero de Alta Capacidad en Nuevo Leon | Aamsa",
+    title: "Doblez CNC de Acero de Alta Capacidad en Nuevo León | Aamsa",
     description:
-      "Doblez CNC preciso y repetible para piezas industriales en Monterrey y Guadalupe NL. Hasta 4,000 tons x 24.4 m. Industria energetica, eolica y transporte.",
+      "Doblez CNC preciso y repetible para piezas industriales en Monterrey y Guadalupe NL. Hasta 4,000 tons x 24.4 m. Industria energética, eólica y transporte.",
     url: "https://aamsa.com/servicios/doblez-cnc",
     images: [{ url: "https://aamsa.com/og/doblez-cnc.jpg" }],
     siteName: "Aamsa",
@@ -37,40 +37,40 @@ const serviceSchema = {
   name: "Doblez CNC",
   provider: {
     "@type": "LocalBusiness",
-    name: "Aamsa -- Abastecedora de Aceros y Maquilas S.A. de C.V.",
+    name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
     telephone: "+52-81-8360-0414",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Av. Benito Juarez Km 7.5 S/N Col. Los Lermas",
+      streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
       addressLocality: "Guadalupe",
-      addressRegion: "Nuevo Leon",
+      addressRegion: "Nuevo León",
       postalCode: "67190",
       addressCountry: "MX",
     },
   },
-  areaServed: { "@type": "State", name: "Nuevo Leon" },
+  areaServed: { "@type": "State", name: "Nuevo León" },
   description:
-    "Doblez CNC de alta capacidad hasta 4,000 tons x 24.4 m. 12 equipos de prensas para industria energetica, eolica, transporte y ferrocarrilera.",
+    "Doblez CNC de alta capacidad hasta 4,000 tons x 24.4 m. 12 equipos de prensas para industria energética, eólica, transporte y ferrocarrilera.",
 };
 
 const faqItems = [
   {
-    question: "Cual es la capacidad maxima de doblez CNC de Aamsa?",
+    question: "¿Cuál es la capacidad máxima de doblez CNC de Aamsa?",
     answer:
       'Hasta 4,000 tons x 24.4 m (80") de largo, uno de los equipos de mayor capacidad a nivel internacional.',
   },
   {
-    question: "Cuantos equipos de doblez tienen?",
+    question: "¿Cuántos equipos de doblez tienen?",
     answer: "12 equipos de prensas, entre CNC y convencionales.",
   },
   {
-    question: "A que industrias atienden con doblez CNC?",
+    question: "¿A qué industrias atienden con doblez CNC?",
     answer:
-      "Industria energetica, eolica, transporte y ferrocarrilera, entre otras.",
+      "Industria energética, eólica, transporte y ferrocarrilera, entre otras.",
   },
   {
-    question: "Ofrecen maquila de doblez CNC?",
-    answer: "Si, ofrecemos servicio de maquila de doblez.",
+    question: "¿Ofrecen maquila de doblez CNC?",
+    answer: "Sí, ofrecemos servicio de maquila de doblez.",
   },
 ];
 
@@ -105,7 +105,7 @@ export default function DoblezCncPage() {
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
             >
-              Doblez CNC de precision
+              Doblez CNC de precisión
             </h2>
             <div className="max-w-3xl">
               <div className="border-l-[3px] border-[#FF7F00] pl-6 py-2 mb-8">
@@ -114,12 +114,12 @@ export default function DoblezCncPage() {
                 </p>
               </div>
               <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
-                Ofrecemos nuestros servicios a la industria energetica, eolica, transporte y ferrocarrilera, entre otras, asi como servicio de <strong className="text-white">maquila</strong>. El doblez CNC garantiza piezas precisas y repetibles para manufactura de precision.
+                Ofrecemos nuestros servicios a la industria energética, eólica, transporte y ferrocarrilera, entre otras, así como servicio de <strong className="text-white">maquila</strong>. El doblez CNC garantiza piezas precisas y repetibles para manufactura de precisión.
               </p>
             </div>
             <div className="mt-12 flex flex-wrap gap-3">
               <Link href="/productos/lamina" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
-                Lamina de acero para doblez
+                Lámina de acero para doblez
               </Link>
               <Link href="/servicios/rolado" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Rolado de placa y perfiles
@@ -181,7 +181,7 @@ export default function DoblezCncPage() {
 
         <ServiceCta
           id="doblez_cnc_cta"
-          headline="Solicita tu cotizacion de doblez CNC en Monterrey"
+          headline="Solicita tu cotización de doblez CNC en Monterrey"
         />
       </main>
       <Footer />

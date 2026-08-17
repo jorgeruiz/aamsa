@@ -8,9 +8,9 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Lamina de Acero en Varios Calibres en Nuevo Leon | Aamsa",
+  title: "Lámina de Acero en Varios Calibres en Nuevo León | Aamsa",
   description:
-    "Venta de lamina de acero rolado en caliente, en frio, antiderrapante y A-572 GR 50 en Monterrey y Guadalupe NL. Disponibilidad inmediata y corte a la medida.",
+    "Venta de lámina de acero rolado en caliente, en frío, antiderrapante y A-572 GR 50 en Monterrey y Guadalupe NL. Disponibilidad inmediata y corte a la medida.",
   alternates: {
     canonical: "https://aamsa.com/productos/lamina",
     languages: {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Lamina de Acero en Varios Calibres en Nuevo Leon | Aamsa",
+    title: "Lámina de Acero en Varios Calibres en Nuevo León | Aamsa",
     description:
-      "Venta de lamina de acero rolado en caliente, en frio, antiderrapante y A-572 GR 50 en Monterrey y Guadalupe NL. Disponibilidad inmediata y corte a la medida.",
+      "Venta de lámina de acero rolado en caliente, en frío, antiderrapante y A-572 GR 50 en Monterrey y Guadalupe NL. Disponibilidad inmediata y corte a la medida.",
     url: "https://aamsa.com/productos/lamina",
     images: [{ url: "https://aamsa.com/og/lamina.jpg" }],
     siteName: "Aamsa",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
-  name: "Lamina de Acero",
+  name: "Lámina de Acero",
   description:
-    "Lamina de acero rolado en caliente, rolado en frio, antiderrapante y A-572 GR 50 en varios calibres. Disponibilidad inmediata y corte a la medida.",
+    "Lámina de acero rolado en caliente, rolado en frío, antiderrapante y A-572 GR 50 en varios calibres. Disponibilidad inmediata y corte a la medida.",
   category: "Acero estructural",
   brand: { "@type": "Brand", name: "Aamsa" },
   offers: {
@@ -44,30 +44,30 @@ const productSchema = {
     priceCurrency: "MXN",
     seller: {
       "@type": "Organization",
-      name: "Aamsa -- Abastecedora de Aceros y Maquilas S.A. de C.V.",
+      name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
     },
   },
 };
 
 const faqItems = [
   {
-    question: "Que tipos de lamina de acero venden?",
+    question: "¿Qué tipos de lámina de acero venden?",
     answer:
-      "Rolado en caliente, rolado en frio, antiderrapante y A-572 GR 50.",
+      "Rolado en caliente, rolado en frío, antiderrapante y A-572 GR 50.",
   },
   {
-    question: "Que espesores maneja la lamina antiderrapante?",
+    question: "¿Qué espesores maneja la lámina antiderrapante?",
     answer: 'Desde calibre C-14 hasta 1/2" de espesor.',
   },
   {
-    question: "Ofrecen corte a la medida de lamina?",
+    question: "¿Ofrecen corte a la medida de lámina?",
     answer:
-      "Si, vendemos desde una lamina hasta mayoreo, con servicio de corte a la medida.",
+      "Sí, vendemos desde una lámina hasta mayoreo, con servicio de corte a la medida.",
   },
   {
-    question: "Para que se usa la lamina rolado en caliente?",
+    question: "¿Para qué se usa la lámina rolado en caliente?",
     answer:
-      "Fabricacion de ruedas, piezas automotrices, tubos, edificios, puentes, ferrocarriles y chasis, entre otros.",
+      "Fabricación de ruedas, piezas automotrices, tubos, edificios, puentes, ferrocarriles y chasis, entre otros.",
   },
 ];
 
@@ -100,17 +100,17 @@ export default function LaminaPage() {
       <main>
         <ServiceHero
           eyebrow="Productos"
-          title="Lamina de Acero en Varios Calibres en Monterrey"
+          title="Lámina de Acero en Varios Calibres en Monterrey"
           id="lamina_hero"
           image="/planta-interior.png"
-          imageAlt="Lamina de acero en planta Aamsa"
+          imageAlt="Lámina de acero en planta Aamsa"
         />
 
         {/* Intro */}
         <section className="py-16 bg-[#1B4375]">
           <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
             <p className="font-[family-name:var(--font-inter)] text-lg text-[#B0C4DE] leading-relaxed max-w-3xl">
-              Venta de laminas de acero rolado en caliente, rolado en frio y antiderrapante, con disponibilidad inmediata y servicio de corte a la medida en Nuevo Leon.
+              Venta de láminas de acero rolado en caliente, rolado en frío y antiderrapante, con disponibilidad inmediata y servicio de corte a la medida en Nuevo León.
             </p>
           </div>
         </section>
@@ -122,10 +122,10 @@ export default function LaminaPage() {
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
             >
-              Lamina Antiderrapante
+              Lámina Antiderrapante
             </h2>
             <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed mb-10 max-w-3xl">
-              Venta de lamina antiderrapante desde C-14 hasta 1/2&quot; de espesor.
+              Venta de lámina antiderrapante desde C-14 hasta 1/2&quot; de espesor.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full min-w-[700px] border-collapse">
@@ -167,11 +167,11 @@ export default function LaminaPage() {
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
             >
-              Lamina Rolado en Frio
+              Lámina Rolado en Frío
             </h2>
             <div className="max-w-3xl">
               <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
-                El acero rolado en frio se obtiene de material rolado en caliente sometido a un proceso de laminacion en frio para reducir su espesor y obtener mayor aptitud al conformado y mejor acabado superficial. Es apto para maquinaria y equipo, perfiles y tuberia, tambores y envases, industria automotriz y otros usos industriales.
+                El acero rolado en frío se obtiene de material rolado en caliente sometido a un proceso de laminación en frío para reducir su espesor y obtener mayor aptitud al conformado y mejor acabado superficial. Es apto para maquinaria y equipo, perfiles y tubería, tambores y envases, industria automotriz y otros usos industriales.
               </p>
             </div>
           </div>
@@ -184,15 +184,15 @@ export default function LaminaPage() {
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
             >
-              Lamina Rolado en Caliente
+              Lámina Rolado en Caliente
             </h2>
             <div className="max-w-3xl">
               <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed mb-8">
-                Damos servicio de venta desde una lamina hasta mayoreo, ademas de corte a la medida. El acero rolado en caliente sin decapar es el producto primario del proceso productivo: se recalienta el planchon para producir rollos de acero con espesores desde 0.075&quot; hasta 0.625&quot;.
+                Damos servicio de venta desde una lámina hasta mayoreo, además de corte a la medida. El acero rolado en caliente sin decapar es el producto primario del proceso productivo: se recalienta el planchón para producir rollos de acero con espesores desde 0.075&quot; hasta 0.625&quot;.
               </p>
               <div className="border-l-[3px] border-[#FF7F00] pl-6 py-2">
                 <p className="font-[family-name:var(--font-inter)] text-white italic leading-relaxed">
-                  Los usos mas comunes son fabricacion de ruedas, piezas automotrices y tubos, asi como construccion de edificios, puentes, ferrocarriles y chasis de automoviles y camiones, entre otros.
+                  Los usos más comunes son fabricación de ruedas, piezas automotrices y tubos, así como construcción de edificios, puentes, ferrocarriles y chasis de automóviles y camiones, entre otros.
                 </p>
               </div>
             </div>
@@ -206,31 +206,31 @@ export default function LaminaPage() {
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-tight text-white mb-8"
               style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
             >
-              Lamina A-572 GR 50
+              Lámina A-572 GR 50
             </h2>
             <div className="max-w-3xl">
               <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed mb-8">
-                La lamina A572 GR 50 es una especificacion normalizada para acero estructural de alta resistencia y baja aleacion de columbio-vanadio.
+                La lámina A572 GR 50 es una especificación normalizada para acero estructural de alta resistencia y baja aleación de columbio-vanadio.
               </p>
               <div className="border-l-[3px] border-[#FF7F00] pl-6 py-2">
                 <p className="font-[family-name:var(--font-inter)] text-white italic leading-relaxed">
-                  La resistencia a la corrosion atmosferica es la misma de las placas de acero al carbon.
+                  La resistencia a la corrosión atmosférica es la misma de las placas de acero al carbón.
                 </p>
               </div>
             </div>
             {/* Internal links */}
             <div className="mt-12 flex flex-wrap gap-3">
               <Link href="/servicios/corte-laser" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
-                Corte laser de lamina
+                Corte láser de lámina
               </Link>
               <Link href="/servicios/corte-guillotina" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
-                Corte guillotina de lamina
+                Corte guillotina de lámina
               </Link>
               <Link href="/servicios/doblez-cnc" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
-                Doblez CNC de lamina
+                Doblez CNC de lámina
               </Link>
               <Link href="/servicios/rolado" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
-                Rolado de lamina
+                Rolado de lámina
               </Link>
             </div>
           </div>
@@ -251,7 +251,7 @@ export default function LaminaPage() {
 
         <ServiceCta
           id="lamina_cta"
-          headline="Solicita tu cotizacion de lamina de acero en Monterrey"
+          headline="Solicita tu cotización de lámina de acero en Monterrey"
         />
       </main>
       <Footer />

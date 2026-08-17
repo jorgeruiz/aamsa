@@ -5,16 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 const serviciosLinks = [
-  { href: "/servicios/corte-laser", label: "Corte Laser" },
+  { href: "/servicios/corte-laser", label: "Corte Láser" },
   { href: "/servicios/corte-plasma-cnc", label: "Corte Plasma CNC" },
-  { href: "/servicios/corte-pantografo", label: "Corte Pantografo" },
+  { href: "/servicios/corte-pantografo", label: "Corte Pantógrafo" },
   { href: "/servicios/corte-guillotina", label: "Corte Guillotina" },
   { href: "/servicios/doblez-cnc", label: "Doblez CNC" },
   { href: "/servicios/rolado", label: "Rolado" },
 ];
 
 const productosLinks = [
-  { href: "/productos/lamina", label: "Lamina" },
+  { href: "/productos/lamina", label: "Lámina" },
   { href: "/productos/placa", label: "Placa" },
 ];
 
@@ -170,7 +170,7 @@ export function Navbar() {
                 href="https://wa.me/528115115660?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Solicitar cotizacion por WhatsApp"
+                aria-label="Solicitar cotización por WhatsApp"
                 className="bg-[#FF7F00] hover:bg-[#CC6600] text-white font-[family-name:var(--font-barlow)] text-sm font-bold uppercase tracking-widest px-6 py-2.5 transition-colors duration-200"
               >
                 Cotizar
@@ -183,7 +183,7 @@ export function Navbar() {
             className="md:hidden flex flex-col gap-1.5 p-2"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-expanded={menuOpen}
-            aria-label="Abrir menu de navegacion"
+            aria-label="Abrir menú de navegación"
           >
             <span
               className={`block w-6 h-0.5 bg-[#1B4375] transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
@@ -291,10 +291,10 @@ export function Navbar() {
             href="https://wa.me/528115115660?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Solicitar cotizacion por WhatsApp"
+            aria-label="Solicitar cotización por WhatsApp"
             className="mt-2 bg-[#FF7F00] text-white font-[family-name:var(--font-barlow)] text-base font-bold uppercase tracking-widest px-6 py-3 text-center"
           >
-            Solicitar Cotizacion
+            Solicitar Cotización
           </a>
           <a
             href="tel:80011acero"
