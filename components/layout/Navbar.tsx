@@ -16,6 +16,7 @@ const serviciosLinks = [
 const productosLinks = [
   { href: "/productos/lamina", label: "Lámina" },
   { href: "/productos/placa", label: "Placa" },
+  { href: "/productos/joists-girders", label: "Joists & Girders" },
 ];
 
 const navLinks = [

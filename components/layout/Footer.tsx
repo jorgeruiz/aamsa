@@ -24,7 +24,7 @@ export function Footer() {
       <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-16">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Brand column */}
-          <div className="col-span-2 lg:col-span-1">
+          <div className="col-span-2 lg:col-span-1 flex flex-col items-center text-center">
             <Link href="/" className="inline-block mb-5">
               <Image
                 src="/logo-aamsa.png"
@@ -41,7 +41,7 @@ export function Footer() {
               Centro de servicio acero
             </p>
             {/* Certifications */}
-            <div className="flex items-center gap-4 mb-6">
+            <div className="flex items-center justify-center gap-4 mb-6">
               <Image
                 src="/iso-9001-lrqa.webp"
                 alt="LRQA Certified ISO 9001"
@@ -59,7 +59,7 @@ export function Footer() {
             </div>
 
             {/* Social */}
-            <div className="flex gap-3">
+            <div className="flex justify-center gap-3">
               <a
                 href="https://www.facebook.com/AAMSA.MX"
                 target="_blank"
@@ -172,7 +172,7 @@ export function Footer() {
                   Dirección
                 </div>
                 <address className="font-[family-name:var(--font-inter)] text-sm text-[#5a7a9c] not-italic leading-relaxed">
-                  Av. Benito Juárez Km 7.5
+                  Av. Benito Juárez Km 7.5 S/N col. Los Lermas
                   <br />
                   Guadalupe, N.L. 67188, México
                 </address>

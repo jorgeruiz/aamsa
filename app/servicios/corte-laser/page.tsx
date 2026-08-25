@@ -66,7 +66,7 @@ const faqItems = [
   },
   {
     question: "¿Cuál es la pieza máxima que pueden cortar?",
-    answer: "Hasta 2.5 m de ancho por 24 m de largo.",
+    answer: "Hasta 3 m de ancho por 24 m de largo.",
   },
   {
     question: "¿Ofrecen servicio de maquila si ya tengo el material?",
@@ -156,7 +156,7 @@ export default function CorteLaserPage() {
               {[
                 {
                   title: "Láser CNC hasta 12,000 watts",
-                  desc: 'Máquina de corte láser CNC de hasta 12,000 W x 2.5 m x 24 m. Espesores de corte de calibre 30 a 3/4".',
+                  desc: 'Máquina de corte láser CNC de hasta 12,000 W x 3 m x 24 m. Espesores de corte de calibre 30 a 3/4".',
                 },
                 {
                   title: "Láser CNC hasta 4,000 watts",
@@ -164,7 +164,7 @@ export default function CorteLaserPage() {
                 },
                 {
                   title: "Láser CNC hasta 4,400 watts",
-                  desc: 'Máquinas de corte láser CNC de hasta 4,400 W x 2.5 m x 12 m. Cortando espesores desde calibre 30 hasta 5/8".',
+                  desc: 'Máquinas de corte láser CNC de hasta 4,400 W x 3 m x 12 m. Cortando espesores desde calibre 30 hasta 5/8".',
                 },
               ].map((equipo) => (
                 <div
@@ -194,7 +194,7 @@ export default function CorteLaserPage() {
             </h2>
             <div className="max-w-3xl">
               <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
-                Apoyamos a clientes de la industria metal-mecánica, automotriz, agroindustrial, alimenticia, petroquímica, médica, limpieza y arquitectónica, entre otras. Contamos con experiencia en exportaciones directas, virtuales y permisos de Sub-Maquilas IMMEX. Somos socios estratégicos de empresas nacionales, trasnacionales, extranjeras y personas físicas. Trabajamos prototipos y producciones bajas, medianas y altas; cortamos piezas de hasta 2.5 m de ancho x 24 m de largo, en espesores de calibre 30 a 3/4&quot;. También ofrecemos servicio de <strong className="text-white">maquila</strong> si el cliente cuenta con el material.
+                Apoyamos a clientes de la industria metal-mecánica, automotriz, agroindustrial, alimenticia, petroquímica, médica, limpieza y arquitectónica, entre otras. Contamos con experiencia en exportaciones directas, virtuales y permisos de Sub-Maquilas IMMEX. Somos socios estratégicos de empresas nacionales, trasnacionales, extranjeras y personas físicas. Trabajamos prototipos y producciones bajas, medianas y altas; cortamos piezas de hasta 3 m de ancho x 24 m de largo, en espesores de calibre 30 a 3/4&quot;. También ofrecemos servicio de <strong className="text-white">maquila</strong> si el cliente cuenta con el material.
               </p>
             </div>
           </div>
