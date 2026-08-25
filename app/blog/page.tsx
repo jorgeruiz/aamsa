@@ -8,14 +8,14 @@ import { getAllPosts, getAllCategories } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Blog - Acero, Corte y Manufactura Industrial | Aamsa",
   description:
-    "Articulos sobre acero estructural, corte laser, corte plasma CNC, doblez y manufactura industrial en Monterrey y Nuevo Leon.",
+    "Artículos sobre acero estructural, corte láser, corte plasma CNC, doblez y manufactura industrial.",
   alternates: {
     canonical: "https://aamsa.com/blog",
   },
   openGraph: {
     title: "Blog - Acero, Corte y Manufactura Industrial | Aamsa",
     description:
-      "Articulos sobre acero estructural, corte laser, corte plasma CNC, doblez y manufactura industrial en Monterrey y Nuevo Leon.",
+      "Artículos sobre acero estructural, corte láser, corte plasma CNC, doblez y manufactura industrial.",
     url: "https://aamsa.com/blog",
     siteName: "Aamsa",
     type: "website",

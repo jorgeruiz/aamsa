@@ -10,7 +10,7 @@ import { JsonLd } from "@/components/servicios/JsonLd";
 export const metadata: Metadata = {
   title: "Corte Plasma CNC de Acero Grueso en Nuevo León | Aamsa",
   description:
-    "Corte plasma CNC rápido y eficiente para acero de alto espesor en Monterrey y Guadalupe NL. Con biselado y taladro. Ideal para proyectos industriales.",
+    "Corte plasma CNC rápido y eficiente para acero de alto espesor. Con biselado y taladro. Ideal para proyectos industriales.",
   alternates: {
     canonical: "https://aamsa.com/servicios/corte-plasma-cnc",
     languages: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Corte Plasma CNC de Acero Grueso en Nuevo León | Aamsa",
     description:
-      "Corte plasma CNC rápido y eficiente para acero de alto espesor en Monterrey y Guadalupe NL. Con biselado y taladro. Ideal para proyectos industriales.",
+      "Corte plasma CNC rápido y eficiente para acero de alto espesor. Con biselado y taladro. Ideal para proyectos industriales.",
     url: "https://aamsa.com/servicios/corte-plasma-cnc",
     images: [{ url: "https://aamsa.com/og/corte-plasma-cnc.jpg" }],
     siteName: "Aamsa",
@@ -160,7 +160,7 @@ export default function CortePlasmaCncPage() {
                 Ideal para industria manufacturera
               </h2>
               <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
-                El corte plasma CNC es la mejor opción para acero de alto espesor en proyectos industriales exigentes de la industria manufacturera en Monterrey y Nuevo León. También ofrecemos servicio de <strong className="text-white">maquila</strong> si el cliente cuenta con el material.
+                El corte plasma CNC es la mejor opción para acero de alto espesor en proyectos industriales exigentes de la industria manufacturera. También ofrecemos servicio de <strong className="text-white">maquila</strong> si el cliente cuenta con el material.
               </p>
             </div>
           </div>
@@ -181,7 +181,7 @@ export default function CortePlasmaCncPage() {
 
         <ServiceCta
           id="corte_plasma_cta"
-          headline="Solicita tu cotización de corte plasma CNC en Monterrey"
+          headline="Solicita tu cotización de corte plasma CNC"
         />
       </main>
       <Footer />

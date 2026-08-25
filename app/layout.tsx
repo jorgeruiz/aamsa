@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Corte Láser, Plasma CNC y Doblez de Acero en Monterrey | Aamsa",
+  title: "Corte Láser, Plasma CNC y Doblez de Acero | Aamsa",
   description:
     "Más de 40 años ofreciendo servicios de corte láser, corte plasma CNC, doblez CNC y distribución de lámina y acero en Nuevo León. Solicita cotización hoy.",
   keywords: [

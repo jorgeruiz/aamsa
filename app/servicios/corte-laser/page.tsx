@@ -8,9 +8,9 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Corte Láser CNC de Acero en Monterrey y Nuevo León | Aamsa",
+  title: "Corte Láser CNC de Acero | Aamsa",
   description:
-    "Servicio de corte láser CNC en Monterrey y Guadalupe NL. Alta precisión en acero al carbón, inoxidable y aluminio, cualquier espesor. Cotiza hoy.",
+    "Servicio de corte láser CNC de alta precisión en acero al carbón, inoxidable y aluminio, cualquier espesor. Cotiza hoy.",
   alternates: {
     canonical: "https://aamsa.com/servicios/corte-laser",
     languages: {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Corte Láser CNC de Acero en Monterrey y Nuevo León | Aamsa",
+    title: "Corte Láser CNC de Acero | Aamsa",
     description:
-      "Servicio de corte láser CNC en Monterrey y Guadalupe NL. Alta precisión en acero al carbón, inoxidable y aluminio, cualquier espesor. Cotiza hoy.",
+      "Servicio de corte láser CNC de alta precisión en acero al carbón, inoxidable y aluminio, cualquier espesor. Cotiza hoy.",
     url: "https://aamsa.com/servicios/corte-laser",
     images: [{ url: "https://aamsa.com/og/corte-laser.jpg" }],
     siteName: "Aamsa",
@@ -76,7 +76,7 @@ const faqItems = [
   {
     question: "¿Dónde están ubicados?",
     answer:
-      "En Av. Benito Juárez Km 7.5, Col. Los Lermas, Guadalupe, Nuevo León, con cobertura en Monterrey y todo Nuevo León.",
+      "En Av. Benito Juárez Km 7.5 S/N, Col. Los Lermas, Guadalupe, Nuevo León.",
   },
 ];
 
@@ -102,7 +102,7 @@ export default function CorteLaserPage() {
       <main>
         <ServiceHero
           eyebrow="Servicios"
-          title="Corte Láser CNC de Acero en Monterrey"
+          title="Corte Láser CNC de Acero"
           id="corte_laser_hero"
           image="/corte-laser-lamina-acero-aamsa.webp"
           imageAlt="Máquina de corte láser CNC cortando lámina de acero con chispas en planta Aamsa Nuevo León"
@@ -134,7 +134,7 @@ export default function CorteLaserPage() {
             {/* Internal links */}
             <div className="mt-12 flex flex-wrap gap-3">
               <Link href="/productos/placa" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
-                Placa de acero en Monterrey
+                Placa de acero
               </Link>
               <Link href="/servicios/corte-pantografo" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
                 Corte pantógrafo CNC para mayor espesor
@@ -215,7 +215,7 @@ export default function CorteLaserPage() {
 
         <ServiceCta
           id="corte_laser_cta"
-          headline="Solicita tu cotización de corte láser en Monterrey — más de 45 años de experiencia industrial"
+          headline="Solicita tu cotización de corte láser — más de 45 años de experiencia industrial"
         />
       </main>
       <Footer />

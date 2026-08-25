@@ -8,9 +8,9 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Doblez CNC de Acero de Alta Capacidad en Nuevo León | Aamsa",
+  title: "Doblez CNC de Acero de Alta Capacidad | Aamsa",
   description:
-    "Doblez CNC preciso y repetible para piezas industriales en Monterrey y Guadalupe NL. Hasta 4,000 tons x 24.4 m. Industria energética, eólica y transporte.",
+    "Doblez CNC preciso y repetible para piezas industriales. Hasta 4,000 tons x 24.4 m. Industria energética, eólica y transporte.",
   alternates: {
     canonical: "https://aamsa.com/servicios/doblez-cnc",
     languages: {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Doblez CNC de Acero de Alta Capacidad en Nuevo León | Aamsa",
+    title: "Doblez CNC de Acero de Alta Capacidad | Aamsa",
     description:
-      "Doblez CNC preciso y repetible para piezas industriales en Monterrey y Guadalupe NL. Hasta 4,000 tons x 24.4 m. Industria energética, eólica y transporte.",
+      "Doblez CNC preciso y repetible para piezas industriales. Hasta 4,000 tons x 24.4 m. Industria energética, eólica y transporte.",
     url: "https://aamsa.com/servicios/doblez-cnc",
     images: [{ url: "https://aamsa.com/og/doblez-cnc.jpg" }],
     siteName: "Aamsa",
@@ -93,7 +93,7 @@ export default function DoblezCncPage() {
       <main>
         <ServiceHero
           eyebrow="Servicios"
-          title="Doblez CNC de Acero de Alta Capacidad en Monterrey"
+          title="Doblez CNC de Acero de Alta Capacidad"
           id="doblez_cnc_hero"
           image="/doblez-cnc-prensa-yawei-aamsa.webp"
           imageAlt="Prensa de doblez CNC Yawei de alta capacidad en planta Aamsa"
@@ -181,7 +181,7 @@ export default function DoblezCncPage() {
 
         <ServiceCta
           id="doblez_cnc_cta"
-          headline="Solicita tu cotización de doblez CNC en Monterrey"
+          headline="Solicita tu cotización de doblez CNC"
         />
       </main>
       <Footer />

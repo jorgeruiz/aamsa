@@ -8,9 +8,9 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Corte Pantógrafo CNC en Monterrey y Guadalupe NL | Aamsa",
+  title: "Corte Pantógrafo CNC de Acero | Aamsa",
   description:
-    'Servicio de corte pantógrafo CNC para acero al carbón de 3/8" a 9" de espesor en Nuevo León. Precisión, rapidez y 45 años de experiencia. Cotiza ya.',
+    'Servicio de corte pantógrafo CNC para acero al carbón de 3/8" a 9" de espesor Precisión, rapidez y 45 años de experiencia. Cotiza ya.',
   alternates: {
     canonical: "https://aamsa.com/servicios/corte-pantografo",
     languages: {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Corte Pantógrafo CNC en Monterrey y Guadalupe NL | Aamsa",
+    title: "Corte Pantógrafo CNC de Acero | Aamsa",
     description:
-      'Servicio de corte pantógrafo CNC para acero al carbón de 3/8" a 9" de espesor en Nuevo León. Precisión, rapidez y 45 años de experiencia. Cotiza ya.',
+      'Servicio de corte pantógrafo CNC para acero al carbón de 3/8" a 9" de espesor Precisión, rapidez y 45 años de experiencia. Cotiza ya.',
     url: "https://aamsa.com/servicios/corte-pantografo",
     images: [{ url: "https://aamsa.com/og/corte-pantografo.jpg" }],
     siteName: "Aamsa",
@@ -93,7 +93,7 @@ export default function CortePantografoPage() {
       <main>
         <ServiceHero
           eyebrow="Servicios"
-          title="Corte Pantógrafo CNC en Monterrey"
+          title="Corte Pantógrafo CNC de Acero"
           id="corte_pantografo_hero"
           image="/corte-pantografo-metal-aamsa.webp"
           imageAlt="Antorchas de corte pantógrafo CNC cortando placa de acero con chispas en planta Aamsa Nuevo León"
@@ -153,7 +153,7 @@ export default function CortePantografoPage() {
 
         <ServiceCta
           id="corte_pantografo_cta"
-          headline="Solicita cotización de corte pantógrafo en Monterrey y recibe atención técnica especializada"
+          headline="Solicita cotización de corte pantógrafo y recibe atención técnica especializada"
         />
       </main>
       <Footer />

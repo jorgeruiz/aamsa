@@ -8,9 +8,9 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Placa de Acero en Diferentes Espesores en Nuevo León | Aamsa",
+  title: "Placa de Acero en Diferentes Espesores | Aamsa",
   description:
-    "Venta de placa y planchones de acero A-36, AR-400, SAE 1045, 4140, Hardox, Strenx, Brinar y Maxil en Monterrey y Guadalupe NL. Inventario inmediato y corte a la medida.",
+    "Venta de placa y planchones de acero A-36, AR-400, SAE 1045, 4140, Hardox, Strenx, Brinar y Maxil Inventario inmediato y corte a la medida.",
   alternates: {
     canonical: "https://aamsa.com/productos/placa",
     languages: {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Placa de Acero en Diferentes Espesores en Nuevo León | Aamsa",
+    title: "Placa de Acero en Diferentes Espesores | Aamsa",
     description:
-      "Venta de placa y planchones de acero A-36, AR-400, SAE 1045, 4140, Hardox, Strenx, Brinar y Maxil en Monterrey y Guadalupe NL. Inventario inmediato y corte a la medida.",
+      "Venta de placa y planchones de acero A-36, AR-400, SAE 1045, 4140, Hardox, Strenx, Brinar y Maxil Inventario inmediato y corte a la medida.",
     url: "https://aamsa.com/productos/placa",
     images: [{ url: "https://aamsa.com/og/placa.jpg" }],
     siteName: "Aamsa",
@@ -161,7 +161,7 @@ export default function PlacaPage() {
       <main>
         <ServiceHero
           eyebrow="Productos"
-          title="Placa de Acero en Diferentes Espesores en Monterrey"
+          title="Placa de Acero en Diferentes Espesores"
           id="placa_hero"
           image="/planta-general.png"
           imageAlt="Placa de acero en planta Aamsa"
@@ -290,7 +290,7 @@ export default function PlacaPage() {
 
         <ServiceCta
           id="placa_cta"
-          headline="Solicita tu cotización de placa de acero en Monterrey"
+          headline="Solicita tu cotización de placa de acero"
         />
       </main>
       <Footer />

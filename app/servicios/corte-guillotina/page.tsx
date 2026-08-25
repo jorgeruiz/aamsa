@@ -8,9 +8,9 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Corte Guillotina de Lámina de Acero en Nuevo León | Aamsa",
+  title: "Corte Guillotina de Lámina de Acero | Aamsa",
   description:
-    "Corte guillotina de lámina de acero con alta precisión y rapidez en Monterrey y Guadalupe NL. Ideal para producción en serie. Solicita tu cotización.",
+    "Corte guillotina de lámina de acero con alta precisión y rapidez con alta precisión y rapidez. Ideal para producción en serie. Solicita tu cotización.",
   alternates: {
     canonical: "https://aamsa.com/servicios/corte-guillotina",
     languages: {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Corte Guillotina de Lámina de Acero en Nuevo León | Aamsa",
+    title: "Corte Guillotina de Lámina de Acero | Aamsa",
     description:
-      "Corte guillotina de lámina de acero con alta precisión y rapidez en Monterrey y Guadalupe NL. Ideal para producción en serie. Solicita tu cotización.",
+      "Corte guillotina de lámina de acero con alta precisión y rapidez con alta precisión y rapidez. Ideal para producción en serie. Solicita tu cotización.",
     url: "https://aamsa.com/servicios/corte-guillotina",
     images: [{ url: "https://aamsa.com/og/corte-guillotina.jpg" }],
     siteName: "Aamsa",
@@ -88,7 +88,7 @@ export default function CorteGuillotinaPage() {
       <main>
         <ServiceHero
           eyebrow="Servicios"
-          title="Corte Guillotina de Lámina de Acero en Monterrey"
+          title="Corte Guillotina de Lámina de Acero"
           id="corte_guillotina_hero"
           image="/corte-guillotina-lamina-aamsa.webp"
           imageAlt="Cizalla guillotina industrial con piezas de lámina de acero cortadas en planta Aamsa Nuevo León"
@@ -148,7 +148,7 @@ export default function CorteGuillotinaPage() {
 
         <ServiceCta
           id="corte_guillotina_cta"
-          headline="Solicita tu cotización de corte guillotina en Monterrey"
+          headline="Solicita tu cotización de corte guillotina"
         />
       </main>
       <Footer />

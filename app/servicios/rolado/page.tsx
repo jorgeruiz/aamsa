@@ -8,9 +8,9 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Rolado de Acero para Piezas Curvas en Nuevo León | Aamsa",
+  title: "Rolado de Acero para Piezas Curvas | Aamsa",
   description:
-    "Servicio de rolado de lámina, placa y perfiles para cilindros, tanques y estructuras en Monterrey y Guadalupe NL. Roladora CNC de 4 rodillos. Cotiza ya.",
+    "Servicio de rolado de lámina, placa y perfiles para cilindros, tanques y estructuras. Roladora CNC de 4 rodillos. Cotiza ya.",
   alternates: {
     canonical: "https://aamsa.com/servicios/rolado",
     languages: {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Rolado de Acero para Piezas Curvas en Nuevo León | Aamsa",
+    title: "Rolado de Acero para Piezas Curvas | Aamsa",
     description:
-      "Servicio de rolado de lámina, placa y perfiles para cilindros, tanques y estructuras en Monterrey y Guadalupe NL. Roladora CNC de 4 rodillos. Cotiza ya.",
+      "Servicio de rolado de lámina, placa y perfiles para cilindros, tanques y estructuras. Roladora CNC de 4 rodillos. Cotiza ya.",
     url: "https://aamsa.com/servicios/rolado",
     images: [{ url: "https://aamsa.com/og/rolado.jpg" }],
     siteName: "Aamsa",
@@ -89,7 +89,7 @@ export default function RoladoPage() {
       <main>
         <ServiceHero
           eyebrow="Servicios"
-          title="Rolado de Acero para Piezas Curvas en Monterrey"
+          title="Rolado de Acero para Piezas Curvas"
           id="rolado_hero"
           image="/rolado-lamina-acero-aamsa.webp"
           imageAlt="Roladora industrial formando lámina de acero en curva en planta Aamsa Nuevo León"
@@ -154,7 +154,7 @@ export default function RoladoPage() {
 
         <ServiceCta
           id="rolado_cta"
-          headline="Solicita tu cotización de rolado en Monterrey"
+          headline="Solicita tu cotización de rolado"
         />
       </main>
       <Footer />

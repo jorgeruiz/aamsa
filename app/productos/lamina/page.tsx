@@ -8,9 +8,9 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Lámina de Acero en Varios Calibres en Nuevo León | Aamsa",
+  title: "Lámina de Acero en Varios Calibres | Aamsa",
   description:
-    "Venta de lámina de acero rolado en caliente, en frío, antiderrapante y A-572 GR 50 en Monterrey y Guadalupe NL. Disponibilidad inmediata y corte a la medida.",
+    "Venta de lámina de acero rolado en caliente, en frío, antiderrapante y A-572 GR 50 Disponibilidad inmediata y corte a la medida.",
   alternates: {
     canonical: "https://aamsa.com/productos/lamina",
     languages: {
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Lámina de Acero en Varios Calibres en Nuevo León | Aamsa",
+    title: "Lámina de Acero en Varios Calibres | Aamsa",
     description:
-      "Venta de lámina de acero rolado en caliente, en frío, antiderrapante y A-572 GR 50 en Monterrey y Guadalupe NL. Disponibilidad inmediata y corte a la medida.",
+      "Venta de lámina de acero rolado en caliente, en frío, antiderrapante y A-572 GR 50 Disponibilidad inmediata y corte a la medida.",
     url: "https://aamsa.com/productos/lamina",
     images: [{ url: "https://aamsa.com/og/lamina.jpg" }],
     siteName: "Aamsa",
@@ -100,7 +100,7 @@ export default function LaminaPage() {
       <main>
         <ServiceHero
           eyebrow="Productos"
-          title="Lámina de Acero en Varios Calibres en Monterrey"
+          title="Lámina de Acero en Varios Calibres"
           id="lamina_hero"
           image="/planta-interior.png"
           imageAlt="Lámina de acero en planta Aamsa"
@@ -251,7 +251,7 @@ export default function LaminaPage() {
 
         <ServiceCta
           id="lamina_cta"
-          headline="Solicita tu cotización de lámina de acero en Monterrey"
+          headline="Solicita tu cotización de lámina de acero"
         />
       </main>
       <Footer />
