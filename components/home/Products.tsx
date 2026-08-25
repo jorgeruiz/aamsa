@@ -48,7 +48,7 @@ const products = [
     title: "Joist & Girders",
     description:
       "Vigas de alma abierta y cabrillas diseñadas y fabricadas conforme a las especificaciones de ingeniería de cada proyecto.",
-    href: "/productos/joist-girders",
+    href: "/productos/joists-girders",
     icon: (
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M3 8l4-4h10l4 4v12H3z" />
