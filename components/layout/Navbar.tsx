@@ -118,16 +118,14 @@ export function Navbar() {
               className={`w-auto transition-all duration-300 ${scrolled ? "h-12" : "h-24"}`}
               priority
             />
-            {!scrolled && (
-              <div className="hidden sm:flex flex-col items-center">
-                <span className="font-[family-name:var(--font-barlow)] text-xl lg:text-2xl font-bold uppercase tracking-wide text-[#1B4375] leading-tight text-center">
-                  Abastecedora de Aceros y Maquilas S.A. de C.V.
-                </span>
-                <span className="font-[family-name:var(--font-barlow)] text-xs font-semibold uppercase tracking-[0.14em] text-[#2261AE] mt-1 text-center">
-                  Centro de servicio acero
-                </span>
-              </div>
-            )}
+            <div className={`hidden sm:flex flex-col items-center transition-all duration-300 ${scrolled ? "max-w-[200px] lg:max-w-[260px]" : ""}`}>
+              <span className={`font-[family-name:var(--font-barlow)] font-bold uppercase tracking-wide text-[#1B4375] leading-tight text-center transition-all duration-300 ${scrolled ? "text-xs lg:text-sm" : "text-xl lg:text-2xl"}`}>
+                Abastecedora de Aceros y Maquilas S.A. de C.V.
+              </span>
+              <span className={`font-[family-name:var(--font-barlow)] font-semibold uppercase tracking-[0.14em] text-[#2261AE] text-center transition-all duration-300 ${scrolled ? "text-[10px] mt-0.5" : "text-xs mt-1"}`}>
+                Centro de servicio acero
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}

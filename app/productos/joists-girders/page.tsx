@@ -9,7 +9,7 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Joists y Joist Girders de Acero en Nuevo León | Aamsa",
+  title: "Joists y Joist Girders de Acero | Aamsa",
   description:
     "Fabricación de Joists y Joist Girders de acero certificados por SJI. Vigas de alma abierta y cabrillas para techos y entrepisos. Proyectos en México y EE.UU.",
   alternates: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Joists y Joist Girders de Acero en Nuevo León | Aamsa",
+    title: "Joists y Joist Girders de Acero | Aamsa",
     description:
       "Fabricación de Joists y Joist Girders de acero certificados por SJI. Vigas de alma abierta y cabrillas para techos y entrepisos. Proyectos en México y EE.UU.",
     url: "https://aamsa.com/productos/joists-girders",
@@ -149,13 +149,8 @@ export default function JoistsGirdersPage() {
               Fabricación certificada SJI
             </h2>
             <div className="max-w-3xl">
-              <div className="border-l-[3px] border-[#FF7F00] pl-6 py-2 mb-8">
-                <p className="font-[family-name:var(--font-inter)] text-white italic leading-relaxed">
-                  AAMSA, en alianza con GA Steel, fabrica vigas de alma abierta y cabrillas de acero de alta calidad, con precisión y de acuerdo con los estándares de la industria.
-                </p>
-              </div>
               <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
-                Contamos con la certificación del <strong className="text-white">Steel Joist Institute (SJI)</strong>, ofreciendo soluciones estructurales confiables para proyectos en México y Estados Unidos. Cada pieza se diseña y fabrica conforme a las especificaciones de ingeniería de cada proyecto.
+                AAMSA, en alianza con GA Steel, fabrica vigas de alma abierta y cabrillas de acero de alta calidad, con precisión y de acuerdo con los estándares de la industria. Contamos con la certificación del <strong className="text-white">Steel Joist Institute (SJI)</strong>, ofreciendo soluciones estructurales confiables para proyectos en México y Estados Unidos. Cada pieza se diseña y fabrica conforme a las especificaciones de ingeniería de cada proyecto.
               </p>
             </div>
           </div>
@@ -213,7 +208,7 @@ export default function JoistsGirdersPage() {
                   src="/joist-girder-planta-aamsa.jpeg"
                   alt="Joist Girder de gran formato en nave industrial Aamsa"
                   fill
-                  className="object-cover"
+                  className="object-cover object-[70%_20%]"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
@@ -256,6 +251,9 @@ export default function JoistsGirdersPage() {
             >
               Ingeniería, precisión y resistencia
             </h2>
+            <p className="font-[family-name:var(--font-inter)] text-lg text-[#B0C4DE] leading-relaxed max-w-3xl mb-12">
+              Soluciones estructurales eficientes para la construcción moderna.
+            </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {galleryImages.map((img) => (
                 <div key={img.src} className="relative h-56 lg:h-64 overflow-hidden group">

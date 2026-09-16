@@ -8,7 +8,7 @@ import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Corte Plasma CNC de Acero Grueso en Nuevo León | Aamsa",
+  title: "Corte Plasma CNC de Acero Grueso | Aamsa",
   description:
     "Corte plasma CNC rápido y eficiente para acero de alto espesor. Con biselado y taladro. Ideal para proyectos industriales.",
   alternates: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Corte Plasma CNC de Acero Grueso en Nuevo León | Aamsa",
+    title: "Corte Plasma CNC de Acero Grueso | Aamsa",
     description:
       "Corte plasma CNC rápido y eficiente para acero de alto espesor. Con biselado y taladro. Ideal para proyectos industriales.",
     url: "https://aamsa.com/servicios/corte-plasma-cnc",
@@ -94,7 +94,7 @@ export default function CortePlasmaCncPage() {
       <main>
         <ServiceHero
           eyebrow="Servicios"
-          title="Corte Plasma CNC para Acero Grueso en Nuevo León"
+          title="Corte Plasma CNC para Acero Grueso"
           id="corte_plasma_hero"
           image="/corte-plasma-cnc-acero-aamsa.webp"
           imageAlt="Equipo de corte plasma CNC cortando placa de acero grueso con chispas en planta Aamsa Nuevo León"
