@@ -1,80 +1,48 @@
-import type { MetadataRoute } from "next";
-import { getAllPosts } from "@/lib/blog";
+// app/sitemap.ts
+import { MetadataRoute } from 'next'
+import { getAllPosts } from '@/lib/blog'
+
+const BASE_URL = 'https://aamsa.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://aamsa.com";
+  const blogPosts = getAllPosts()
 
-  const blogPosts = getAllPosts().map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
+  const staticRoutes: MetadataRoute.Sitemap = [
+    {
+      url: BASE_URL,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1.0,
+    },
+    // Servicios — priority 0.9
+    ...[
+      'corte-laser',
+      'corte-plasma-cnc',
+      'corte-pantografo',
+      'corte-guillotina',
+      'doblez-cnc',
+      'rolado',
+    ].map((slug) => ({
+      url: `${BASE_URL}/servicios/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    })),
+    // Productos — priority 0.8
+    ...['lamina', 'placa'].map((slug) => ({
+      url: `${BASE_URL}/productos/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    })),
+  ]
+
+  const blogRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
     lastModified: new Date(post.fecha_publicacion),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
 
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-    // Servicios — priority 0.8
-    {
-      url: `${baseUrl}/servicios/corte-laser`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/servicios/corte-plasma-cnc`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/servicios/corte-pantografo`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/servicios/corte-guillotina`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/servicios/doblez-cnc`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/servicios/rolado`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    // Productos — priority 0.7
-    {
-      url: `${baseUrl}/productos/lamina`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/productos/placa`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    // Blog — priority 0.6
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    ...blogPosts,
-  ];
+  return [...staticRoutes, ...blogRoutes]
 }
