@@ -7,10 +7,12 @@ import { ServiceCta } from "@/components/servicios/ServiceCta";
 import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
+const PAGE_DESCRIPTION =
+  "Corte plasma CNC Monterrey para acero de gran espesor: 400 Amp, biselado y taladro en cama de 3×16 m. Producción industrial en NL. Cotiza con nosotros.";
+
 export const metadata: Metadata = {
-  title: "Corte Plasma CNC de Acero Grueso | Aamsa",
-  description:
-    "Corte plasma CNC rápido y eficiente para acero de alto espesor. Con biselado y taladro. Ideal para proyectos industriales.",
+  title: "Corte Plasma CNC Industrial | Aamsa — Acero Industrial en Monterrey",
+  description: PAGE_DESCRIPTION,
   alternates: {
     canonical: "https://aamsa.com/servicios/corte-plasma-cnc",
     languages: {
@@ -19,9 +21,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Corte Plasma CNC de Acero Grueso | Aamsa",
-    description:
-      "Corte plasma CNC rápido y eficiente para acero de alto espesor. Con biselado y taladro. Ideal para proyectos industriales.",
+    title: "Corte Plasma CNC Industrial | Aamsa — Acero Industrial en Monterrey",
+    description: PAGE_DESCRIPTION,
     url: "https://aamsa.com/servicios/corte-plasma-cnc",
     images: [{ url: "https://aamsa.com/og/corte-plasma-cnc.jpg" }],
     siteName: "Aamsa",
@@ -30,27 +31,69 @@ export const metadata: Metadata = {
   },
 };
 
-const serviceSchema = {
+const combinedSchema = {
   "@context": "https://schema.org",
-  "@type": "Service",
-  serviceType: "Corte plasma CNC de acero",
-  name: "Corte Plasma CNC",
-  provider: {
-    "@type": "LocalBusiness",
-    name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
-    telephone: "+52-81-8360-0414",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
-      addressLocality: "Guadalupe",
-      addressRegion: "Nuevo León",
-      postalCode: "67190",
-      addressCountry: "MX",
+  "@graph": [
+    {
+      "@type": "Service",
+      serviceType: "Corte CNC",
+      name: "Corte Plasma CNC Industrial",
+      description: PAGE_DESCRIPTION,
+      url: "https://aamsa.com/servicios/corte-plasma-cnc",
+      provider: {
+        "@type": "LocalBusiness",
+        name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
+        url: "https://aamsa.com",
+        telephone: "+52-81-8360-0414",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
+          addressLocality: "Monterrey",
+          addressRegion: "Nuevo León",
+          postalCode: "67190",
+          addressCountry: "MX",
+        },
+      },
+      areaServed: { "@type": "State", name: "Nuevo León" },
     },
-  },
-  areaServed: { "@type": "State", name: "Nuevo León" },
-  description:
-    "Corte plasma CNC de 400 Amp con biselado y taladro para acero de alto espesor. Cama de 3 m x 16 m.",
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "¿Para qué tipo de acero conviene el corte plasma CNC?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Es ideal para acero de alto espesor donde se requiere rapidez y eficiencia en proyectos industriales.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Qué capacidad tiene el equipo de plasma de Aamsa?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Corte plasma CNC de 400 Amp con biselado y taladro, en cama de 3 m x 16 m.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Cuál es la ventaja del corte plasma frente a otros procesos?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Menor riesgo de deformaciones gracias a la compactación calorífica de la zona de corte.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Ofrecen maquila de corte plasma?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí, si el cliente cuenta con el material.",
+          },
+        },
+      ],
+    },
+  ],
 };
 
 const faqItems = [
@@ -75,21 +118,10 @@ const faqItems = [
   },
 ];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: { "@type": "Answer", text: item.answer },
-  })),
-};
-
 export default function CortePlasmaCncPage() {
   return (
     <>
-      <JsonLd data={serviceSchema} />
-      <JsonLd data={faqSchema} />
+      <JsonLd data={combinedSchema} />
       <Navbar />
       <main>
         <ServiceHero

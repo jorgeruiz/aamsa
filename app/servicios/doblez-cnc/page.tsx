@@ -7,10 +7,12 @@ import { ServiceCta } from "@/components/servicios/ServiceCta";
 import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
+const PAGE_DESCRIPTION =
+  "Doblado acero NL con 12 prensas CNC de hasta 4,000 tons × 24.4 m. Piezas repetibles para industria eólica, energética y ferrocarrilera en Nuevo León. Cotiza.";
+
 export const metadata: Metadata = {
-  title: "Doblez CNC de Acero de Alta Capacidad | Aamsa",
-  description:
-    "Doblez CNC preciso y repetible para piezas industriales. Hasta 4,000 tons x 24.4 m. Industria energética, eólica y transporte.",
+  title: "Doblez CNC de Lámina y Placa | Aamsa — Acero Industrial en Monterrey",
+  description: PAGE_DESCRIPTION,
   alternates: {
     canonical: "https://aamsa.com/servicios/doblez-cnc",
     languages: {
@@ -19,9 +21,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Doblez CNC de Acero de Alta Capacidad | Aamsa",
-    description:
-      "Doblez CNC preciso y repetible para piezas industriales. Hasta 4,000 tons x 24.4 m. Industria energética, eólica y transporte.",
+    title: "Doblez CNC de Lámina y Placa | Aamsa — Acero Industrial en Monterrey",
+    description: PAGE_DESCRIPTION,
     url: "https://aamsa.com/servicios/doblez-cnc",
     images: [{ url: "https://aamsa.com/og/doblez-cnc.jpg" }],
     siteName: "Aamsa",
@@ -30,27 +31,69 @@ export const metadata: Metadata = {
   },
 };
 
-const serviceSchema = {
+const combinedSchema = {
   "@context": "https://schema.org",
-  "@type": "Service",
-  serviceType: "Doblez CNC de acero",
-  name: "Doblez CNC",
-  provider: {
-    "@type": "LocalBusiness",
-    name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
-    telephone: "+52-81-8360-0414",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
-      addressLocality: "Guadalupe",
-      addressRegion: "Nuevo León",
-      postalCode: "67190",
-      addressCountry: "MX",
+  "@graph": [
+    {
+      "@type": "Service",
+      serviceType: "Doblez CNC",
+      name: "Doblez CNC de Lámina y Placa",
+      description: PAGE_DESCRIPTION,
+      url: "https://aamsa.com/servicios/doblez-cnc",
+      provider: {
+        "@type": "LocalBusiness",
+        name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
+        url: "https://aamsa.com",
+        telephone: "+52-81-8360-0414",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
+          addressLocality: "Monterrey",
+          addressRegion: "Nuevo León",
+          postalCode: "67190",
+          addressCountry: "MX",
+        },
+      },
+      areaServed: { "@type": "State", name: "Nuevo León" },
     },
-  },
-  areaServed: { "@type": "State", name: "Nuevo León" },
-  description:
-    "Doblez CNC de alta capacidad hasta 4,000 tons x 24.4 m. 12 equipos de prensas para industria energética, eólica, transporte y ferrocarrilera.",
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "¿Cuál es la capacidad máxima de doblez CNC de Aamsa?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: 'Hasta 4,000 tons x 24.4 m (80") de largo, uno de los equipos de mayor capacidad a nivel internacional.',
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Cuántos equipos de doblez tienen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "12 equipos de prensas, entre CNC y convencionales.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿A qué industrias atienden con doblez CNC?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Industria energética, eólica, transporte y ferrocarrilera, entre otras.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Ofrecen maquila de doblez CNC?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí, ofrecemos servicio de maquila de doblez.",
+          },
+        },
+      ],
+    },
+  ],
 };
 
 const faqItems = [
@@ -74,21 +117,10 @@ const faqItems = [
   },
 ];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: { "@type": "Answer", text: item.answer },
-  })),
-};
-
 export default function DoblezCncPage() {
   return (
     <>
-      <JsonLd data={serviceSchema} />
-      <JsonLd data={faqSchema} />
+      <JsonLd data={combinedSchema} />
       <Navbar />
       <main>
         <ServiceHero

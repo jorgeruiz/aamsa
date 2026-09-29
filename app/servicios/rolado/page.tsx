@@ -7,10 +7,12 @@ import { ServiceCta } from "@/components/servicios/ServiceCta";
 import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
+const PAGE_DESCRIPTION =
+  "Rolado acero Monterrey con roladora CNC de 4 rodillos: lámina, placa y perfiles hasta 1¼\" × 10'. 7 roladoras para cilindros y tanques industriales en NL.";
+
 export const metadata: Metadata = {
-  title: "Rolado de Acero para Piezas Curvas | Aamsa",
-  description:
-    "Servicio de rolado de lámina, placa y perfiles para cilindros, tanques y estructuras. Roladora CNC de 4 rodillos. Cotiza ya.",
+  title: "Rolado de Acero CNC | Aamsa — Acero Industrial en Monterrey",
+  description: PAGE_DESCRIPTION,
   alternates: {
     canonical: "https://aamsa.com/servicios/rolado",
     languages: {
@@ -19,9 +21,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Rolado de Acero para Piezas Curvas | Aamsa",
-    description:
-      "Servicio de rolado de lámina, placa y perfiles para cilindros, tanques y estructuras. Roladora CNC de 4 rodillos. Cotiza ya.",
+    title: "Rolado de Acero CNC | Aamsa — Acero Industrial en Monterrey",
+    description: PAGE_DESCRIPTION,
     url: "https://aamsa.com/servicios/rolado",
     images: [{ url: "https://aamsa.com/og/rolado.jpg" }],
     siteName: "Aamsa",
@@ -30,27 +31,61 @@ export const metadata: Metadata = {
   },
 };
 
-const serviceSchema = {
+const combinedSchema = {
   "@context": "https://schema.org",
-  "@type": "Service",
-  serviceType: "Rolado de acero",
-  name: "Rolado",
-  provider: {
-    "@type": "LocalBusiness",
-    name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
-    telephone: "+52-81-8360-0414",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
-      addressLocality: "Guadalupe",
-      addressRegion: "Nuevo León",
-      postalCode: "67190",
-      addressCountry: "MX",
+  "@graph": [
+    {
+      "@type": "Service",
+      serviceType: "Rolado Industrial",
+      name: "Rolado de Acero CNC",
+      description: PAGE_DESCRIPTION,
+      url: "https://aamsa.com/servicios/rolado",
+      provider: {
+        "@type": "LocalBusiness",
+        name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
+        url: "https://aamsa.com",
+        telephone: "+52-81-8360-0414",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
+          addressLocality: "Monterrey",
+          addressRegion: "Nuevo León",
+          postalCode: "67190",
+          addressCountry: "MX",
+        },
+      },
+      areaServed: { "@type": "State", name: "Nuevo León" },
     },
-  },
-  areaServed: { "@type": "State", name: "Nuevo León" },
-  description:
-    "Rolado de lámina, placa y perfiles hasta 1 1/4\" x 10' de ancho con roladora CNC de 4 rodillos. 7 roladoras disponibles.",
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "¿Qué materiales pueden rolar?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: 'Lámina, placa y perfiles hasta 1 1/4" de espesor x 10\' de ancho.',
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Para qué se usa el servicio de rolado?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Para fabricar cilindros, tanques y estructuras curvas en proyectos industriales.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Qué ventaja tiene la roladora CNC de 4 rodillos?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Mayor precisión y menor desperdicio de material.",
+          },
+        },
+      ],
+    },
+  ],
 };
 
 const faqItems = [
@@ -70,21 +105,10 @@ const faqItems = [
   },
 ];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: { "@type": "Answer", text: item.answer },
-  })),
-};
-
 export default function RoladoPage() {
   return (
     <>
-      <JsonLd data={serviceSchema} />
-      <JsonLd data={faqSchema} />
+      <JsonLd data={combinedSchema} />
       <Navbar />
       <main>
         <ServiceHero
@@ -154,7 +178,7 @@ export default function RoladoPage() {
 
         <ServiceCta
           id="rolado_cta"
-          headline="Solicita tu cotización de rolado"
+          headline="Solicita tu cotización de rolado de acero en Monterrey"
         />
       </main>
       <Footer />

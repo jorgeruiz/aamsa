@@ -7,10 +7,12 @@ import { ServiceCta } from "@/components/servicios/ServiceCta";
 import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
+const PAGE_DESCRIPTION =
+  "Corte láser CNC de acero en Monterrey con tolerancias de ±0.1 mm. Más de 45 años impulsando la industria metalmecánica en NL. Cotiza sin compromiso.";
+
 export const metadata: Metadata = {
-  title: "Corte Láser CNC de Acero | Aamsa",
-  description:
-    "Servicio de corte láser CNC de alta precisión en acero al carbón, inoxidable y aluminio, cualquier espesor. Cotiza hoy.",
+  title: "Corte Láser CNC de Acero | Aamsa — Acero Industrial en Monterrey",
+  description: PAGE_DESCRIPTION,
   alternates: {
     canonical: "https://aamsa.com/servicios/corte-laser",
     languages: {
@@ -19,9 +21,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Corte Láser CNC de Acero | Aamsa",
-    description:
-      "Servicio de corte láser CNC de alta precisión en acero al carbón, inoxidable y aluminio, cualquier espesor. Cotiza hoy.",
+    title: "Corte Láser CNC de Acero | Aamsa — Acero Industrial en Monterrey",
+    description: PAGE_DESCRIPTION,
     url: "https://aamsa.com/servicios/corte-laser",
     images: [{ url: "https://aamsa.com/og/corte-laser.jpg" }],
     siteName: "Aamsa",
@@ -30,27 +31,77 @@ export const metadata: Metadata = {
   },
 };
 
-const serviceSchema = {
+const combinedSchema = {
   "@context": "https://schema.org",
-  "@type": "Service",
-  serviceType: "Corte láser CNC de acero",
-  name: "Corte Láser CNC",
-  provider: {
-    "@type": "LocalBusiness",
-    name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
-    telephone: "+52-81-8360-0414",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
-      addressLocality: "Guadalupe",
-      addressRegion: "Nuevo León",
-      postalCode: "67190",
-      addressCountry: "MX",
+  "@graph": [
+    {
+      "@type": "Service",
+      serviceType: "Corte CNC",
+      name: "Corte Láser CNC de Acero",
+      description: PAGE_DESCRIPTION,
+      url: "https://aamsa.com/servicios/corte-laser",
+      provider: {
+        "@type": "LocalBusiness",
+        name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
+        url: "https://aamsa.com",
+        telephone: "+52-81-8360-0414",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
+          addressLocality: "Monterrey",
+          addressRegion: "Nuevo León",
+          postalCode: "67190",
+          addressCountry: "MX",
+        },
+      },
+      areaServed: { "@type": "State", name: "Nuevo León" },
     },
-  },
-  areaServed: { "@type": "State", name: "Nuevo León" },
-  description:
-    'Servicio de corte láser CNC de alta precisión en acero al carbón, inoxidable, aluminio, bronce y latón. Espesores de calibre 30 a 3/4". 8 equipos disponibles.',
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "¿Qué materiales pueden cortar con láser?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Acero al carbón, acero inoxidable, aluminio, bronce y latón, entre otros.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Qué espesores maneja el corte láser de Aamsa?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: 'Desde calibre 30 hasta 3/4" de espesor, según el equipo utilizado.',
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Cuál es la pieza máxima que pueden cortar?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Hasta 3 m de ancho por 24 m de largo.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Ofrecen servicio de maquila si ya tengo el material?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí, ofrecemos maquila de corte láser cuando el cliente aporta el material.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Dónde están ubicados?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "En Av. Benito Juárez Km 7.5 S/N, Col. Los Lermas, Guadalupe, Nuevo León.",
+          },
+        },
+      ],
+    },
+  ],
 };
 
 const faqItems = [
@@ -80,24 +131,10 @@ const faqItems = [
   },
 ];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.answer,
-    },
-  })),
-};
-
 export default function CorteLaserPage() {
   return (
     <>
-      <JsonLd data={serviceSchema} />
-      <JsonLd data={faqSchema} />
+      <JsonLd data={combinedSchema} />
       <Navbar />
       <main>
         <ServiceHero

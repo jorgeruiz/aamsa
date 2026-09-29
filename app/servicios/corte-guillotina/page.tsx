@@ -7,10 +7,12 @@ import { ServiceCta } from "@/components/servicios/ServiceCta";
 import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
+const PAGE_DESCRIPTION =
+  "Corte guillotina acero Monterrey: 6 equipos, espesores de 1/4\" a 1\" y anchos de 10' a 22'. Producción en serie rápida y sin rebabas en Nuevo León. Cotiza.";
+
 export const metadata: Metadata = {
-  title: "Corte Guillotina de Lámina de Acero | Aamsa",
-  description:
-    "Corte guillotina de lámina de acero con alta precisión y rapidez con alta precisión y rapidez. Ideal para producción en serie. Solicita tu cotización.",
+  title: "Corte Guillotina de Lámina | Aamsa — Acero Industrial en Monterrey",
+  description: PAGE_DESCRIPTION,
   alternates: {
     canonical: "https://aamsa.com/servicios/corte-guillotina",
     languages: {
@@ -19,9 +21,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Corte Guillotina de Lámina de Acero | Aamsa",
-    description:
-      "Corte guillotina de lámina de acero con alta precisión y rapidez con alta precisión y rapidez. Ideal para producción en serie. Solicita tu cotización.",
+    title: "Corte Guillotina de Lámina | Aamsa — Acero Industrial en Monterrey",
+    description: PAGE_DESCRIPTION,
     url: "https://aamsa.com/servicios/corte-guillotina",
     images: [{ url: "https://aamsa.com/og/corte-guillotina.jpg" }],
     siteName: "Aamsa",
@@ -30,27 +31,61 @@ export const metadata: Metadata = {
   },
 };
 
-const serviceSchema = {
+const combinedSchema = {
   "@context": "https://schema.org",
-  "@type": "Service",
-  serviceType: "Corte guillotina de lámina de acero",
-  name: "Corte Guillotina",
-  provider: {
-    "@type": "LocalBusiness",
-    name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
-    telephone: "+52-81-8360-0414",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
-      addressLocality: "Guadalupe",
-      addressRegion: "Nuevo León",
-      postalCode: "67190",
-      addressCountry: "MX",
+  "@graph": [
+    {
+      "@type": "Service",
+      serviceType: "Corte CNC",
+      name: "Corte Guillotina de Lámina",
+      description: PAGE_DESCRIPTION,
+      url: "https://aamsa.com/servicios/corte-guillotina",
+      provider: {
+        "@type": "LocalBusiness",
+        name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
+        url: "https://aamsa.com",
+        telephone: "+52-81-8360-0414",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
+          addressLocality: "Monterrey",
+          addressRegion: "Nuevo León",
+          postalCode: "67190",
+          addressCountry: "MX",
+        },
+      },
+      areaServed: { "@type": "State", name: "Nuevo León" },
     },
-  },
-  areaServed: { "@type": "State", name: "Nuevo León" },
-  description:
-    "Corte guillotina de lámina de acero desde 1/4\" hasta 1\" de espesor, ancho de 10' a 22'. 6 equipos disponibles.",
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "¿Qué espesores maneja el corte guillotina?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: 'Desde 1/4" hasta 1" de espesor.',
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Qué ancho de pieza pueden cortar con guillotina?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Desde 10' hasta 22' de ancho.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Para qué es ideal el corte guillotina?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Para piezas largas o cuadros de cualquier tamaño y para producción en serie con rapidez y precisión.",
+          },
+        },
+      ],
+    },
+  ],
 };
 
 const faqItems = [
@@ -69,21 +104,10 @@ const faqItems = [
   },
 ];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: { "@type": "Answer", text: item.answer },
-  })),
-};
-
 export default function CorteGuillotinaPage() {
   return (
     <>
-      <JsonLd data={serviceSchema} />
-      <JsonLd data={faqSchema} />
+      <JsonLd data={combinedSchema} />
       <Navbar />
       <main>
         <ServiceHero

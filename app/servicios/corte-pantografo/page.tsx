@@ -7,10 +7,12 @@ import { ServiceCta } from "@/components/servicios/ServiceCta";
 import { FaqAccordion } from "@/components/servicios/FaqAccordion";
 import { JsonLd } from "@/components/servicios/JsonLd";
 
+const PAGE_DESCRIPTION =
+  'Corte pantógrafo acero NL para espesores de 3/8" a 9". 4 equipos en 2,000 m² dedicados a anillos, discos y figuras especiales en Nuevo León. Cotiza ya.';
+
 export const metadata: Metadata = {
-  title: "Corte Pantógrafo CNC de Acero | Aamsa",
-  description:
-    'Servicio de corte pantógrafo CNC para acero al carbón de 3/8" a 9" de espesor Precisión, rapidez y 45 años de experiencia. Cotiza ya.',
+  title: "Corte Pantógrafo de Acero | Aamsa — Acero Industrial en Monterrey",
+  description: PAGE_DESCRIPTION,
   alternates: {
     canonical: "https://aamsa.com/servicios/corte-pantografo",
     languages: {
@@ -19,9 +21,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Corte Pantógrafo CNC de Acero | Aamsa",
-    description:
-      'Servicio de corte pantógrafo CNC para acero al carbón de 3/8" a 9" de espesor Precisión, rapidez y 45 años de experiencia. Cotiza ya.',
+    title: "Corte Pantógrafo de Acero | Aamsa — Acero Industrial en Monterrey",
+    description: PAGE_DESCRIPTION,
     url: "https://aamsa.com/servicios/corte-pantografo",
     images: [{ url: "https://aamsa.com/og/corte-pantografo.jpg" }],
     siteName: "Aamsa",
@@ -30,27 +31,69 @@ export const metadata: Metadata = {
   },
 };
 
-const serviceSchema = {
+const combinedSchema = {
   "@context": "https://schema.org",
-  "@type": "Service",
-  serviceType: "Corte pantógrafo CNC de acero",
-  name: "Corte Pantógrafo CNC",
-  provider: {
-    "@type": "LocalBusiness",
-    name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
-    telephone: "+52-81-8360-0414",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
-      addressLocality: "Guadalupe",
-      addressRegion: "Nuevo León",
-      postalCode: "67190",
-      addressCountry: "MX",
+  "@graph": [
+    {
+      "@type": "Service",
+      serviceType: "Corte CNC",
+      name: "Corte Pantógrafo de Acero",
+      description: PAGE_DESCRIPTION,
+      url: "https://aamsa.com/servicios/corte-pantografo",
+      provider: {
+        "@type": "LocalBusiness",
+        name: "Aamsa — Abastecedora de Aceros y Maquilas S.A. de C.V.",
+        url: "https://aamsa.com",
+        telephone: "+52-81-8360-0414",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Av. Benito Juárez Km 7.5 S/N Col. Los Lermas",
+          addressLocality: "Monterrey",
+          addressRegion: "Nuevo León",
+          postalCode: "67190",
+          addressCountry: "MX",
+        },
+      },
+      areaServed: { "@type": "State", name: "Nuevo León" },
     },
-  },
-  areaServed: { "@type": "State", name: "Nuevo León" },
-  description:
-    'Corte pantógrafo CNC de acero al carbón de 3/8" a 9" de espesor. 4 equipos en área de 2,000 m2. Anillos, discos, cuadros y figuras especiales.',
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "¿Qué espesores corta el pantógrafo CNC de Aamsa?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: 'Desde 3/8" hasta 9" de espesor en acero al carbón.',
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Qué tipo de piezas pueden fabricar con pantógrafo?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Anillos, discos, cuadros y figuras especiales diseñadas por computadora, a la medida o por pieza.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Manejan producción en serie o solo prototipos?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Trabajamos alta, mediana y baja producción, así como prototipos.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Ofrecen maquila de corte pantógrafo?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí, si el cliente cuenta con el material.",
+          },
+        },
+      ],
+    },
+  ],
 };
 
 const faqItems = [
@@ -74,21 +117,10 @@ const faqItems = [
   },
 ];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: { "@type": "Answer", text: item.answer },
-  })),
-};
-
 export default function CortePantografoPage() {
   return (
     <>
-      <JsonLd data={serviceSchema} />
-      <JsonLd data={faqSchema} />
+      <JsonLd data={combinedSchema} />
       <Navbar />
       <main>
         <ServiceHero
