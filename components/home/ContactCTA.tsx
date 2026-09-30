@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { MotionSection } from "@/components/ui/MotionSection";
+import { useWhatsAppModal } from "@/components/ui/WhatsAppModal";
 
 const contactMethods = [
   {
@@ -63,6 +64,7 @@ const contactMethods = [
 
 export function ContactCTA() {
   const shouldReduce = useReducedMotion();
+  const { openWhatsAppModal } = useWhatsAppModal();
 
   return (
     <section className="py-24 lg:py-32 bg-[#1B4375] relative overflow-hidden">
@@ -135,10 +137,11 @@ export function ContactCTA() {
               {contactMethods.map((method) => (
                 <motion.a
                   key={method.label}
-                  href={method.href}
-                  target={method.href.startsWith("http") ? "_blank" : undefined}
+                  href={method.primary ? undefined : method.href}
+                  onClick={method.primary ? (e: React.MouseEvent) => { e.preventDefault(); openWhatsAppModal(); } : undefined}
+                  target={!method.primary && method.href.startsWith("http") ? "_blank" : undefined}
                   rel={
-                    method.href.startsWith("http")
+                    !method.primary && method.href.startsWith("http")
                       ? "noopener noreferrer"
                       : undefined
                   }

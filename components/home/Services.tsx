@@ -4,6 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { MotionSection } from "@/components/ui/MotionSection";
+import { useWhatsAppModal } from "@/components/ui/WhatsAppModal";
 
 const services = [
   {
@@ -160,6 +161,7 @@ const gridChildVariants = {
 
 export function Services() {
   const shouldReduce = useReducedMotion();
+  const { openWhatsAppModal } = useWhatsAppModal();
 
   return (
     <section className="relative py-24 lg:py-32 bg-[#2261AE]">
@@ -263,11 +265,8 @@ export function Services() {
 
         {/* Bottom CTA */}
         <MotionSection className="mt-12 text-center">
-          <motion.a
-            href="https://wa.me/528115115660?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Solicitar cotización por WhatsApp"
+          <motion.button
+            onClick={openWhatsAppModal}
             whileHover={shouldReduce ? {} : { y: -3, scale: 1.02 }}
             whileTap={shouldReduce ? {} : { scale: 0.96, y: 0 }}
             transition={{ duration: 0.18, ease: [0.23, 1, 0.32, 1] }}
@@ -285,7 +284,7 @@ export function Services() {
             >
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
-          </motion.a>
+          </motion.button>
         </MotionSection>
       </div>
     </section>

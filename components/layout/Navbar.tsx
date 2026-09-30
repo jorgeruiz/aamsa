@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useWhatsAppModal } from "@/components/ui/WhatsAppModal";
 
 const serviciosLinks = [
   { href: "/servicios/corte-laser", label: "Corte Láser" },
@@ -91,6 +92,7 @@ export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
+  const { openWhatsAppModal } = useWhatsAppModal();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -165,15 +167,12 @@ export function Navbar() {
               >
                 800 11 Acero
               </a>
-              <a
-                href="https://wa.me/528115115660?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Solicitar cotización por WhatsApp"
-                className="bg-[#FF7F00] hover:bg-[#CC6600] text-white font-[family-name:var(--font-barlow)] text-sm font-bold uppercase tracking-widest px-6 py-2.5 transition-colors duration-200"
+              <button
+                onClick={openWhatsAppModal}
+                className="bg-[#FF7F00] hover:bg-[#CC6600] text-white font-[family-name:var(--font-barlow)] text-sm font-bold uppercase tracking-widest px-6 py-2.5 transition-colors duration-200 cursor-pointer"
               >
                 Cotizar
-              </a>
+              </button>
             </div>
           </div>
 
@@ -286,15 +285,12 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://wa.me/528115115660?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Solicitar cotización por WhatsApp"
-            className="mt-2 bg-[#FF7F00] text-white font-[family-name:var(--font-barlow)] text-base font-bold uppercase tracking-widest px-6 py-3 text-center"
+          <button
+            onClick={() => { setMenuOpen(false); openWhatsAppModal(); }}
+            className="mt-2 bg-[#FF7F00] text-white font-[family-name:var(--font-barlow)] text-base font-bold uppercase tracking-widest px-6 py-3 text-center cursor-pointer"
           >
             Solicitar Cotización
-          </a>
+          </button>
           <a
             href="tel:80011acero"
             className="font-[family-name:var(--font-inter)] text-sm text-center text-[#5a7a9c]"

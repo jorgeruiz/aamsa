@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Barlow_Condensed, Inter } from "next/font/google";
 import "./globals.css";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
+import { WhatsAppModalProvider } from "@/components/ui/WhatsAppModal";
 
 const barlowCondensed = Barlow_Condensed({
   variable: "--font-barlow",
@@ -47,7 +48,9 @@ export default function RootLayout({
       className={`${barlowCondensed.variable} ${inter.variable} h-full`}
     >
       <body className="min-h-full flex flex-col">
-        <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        <WhatsAppModalProvider>
+          <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        </WhatsAppModalProvider>
       </body>
     </html>
   );
