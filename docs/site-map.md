@@ -1,135 +1,98 @@
-# Mapa del Sitio — Aamsa
+# Mapa del sitio — Aamsa
 
-**Ultima actualizacion:** 2026-07-08
+> Generado automáticamente desde https://www.aamsa.com
 
----
+## +40 Años en Acero y Maquila Industrial (/)
 
-## Paginas y secciones
+| id | Sección |
+|---|---|
+| `site-header` | Site Header |
+| `2102` | 2102 |
+| `2976136` | 2976136 |
+| `2cf5192` | 2cf5192 |
+| `6afa9b4` | 6afa9b4 |
+| `ee2d707` | Ee2d707 |
+| `1900f6f` | 1900f6f |
+| `91cea64` | 91cea64 |
+| `f680858` | F680858 |
+| `41e5617` | 41e5617 |
+| `b0874f8` | B0874f8 |
+| `ce14b0b` | Ce14b0b |
+| `a619fe2` | A619fe2 |
+| `6b9300f` | 6b9300f |
+| `6d3b3c0` | 6d3b3c0 |
+| `1d33f19` | 1d33f19 |
+| `085cfcf` | 085cfcf |
+| `5b08b86` | 5b08b86 |
+| `9ecb6d1` | 9ecb6d1 |
+| `d836b7c` | D836b7c |
+| `889281e` | 889281e |
+| `383116d` | 383116d |
+| `ccccebe` | Ccccebe |
+| `ebf842b` | Ebf842b |
+| `008218c` | 008218c |
+| `bed261b` | Bed261b |
+| `2a6f2f2` | 2a6f2f2 |
+| `9979c60` | 9979c60 |
+| `50c7158` | 50c7158 |
+| `aebf008` | Aebf008 |
+| `619091f` | 619091f |
+| `c860440` | C860440 |
+| `291c3fe` | 291c3fe |
+| `a5d2841` | A5d2841 |
+| `2bc5ea5` | 2bc5ea5 |
+| `e6e9f9d` | E6e9f9d |
+| `9d50872` | 9d50872 |
+| `bfd7a0f` | Bfd7a0f |
+| `26e1044` | 26e1044 |
+| `32160dd` | 32160dd |
+| `83e1801` | 83e1801 |
+| `b4ca240` | B4ca240 |
+| `f5aa598` | F5aa598 |
+| `8446018` | 8446018 |
+| `5a30ec5` | 5a30ec5 |
+| `67deb37` | 67deb37 |
+| `72019c0` | 72019c0 |
+| `f711737` | F711737 |
+| `b1cf7cd` | B1cf7cd |
+| `ed59bf5` | Ed59bf5 |
+| `2e5d982` | 2e5d982 |
+| `a07aa51` | A07aa51 |
+| `820855c` | 820855c |
+| `793316b` | 793316b |
+| `2c58c1a` | 2c58c1a |
+| `012859c` | 012859c |
+| `6a6b95e` | 6a6b95e |
+| `fb66932` | Fb66932 |
+| `6d51c41` | 6d51c41 |
+| `5b7b4c1` | 5b7b4c1 |
+| `d71556a` | D71556a |
+| `7c0b9dc` | 7c0b9dc |
+| `6ce71ef` | 6ce71ef |
+| `510dbad` | 510dbad |
+| `4ec0342` | 4ec0342 |
+| `1d125bb` | 1d125bb |
+| `b089b9b` | B089b9b |
+| `89882b9` | 89882b9 |
+| `3d8a454` | 3d8a454 |
+| `348d401` | 348d401 |
+| `b872c44` | B872c44 |
+| `84948d6` | 84948d6 |
+| `31de52b` | 31de52b |
+| `1a4a7f4` | 1a4a7f4 |
+| `e4aa4b5` | E4aa4b5 |
+| `75b586d` | 75b586d |
+| `542a658` | 542a658 |
+| `242` | 242 |
+| `f9d0cf9` | F9d0cf9 |
+| `a020e0e` | A020e0e |
+| `site-footer` | Site Footer |
+| `joinchat__label` | Joinchat  Label |
 
-### Inicio (`/`)
+## Page Sitemap.Xml (/page-sitemap.xml)
 
-**ID de pagina:** `home`
+_(sin secciones detectadas)_
 
-| ID de seccion | Etiqueta para el cliente |
-|--------------|--------------------------|
-| `home_hero` | Hero principal |
-| `home_services` | Servicios destacados |
-| `home_products` | Productos |
-| `home_stats` | Estadisticas / Numeros |
-| `home_process` | Proceso de trabajo |
-| `home_cta` | Llamada a la accion de contacto |
-| `home_navbar` | Barra de navegacion |
-| `home_footer` | Pie de pagina |
+## Post Sitemap.Xml (/post-sitemap.xml)
 
----
-
-### Corte Laser (`/servicios/corte-laser`)
-
-**ID de pagina:** `servicio_corte_laser`
-
-| ID de seccion | Etiqueta para el cliente |
-|--------------|--------------------------|
-| `corte_laser_hero` | Hero del servicio |
-| `corte_laser_content` | Contenido y especificaciones |
-| `corte_laser_faq` | Preguntas frecuentes |
-| `corte_laser_cta` | Llamada a la accion |
-
----
-
-### Corte Plasma CNC (`/servicios/corte-plasma-cnc`)
-
-**ID de pagina:** `servicio_corte_plasma`
-
-| ID de seccion | Etiqueta para el cliente |
-|--------------|--------------------------|
-| `corte_plasma_hero` | Hero del servicio |
-| `corte_plasma_content` | Contenido y especificaciones |
-| `corte_plasma_faq` | Preguntas frecuentes |
-| `corte_plasma_cta` | Llamada a la accion |
-
----
-
-### Corte Pantografo (`/servicios/corte-pantografo`)
-
-**ID de pagina:** `servicio_corte_pantografo`
-
-| ID de seccion | Etiqueta para el cliente |
-|--------------|--------------------------|
-| `corte_pantografo_hero` | Hero del servicio |
-| `corte_pantografo_content` | Contenido y especificaciones |
-| `corte_pantografo_faq` | Preguntas frecuentes |
-| `corte_pantografo_cta` | Llamada a la accion |
-
----
-
-### Corte Guillotina (`/servicios/corte-guillotina`)
-
-**ID de pagina:** `servicio_corte_guillotina`
-
-| ID de seccion | Etiqueta para el cliente |
-|--------------|--------------------------|
-| `corte_guillotina_hero` | Hero del servicio |
-| `corte_guillotina_content` | Contenido y especificaciones |
-| `corte_guillotina_faq` | Preguntas frecuentes |
-| `corte_guillotina_cta` | Llamada a la accion |
-
----
-
-### Doblez CNC (`/servicios/doblez-cnc`)
-
-**ID de pagina:** `servicio_doblez`
-
-| ID de seccion | Etiqueta para el cliente |
-|--------------|--------------------------|
-| `doblez_hero` | Hero del servicio |
-| `doblez_content` | Contenido y especificaciones |
-| `doblez_faq` | Preguntas frecuentes |
-| `doblez_cta` | Llamada a la accion |
-
----
-
-### Rolado (`/servicios/rolado`)
-
-**ID de pagina:** `servicio_rolado`
-
-| ID de seccion | Etiqueta para el cliente |
-|--------------|--------------------------|
-| `rolado_hero` | Hero del servicio |
-| `rolado_content` | Contenido y especificaciones |
-| `rolado_faq` | Preguntas frecuentes |
-| `rolado_cta` | Llamada a la accion |
-
----
-
-### Lamina de Acero (`/productos/lamina`)
-
-**ID de pagina:** `producto_lamina`
-
-| ID de seccion | Etiqueta para el cliente |
-|--------------|--------------------------|
-| `lamina_hero` | Hero del producto |
-| `lamina_content` | Contenido y especificaciones |
-| `lamina_faq` | Preguntas frecuentes |
-| `lamina_cta` | Llamada a la accion |
-
----
-
-### Placa de Acero (`/productos/placa`)
-
-**ID de pagina:** `producto_placa`
-
-| ID de seccion | Etiqueta para el cliente |
-|--------------|--------------------------|
-| `placa_hero` | Hero del producto |
-| `placa_content` | Contenido y especificaciones |
-| `placa_faq` | Preguntas frecuentes |
-| `placa_cta` | Llamada a la accion |
-
----
-
-## Notas
-
-- Las paginas `/nosotros` y `/contacto` aparecen en el Navbar pero no estan implementadas.
-- Las paginas `/portafolio`, `/blog` y `/preguntas-frecuentes` aparecen en el Footer pero no estan implementadas.
-- `/propuesta-2` es una propuesta alternativa de diseno (A/B test), no es una pagina publica permanente.
-- Los componentes de layout (Navbar, Footer) son compartidos por todas las paginas excepto `/propuesta-2` que tiene los suyos.
+_(sin secciones detectadas)_
