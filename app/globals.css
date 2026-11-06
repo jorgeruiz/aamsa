@@ -54,6 +54,11 @@ body {
   background: #FF7F00;
 }
 
+/* Justify long paragraphs in content sections */
+main p.leading-relaxed {
+  text-align: justify;
+}
+
 /* Dot grid pattern utility */
 .dot-grid {
   background-image: radial-gradient(#1A4070 1px, transparent 1px);
@@ -98,6 +103,7 @@ body {
 
 .prose-aamsa p {
   margin-bottom: 1.25rem;
+  text-align: justify;
 }
 
 .prose-aamsa strong {

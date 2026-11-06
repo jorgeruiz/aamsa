@@ -109,22 +109,23 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
-        <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? "h-16 md:h-18" : "h-24 md:h-28"}`}>
+        {/* Main row: Logo + Name + Desktop Nav */}
+        <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? "h-16 md:h-18" : "h-20 md:h-28"}`}>
           {/* Logo + Razon Social */}
-          <Link href="/" className="flex items-center gap-4">
+          <Link href="/" className="flex items-center gap-2 sm:gap-4 min-w-0">
             <Image
               src="/logo-aamsa.png"
               alt="AAMSA -- Abastecedora de Aceros y Maquilas"
               width={200}
               height={220}
-              className={`w-auto transition-all duration-300 ${scrolled ? "h-12" : "h-24"}`}
+              className={`w-auto shrink-0 transition-all duration-300 ${scrolled ? "h-10 sm:h-12" : "h-14 sm:h-24"}`}
               priority
             />
-            <div className={`hidden sm:flex flex-col items-center transition-all duration-300 ${scrolled ? "max-w-[200px] lg:max-w-[260px]" : ""}`}>
-              <span className={`font-[family-name:var(--font-barlow)] font-bold uppercase tracking-wide text-[#1B4375] leading-tight text-center transition-all duration-300 ${scrolled ? "text-xs lg:text-sm" : "text-xl lg:text-2xl"}`}>
+            <div className={`flex flex-col items-center transition-all duration-300 min-w-0 ${scrolled ? "max-w-[160px] sm:max-w-[200px] lg:max-w-[260px]" : "max-w-[180px] sm:max-w-none"}`}>
+              <span className={`font-[family-name:var(--font-barlow)] font-bold uppercase tracking-wide text-[#1B4375] leading-tight text-center transition-all duration-300 ${scrolled ? "text-[10px] sm:text-xs lg:text-sm" : "text-xs sm:text-xl lg:text-2xl"}`}>
                 Abastecedora de Aceros y Maquilas S.A. de C.V.
               </span>
-              <span className={`font-[family-name:var(--font-barlow)] font-semibold uppercase tracking-[0.14em] text-[#2261AE] text-center transition-all duration-300 ${scrolled ? "text-[10px] mt-0.5" : "text-xs mt-1"}`}>
+              <span className={`font-[family-name:var(--font-barlow)] font-semibold uppercase tracking-[0.14em] text-[#2261AE] text-center transition-all duration-300 ${scrolled ? "text-[8px] sm:text-[10px] mt-0.5" : "text-[9px] sm:text-xs mt-0.5 sm:mt-1"}`}>
                 Centro de servicio acero
               </span>
             </div>
@@ -175,23 +176,30 @@ export function Navbar() {
               </button>
             </div>
           </div>
+        </div>
 
-          {/* Mobile hamburger */}
+        {/* Mobile hamburger row — below logo */}
+        <div className="md:hidden flex items-center justify-end -mt-2 pb-2">
           <button
-            className="md:hidden flex flex-col gap-1.5 p-2"
+            className="flex items-center gap-2 p-2"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-expanded={menuOpen}
             aria-label="Abrir menú de navegación"
           >
-            <span
-              className={`block w-6 h-0.5 bg-[#1B4375] transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-[#1B4375] transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-[#1B4375] transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
-            />
+            <span className="font-[family-name:var(--font-barlow)] text-xs font-bold uppercase tracking-wider text-[#1B4375]">
+              Menú
+            </span>
+            <span className="flex flex-col gap-1">
+              <span
+                className={`block w-5 h-0.5 bg-[#1B4375] transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-[3px]" : ""}`}
+              />
+              <span
+                className={`block w-5 h-0.5 bg-[#1B4375] transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`}
+              />
+              <span
+                className={`block w-5 h-0.5 bg-[#1B4375] transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-[3px]" : ""}`}
+              />
+            </span>
           </button>
         </div>
       </div>

@@ -111,6 +111,22 @@ const placaData = [
 
 const grades = [
   {
+    title: "Placa Brinar",
+    desc: "Acero resistente a la abrasión con alta dureza y tenacidad. Ideal para equipos de minería, construcción y manejo de materiales que requieren resistencia al desgaste.",
+  },
+  {
+    title: "Placa Maxil",
+    desc: "Acero estructural de alta resistencia y buena soldabilidad. Diseñado para aplicaciones que demandan rendimiento mecánico superior con optimización de peso.",
+  },
+  {
+    title: "Placa Hardox",
+    desc: "Placa plegable y soldable resistente a la abrasión, ideal para aplicaciones de alta resistencia al desgaste.",
+  },
+  {
+    title: "Placa Strenx",
+    desc: "Placa de acero fino, resistente y de alta prestación que hace los productos más ligeros y seguros.",
+  },
+  {
     title: "Placa A-36",
     desc: "El acero A36 tiene densidad de 7,860 kg/m³ (0.28 lb/in³). En espesores menores de 8\" el límite de fluencia mínimo es 250 MPa (36 ksi) y el de rotura 400 MPa (58 ksi); para espesores mayores, la fluencia mínima es 220 MPa (32 ksi). Por su composición química simple, es fácil de soldar, lo que lo hace atractivo para construcción.",
   },
@@ -131,24 +147,8 @@ const grades = [
     desc: "Acero económico sin certificado de calidad. Útil para trabajos que no requieren alta calidad en el material.",
   },
   {
-    title: "Placa Hardox",
-    desc: "Placa plegable y soldable resistente a la abrasión, ideal para aplicaciones de alta resistencia al desgaste.",
-  },
-  {
-    title: "Placa Strenx",
-    desc: "Placa de acero fino, resistente y de alta prestación que hace los productos más ligeros y seguros.",
-  },
-  {
     title: "Placa AR-400",
     desc: "Acero de aleación alto en carbono para aplicaciones resistentes a la abrasión y desgaste. Dureza de 360 a 444 BHN.",
-  },
-  {
-    title: "Placa Brinar",
-    desc: "Acero resistente a la abrasión con alta dureza y tenacidad. Ideal para equipos de minería, construcción y manejo de materiales que requieren resistencia al desgaste.",
-  },
-  {
-    title: "Placa Maxil",
-    desc: "Acero estructural de alta resistencia y buena soldabilidad. Diseñado para aplicaciones que demandan rendimiento mecánico superior con optimización de peso.",
   },
 ];
 

@@ -318,7 +318,7 @@ export function NosotrosContent() {
               ¿Listo para trabajar con nosotros?
             </h2>
             <p className="font-[family-name:var(--font-inter)] text-white/80 mb-8 max-w-lg mx-auto">
-              Más de 40 años de experiencia respaldan cada proyecto. Solicita tu cotización sin compromiso.
+              Más de 45 años de experiencia respaldan cada proyecto. Solicita tu cotización sin compromiso.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
