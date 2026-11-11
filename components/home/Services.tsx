@@ -212,7 +212,7 @@ export function Services() {
             >
               <Link
                 href={service.href}
-                className="group block bg-[#1B4375] border border-white/10 border-t-[3px] border-t-[#FF7F00] h-full transition-colors duration-200 hover:border-[#FF7F00]/40 hover:bg-[#2261AE] overflow-hidden"
+                className="group flex flex-col bg-[#1B4375] border border-white/10 border-t-[3px] border-t-[#FF7F00] h-full transition-colors duration-200 hover:border-[#FF7F00]/40 hover:bg-[#2261AE] overflow-hidden"
               >
                 {/* Service photo */}
                 <div className="relative w-full h-40 overflow-hidden">
@@ -225,7 +225,7 @@ export function Services() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1B4375] via-[#1B4375]/30 to-transparent" />
                 </div>
 
-                <div className="p-8 pt-4">
+                <div className="p-8 pt-4 flex flex-col flex-1">
                   {/* Icon */}
                   <div className="text-[#FF7F00] mb-6">{service.icon}</div>
 
@@ -239,8 +239,8 @@ export function Services() {
                   {service.description}
                 </p>
 
-                {/* Spec badge */}
-                <div className="flex items-center justify-between">
+                {/* Spec badge — pushed to bottom */}
+                <div className="flex items-center justify-between mt-auto">
                   <span className="font-[family-name:var(--font-inter)] text-xs text-white/50 uppercase tracking-wider">
                     {service.spec}
                   </span>

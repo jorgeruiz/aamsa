@@ -146,7 +146,7 @@ export function Hero() {
       </div>
 
       <div className="relative max-w-[1440px] mx-auto px-6 lg:px-10 pt-44 lg:pt-52 pb-20 w-full">
-        <div className="grid lg:grid-cols-12 gap-10 items-center">
+        <div className="grid lg:grid-cols-12 gap-10 items-end">
           {/* Left — copy */}
           <div className="lg:col-span-7">
             {/* Eyebrow (one total — Taste rule) */}

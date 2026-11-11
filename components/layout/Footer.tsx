@@ -49,13 +49,6 @@ export function Footer() {
                 height={120}
                 className="h-28 w-auto"
               />
-              <Image
-                src="/qr-aamsa.webp"
-                alt="Código QR AAMSA"
-                width={120}
-                height={120}
-                className="h-28 w-auto"
-              />
             </div>
 
             {/* Social */}
@@ -171,11 +164,16 @@ export function Footer() {
                 <div className="font-[family-name:var(--font-inter)] text-xs text-[#5a7a9c] uppercase tracking-wider mb-1">
                   Dirección
                 </div>
-                <address className="font-[family-name:var(--font-inter)] text-sm text-[#5a7a9c] not-italic leading-relaxed">
+                <a
+                  href="https://maps.google.com/?q=Av.+Benito+Ju%C3%A1rez+Km+7.5+S/N+col.+Los+Lermas,+Guadalupe,+N.L.+67188,+M%C3%A9xico"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-[family-name:var(--font-inter)] text-sm text-[#1B4375] hover:text-[#FF7F00] not-italic leading-relaxed transition-colors inline-block"
+                >
                   Av. Benito Juárez Km 7.5 S/N col. Los Lermas
                   <br />
                   Guadalupe, N.L. 67188, México
-                </address>
+                </a>
               </li>
             </ul>
           </div>
