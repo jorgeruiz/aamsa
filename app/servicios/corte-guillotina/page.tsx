@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -126,10 +127,21 @@ export default function CorteGuillotinaPage() {
             >
               Servicio de corte por guillotina
             </h2>
-            <div className="max-w-3xl">
-              <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
-                Contamos con servicio de corte por guillotina para piezas largas o cuadros de cualquier tamaño, con alta precisión y rapidez. Es la opción ideal para producción en serie de lámina de acero.
-              </p>
+            <div className="grid lg:grid-cols-2 gap-10 items-start">
+              <div className="max-w-3xl">
+                <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
+                  Contamos con servicio de corte por guillotina para piezas largas o cuadros de cualquier tamaño, con alta precisión y rapidez. Es la opción ideal para producción en serie de lámina de acero.
+                </p>
+              </div>
+              <div className="relative overflow-hidden rounded-lg shadow-2xl bg-[#0e2a4f] p-4">
+                <Image
+                  src="/corte-guillotina-equipo.jpeg"
+                  alt="Cizalla guillotina industrial para corte de lámina de acero en planta Aamsa"
+                  width={640}
+                  height={420}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
             </div>
             <div className="mt-12 flex flex-wrap gap-3">
               <Link href="/productos/lamina" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">

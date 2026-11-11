@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -141,14 +142,25 @@ export default function CortePlasmaCncPage() {
             >
               ¿Qué es el corte con plasma CNC?
             </h2>
-            <div className="max-w-3xl">
-              <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed mb-8">
-                El corte por plasma se basa en la acción térmica y mecánica de un chorro de gas calentado por un arco eléctrico de corriente continua establecido entre un electrodo ubicado en la antorcha y la pieza a mecanizar. El chorro de plasma lanzado contra la pieza penetra la totalidad del espesor a cortar, fundiendo y expulsando el material.
-              </p>
-              <div className="border-l-[3px] border-[#FF7F00] pl-6 py-2">
-                <p className="font-[family-name:var(--font-inter)] text-white italic leading-relaxed">
-                  La ventaja principal de este sistema radica en su reducido riesgo de deformaciones debido a la compactación calorífica de la zona de corte.
+            <div className="grid lg:grid-cols-2 gap-10 items-start">
+              <div className="max-w-3xl">
+                <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed mb-8">
+                  El corte por plasma se basa en la acción térmica y mecánica de un chorro de gas calentado por un arco eléctrico de corriente continua establecido entre un electrodo ubicado en la antorcha y la pieza a mecanizar. El chorro de plasma lanzado contra la pieza penetra la totalidad del espesor a cortar, fundiendo y expulsando el material.
                 </p>
+                <div className="border-l-[3px] border-[#FF7F00] pl-6 py-2">
+                  <p className="font-[family-name:var(--font-inter)] text-white italic leading-relaxed">
+                    La ventaja principal de este sistema radica en su reducido riesgo de deformaciones debido a la compactación calorífica de la zona de corte.
+                  </p>
+                </div>
+              </div>
+              <div className="relative overflow-hidden rounded-lg shadow-2xl bg-[#0e2a4f] p-4">
+                <Image
+                  src="/corte-plasma-cnc-equipo.jpeg"
+                  alt="Equipo de corte plasma CNC Bystronic en planta Aamsa"
+                  width={640}
+                  height={320}
+                  className="w-full h-auto object-contain"
+                />
               </div>
             </div>
             <div className="mt-12 flex flex-wrap gap-3">

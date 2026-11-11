@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -154,17 +155,28 @@ export default function CorteLaserPage() {
             >
               ¿Qué es el corte con láser?
             </h2>
-            <div className="max-w-3xl">
-              <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed mb-6">
-                El corte con láser es un proceso de división térmico para el tratamiento de láminas y placas. El rayo láser se genera en una fuente láser (resonador) y se guía mediante espejos o una fibra transportadora hasta el cabezal de corte, donde se enfoca con una lente a un diámetro menor y de mucha potencia. Al entrar en contacto con la placa, el rayo enfocado hace que el material se funda. Existen dos tipos de fuente láser: los láseres de CO2 y los láseres de fibra.
-              </p>
-              <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed mb-8">
-                <strong className="text-white">Materiales que trabajamos:</strong> acero al carbón, acero inoxidable, aluminio, bronce, latón, entre otros.
-              </p>
-              <div className="border-l-[3px] border-[#FF7F00] pl-6 py-2">
-                <p className="font-[family-name:var(--font-inter)] text-white italic leading-relaxed">
-                  El servicio que brindamos de corte láser es de la más alta tecnología, con un proceso automatizado de alta precisión, obteniendo así piezas con mejor calidad en su corte y tolerancia.
+            <div className="grid lg:grid-cols-2 gap-10 items-start">
+              <div className="max-w-3xl">
+                <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed mb-6">
+                  El corte con láser es un proceso de división térmico para el tratamiento de láminas y placas. El rayo láser se genera en una fuente láser (resonador) y se guía mediante espejos o una fibra transportadora hasta el cabezal de corte, donde se enfoca con una lente a un diámetro menor y de mucha potencia. Al entrar en contacto con la placa, el rayo enfocado hace que el material se funda. Existen dos tipos de fuente láser: los láseres de CO2 y los láseres de fibra.
                 </p>
+                <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed mb-8">
+                  <strong className="text-white">Materiales que trabajamos:</strong> acero al carbón, acero inoxidable, aluminio, bronce, latón, entre otros.
+                </p>
+                <div className="border-l-[3px] border-[#FF7F00] pl-6 py-2">
+                  <p className="font-[family-name:var(--font-inter)] text-white italic leading-relaxed">
+                    El servicio que brindamos de corte láser es de la más alta tecnología, con un proceso automatizado de alta precisión, obteniendo así piezas con mejor calidad en su corte y tolerancia.
+                  </p>
+                </div>
+              </div>
+              <div className="relative overflow-hidden rounded-lg shadow-2xl">
+                <Image
+                  src="/corte-laser-proceso.jpeg"
+                  alt="Proceso de corte láser CNC en lámina de acero mostrando piezas cortadas con precisión"
+                  width={640}
+                  height={427}
+                  className="w-full h-auto object-cover"
+                />
               </div>
             </div>
 
@@ -194,26 +206,42 @@ export default function CorteLaserPage() {
                 {
                   title: "Láser CNC hasta 12,000 watts",
                   desc: 'Máquina de corte láser CNC de hasta 12,000 W x 3 m x 24 m. Espesores de corte de calibre 30 a 3/4".',
+                  image: "/laser-cnc-12000w.jpeg",
+                  imageAlt: "Máquina de corte láser CNC Yawei de hasta 12,000 watts",
                 },
                 {
                   title: "Láser CNC hasta 4,000 watts",
                   desc: "Máquina de corte láser CNC de hasta 4,000 W x 2 m x 4 m. Espesores de calibre 30 a 1/2\". Cortatubos de hasta 6 m de largo y 160 mm de diámetro.",
+                  image: "/laser-cnc-4000w.jpeg",
+                  imageAlt: "Máquina de corte láser CNC Yawei de hasta 4,000 watts",
                 },
                 {
                   title: "Láser CNC hasta 4,400 watts",
                   desc: 'Máquinas de corte láser CNC de hasta 4,400 W x 3 m x 12 m. Cortando espesores desde calibre 30 hasta 5/8".',
+                  image: "/laser-cnc-4400w.jpeg",
+                  imageAlt: "Máquina de corte láser CNC Yawei de hasta 4,400 watts",
                 },
               ].map((equipo) => (
                 <div
                   key={equipo.title}
-                  className="bg-[#1B4375] border border-[#2261AE] border-t-[3px] border-t-[#FF7F00] p-8"
+                  className="bg-[#1B4375] border border-[#2261AE] border-t-[3px] border-t-[#FF7F00] overflow-hidden"
                 >
-                  <h3 className="font-[family-name:var(--font-barlow)] text-lg font-bold uppercase text-white mb-4">
-                    {equipo.title}
-                  </h3>
-                  <p className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] leading-relaxed">
-                    {equipo.desc}
-                  </p>
+                  <div className="relative aspect-[16/10] bg-[#0e2a4f]">
+                    <Image
+                      src={equipo.image}
+                      alt={equipo.imageAlt}
+                      fill
+                      className="object-contain p-3"
+                    />
+                  </div>
+                  <div className="p-8 pt-4">
+                    <h3 className="font-[family-name:var(--font-barlow)] text-lg font-bold uppercase text-white mb-4">
+                      {equipo.title}
+                    </h3>
+                    <p className="font-[family-name:var(--font-inter)] text-sm text-[#B0C4DE] leading-relaxed">
+                      {equipo.desc}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

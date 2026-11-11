@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -127,15 +128,26 @@ export default function RoladoPage() {
             >
               Rolado CNC de precisión
             </h2>
-            <div className="max-w-3xl">
-              <div className="border-l-[3px] border-[#FF7F00] pl-6 py-2 mb-8">
-                <p className="font-[family-name:var(--font-inter)] text-white italic leading-relaxed">
-                  Roladora CNC de 4 rodillos para mayor precisión y menor desperdicio de material.
+            <div className="grid lg:grid-cols-2 gap-10 items-start">
+              <div className="max-w-3xl">
+                <div className="border-l-[3px] border-[#FF7F00] pl-6 py-2 mb-8">
+                  <p className="font-[family-name:var(--font-inter)] text-white italic leading-relaxed">
+                    Roladora CNC de 4 rodillos para mayor precisión y menor desperdicio de material.
+                  </p>
+                </div>
+                <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
+                  Ofrecemos servicio de rolado de acero para cilindros, tanques y estructuras, con precisión y calidad en cada proyecto industrial.
                 </p>
               </div>
-              <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
-                Ofrecemos servicio de rolado de acero para cilindros, tanques y estructuras, con precisión y calidad en cada proyecto industrial.
-              </p>
+              <div className="relative overflow-hidden rounded-lg shadow-2xl">
+                <Image
+                  src="/rolado-equipo.jpeg"
+                  alt="Roladora CNC industrial para lámina y placa de acero en planta Aamsa"
+                  width={640}
+                  height={420}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
             <div className="mt-12 flex flex-wrap gap-3">
               <Link href="/productos/placa" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">

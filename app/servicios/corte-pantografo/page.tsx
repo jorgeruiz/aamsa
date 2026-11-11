@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -139,10 +140,21 @@ export default function CortePantografoPage() {
             >
               ¿Qué es el corte pantógrafo?
             </h2>
-            <div className="max-w-3xl">
-              <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
-                Contamos con servicio de corte con pantógrafo CNC para toda la industria, desde 3/8&quot; a 9&quot; de espesor en acero al carbón. Damos el servicio de venta de material a la medida o por pieza, ya sea en anillos, discos, cuadros o figuras especiales diseñadas por computadora; trabajando en alta, mediana o baja producción, así como prototipos. Adicionalmente ofrecemos el servicio de <strong className="text-white">maquila</strong> si el cliente cuenta con el material.
-              </p>
+            <div className="grid lg:grid-cols-2 gap-10 items-start">
+              <div className="max-w-3xl">
+                <p className="font-[family-name:var(--font-inter)] text-[#B0C4DE] leading-relaxed">
+                  Contamos con servicio de corte con pantógrafo CNC para toda la industria, desde 3/8&quot; a 9&quot; de espesor en acero al carbón. Damos el servicio de venta de material a la medida o por pieza, ya sea en anillos, discos, cuadros o figuras especiales diseñadas por computadora; trabajando en alta, mediana o baja producción, así como prototipos. Adicionalmente ofrecemos el servicio de <strong className="text-white">maquila</strong> si el cliente cuenta con el material.
+                </p>
+              </div>
+              <div className="relative overflow-hidden rounded-lg shadow-2xl bg-[#0e2a4f] p-4">
+                <Image
+                  src="/corte-pantografo-cnc-equipo.jpeg"
+                  alt="Equipo de corte pantógrafo CNC Tecoi Teknos para acero en planta Aamsa"
+                  width={640}
+                  height={400}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
             </div>
             <div className="mt-12 flex flex-wrap gap-3">
               <Link href="/servicios/corte-laser" className="font-[family-name:var(--font-inter)] text-sm text-[#FF7F00] hover:text-white border border-[#2261AE] hover:border-[#FF7F00]/40 px-4 py-2 transition-colors">
