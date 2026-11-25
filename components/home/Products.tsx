@@ -10,7 +10,7 @@ const products = [
     id: "placas",
     title: "Placas de Acero",
     description:
-      "Placa de acero al carbón y resistentes a la abrasión, incluyendo A36, SAE1045, SAE4140, A572 Gr. 50, Brinar, Maxil, Hardox y Strenx.",
+      "Placa de acero al carbón y resistentes a la abrasión, incluyendo A36, SAE1045, SAE4140, A572 Gr. 50, Brinar, Maxil, Hardox & Strenx.",
     href: "/productos/placa",
     image: "/placa-home.jpeg",
   },
