@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useCallback } from "react";
+import { useEffect, useRef, useCallback, useState } from "react";
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { WordReveal } from "@/components/animations/WordReveal";
 import { useWhatsAppModal } from "@/components/ui/WhatsAppModal";
@@ -8,6 +9,9 @@ import { useWhatsAppModal } from "@/components/ui/WhatsAppModal";
 const YT_VIDEO_ID = "RMSDHah5DtU";
 const YT_START = 5;
 const YT_END = 97; // 1:37
+const YT_READY_TIMEOUT_MS = 7000;
+
+type PlayerPhase = "pending" | "visible" | "hidden";
 
 declare global {
   interface Window {
@@ -31,9 +35,40 @@ interface YTPlayerInstance {
 function useYouTubeBackground(containerId: string) {
   const playerRef = useRef<YTPlayerInstance | null>(null);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const phaseRef = useRef<PlayerPhase>("pending");
+  const [phase, setPhase] = useState<PlayerPhase>("pending");
+
+  const destroyPlayer = useCallback(() => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+    const player = playerRef.current;
+    playerRef.current = null;
+    if (!player) return;
+    try {
+      player.destroy();
+    } catch {
+      // The iframe may already be gone after a network failure.
+    }
+  }, []);
+
+  const reveal = useCallback(() => {
+    if (phaseRef.current !== "pending") return;
+    phaseRef.current = "visible";
+    setPhase("visible");
+  }, []);
+
+  const conceal = useCallback(() => {
+    if (phaseRef.current === "hidden") return;
+    phaseRef.current = "hidden";
+    setPhase("hidden");
+    destroyPlayer();
+  }, [destroyPlayer]);
 
   const initPlayer = useCallback(() => {
-    if (!window.YT?.Player) return;
+    if (!window.YT?.Player || phaseRef.current !== "pending" || playerRef.current) return;
+    if (!document.getElementById(containerId)) return;
     playerRef.current = new window.YT.Player(containerId, {
       videoId: YT_VIDEO_ID,
       playerVars: {
@@ -53,10 +88,12 @@ function useYouTubeBackground(containerId: string) {
       },
       events: {
         onReady: (e: { target: YTPlayerInstance }) => {
+          if (phaseRef.current === "hidden") return;
+          reveal();
           e.target.seekTo(YT_START, true);
           // Poll to loop back when reaching the end
           intervalRef.current = setInterval(() => {
-            if (!playerRef.current) return;
+            if (!playerRef.current || phaseRef.current === "hidden") return;
             const t = playerRef.current.getCurrentTime();
             if (t >= YT_END - 0.5 || t < YT_START) {
               playerRef.current.seekTo(YT_START, true);
@@ -64,42 +101,75 @@ function useYouTubeBackground(containerId: string) {
           }, 500);
         },
         onStateChange: (e: { data: number; target: YTPlayerInstance }) => {
+          if (phaseRef.current === "hidden") return;
+          // 1 = playing. Confirms the player, not a network error page.
+          if (e.data === 1) reveal();
           // If video ends or pauses unexpectedly, restart the segment
           if (e.data === 0 || e.data === 2) {
             e.target.seekTo(YT_START, true);
           }
         },
+        onError: () => {
+          conceal();
+        },
       },
     } as Record<string, unknown>);
-  }, [containerId]);
+  }, [conceal, containerId, reveal]);
 
   useEffect(() => {
+    let cancelled = false;
+    const timeoutId = window.setTimeout(() => {
+      if (!cancelled && phaseRef.current === "pending") conceal();
+    }, YT_READY_TIMEOUT_MS);
+
+    const onScriptError = () => {
+      if (!cancelled) conceal();
+    };
+
+    let scriptEl: HTMLScriptElement | null = null;
+
     if (window.YT?.Player) {
       initPlayer();
     } else {
       const prev = window.onYouTubeIframeAPIReady;
       window.onYouTubeIframeAPIReady = () => {
         prev?.();
-        initPlayer();
+        if (!cancelled) initPlayer();
       };
-      if (!document.getElementById("yt-iframe-api")) {
-        const tag = document.createElement("script");
-        tag.id = "yt-iframe-api";
-        tag.src = "https://www.youtube.com/iframe_api";
-        document.head.appendChild(tag);
+      scriptEl = document.getElementById("yt-iframe-api") as HTMLScriptElement | null;
+      if (!scriptEl) {
+        scriptEl = document.createElement("script");
+        scriptEl.id = "yt-iframe-api";
+        scriptEl.src = "https://www.youtube.com/iframe_api";
+        scriptEl.async = true;
+        document.head.appendChild(scriptEl);
       }
+      scriptEl.addEventListener("error", onScriptError);
     }
+
     return () => {
+      cancelled = true;
+      window.clearTimeout(timeoutId);
+      scriptEl?.removeEventListener("error", onScriptError);
       if (intervalRef.current) clearInterval(intervalRef.current);
-      playerRef.current?.destroy();
+      try {
+        playerRef.current?.destroy();
+      } catch {
+        // Ignore teardown races during unmount.
+      }
+      playerRef.current = null;
+      // Strict Mode remounts the effect. A real failure stays hidden.
+      if (phaseRef.current !== "hidden") phaseRef.current = "pending";
     };
-  }, [initPlayer]);
+  }, [conceal, initPlayer]);
+
+  return phase;
 }
 
 export function Hero() {
   const shouldReduce = useReducedMotion();
   const { openWhatsAppModal } = useWhatsAppModal();
-  useYouTubeBackground("yt-hero-player");
+  const playerPhase = useYouTubeBackground("yt-hero-player");
 
   const fadeUp = (delay = 0) => ({
     initial: { opacity: shouldReduce ? 1 : 0, y: shouldReduce ? 0 : 20 },
@@ -111,19 +181,34 @@ export function Hero() {
   });
 
   return (
-    <section className="relative min-h-[100dvh] flex items-center overflow-hidden bg-[#1B4375]">
-      {/* YouTube video background */}
+    <section data-hero className="relative min-h-[100dvh] flex items-center overflow-hidden bg-[#1B4375]">
+      {/* Plant photo stays under the video, including on the server. */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <Image
+          src="/planta-interior.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-          style={{
-            width: "max(177.78vh, 100vw)",
-            height: "max(56.25vw, 100vh)",
-            minWidth: "100%",
-            minHeight: "100%",
-          }}
+          className={`absolute inset-0 ${
+            playerPhase === "visible" ? "opacity-100" : "opacity-0"
+          } ${playerPhase === "hidden" ? "hidden" : ""}`}
+          aria-hidden="true"
         >
-          <div id="yt-hero-player" className="absolute inset-0 w-full h-full" />
+          <div
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            style={{
+              width: "max(177.78vh, 100vw)",
+              height: "max(56.25vw, 100vh)",
+              minWidth: "100%",
+              minHeight: "100%",
+            }}
+          >
+            <div id="yt-hero-player" className="absolute inset-0 w-full h-full" />
+          </div>
         </div>
       </div>
       {/* Gradient overlay: solid on left fading to transparent on right */}

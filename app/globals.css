@@ -54,9 +54,30 @@ body {
   background: #FF7F00;
 }
 
-/* Justify long paragraphs in content sections */
-main p.leading-relaxed {
+/* Content paragraphs. html[lang="es"] supplies the hyphenation language. */
+main p:not(.text-center):not(.text-right) {
   text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* Home hero, stats, fine print, short cards, addresses, and centered blocks. */
+main [data-hero] p:not(.text-center):not(.text-right),
+main p.text-xs:not(.text-center),
+main p[class~="text-[11px]"]:not(.text-center),
+main p.text-sm:not(.leading-relaxed):not(.text-center),
+main .grid p.text-sm,
+main article:not(.prose-aamsa) p.text-sm,
+main address p:not(.text-center):not(.text-right),
+main p.line-clamp-3:not(.text-center) {
+  text-align: start;
+  hyphens: manual;
+}
+
+main .text-center p:not(.leading-relaxed),
+main .text-right p:not(.leading-relaxed) {
+  text-align: inherit;
+  hyphens: manual;
 }
 
 /* Dot grid pattern utility */

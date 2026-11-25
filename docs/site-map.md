@@ -2,7 +2,7 @@
 
 > Generado automáticamente desde https://www.aamsa.com
 
-## +40 Años en Acero y Maquila Industrial (/)
+## +45 Años en Acero y Maquila Industrial (/)
 
 | id | Sección |
 |---|---|
