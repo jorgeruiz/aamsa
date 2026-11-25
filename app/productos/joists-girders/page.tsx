@@ -98,12 +98,12 @@ const galleryImages = [
     alt: "Joists de alma abierta apilados listos para embarque en Aamsa",
   },
   {
-    src: "/joists-produccion-aamsa.jpeg",
-    alt: "Línea de producción de Joists de acero en planta Aamsa",
+    src: "/joists-linea-produccion-planta-aamsa.webp",
+    alt: "Joists de alma abierta en línea de producción de la planta Aamsa",
   },
   {
-    src: "/joist-girder-planta-aamsa.jpeg",
-    alt: "Joist Girder de gran formato en nave industrial Aamsa",
+    src: "/joist-girder-nave-industrial-aamsa.webp",
+    alt: "Joist Girder de acero suspendido en nave industrial de Aamsa",
   },
   {
     src: "/joists-embarque-aamsa.jpeg",
@@ -188,8 +188,8 @@ export default function JoistsGirdersPage() {
               </div>
               <div className="relative h-80 lg:h-96 overflow-hidden">
                 <Image
-                  src="/joists-produccion-aamsa.jpeg"
-                  alt="Línea de producción de Joists de acero en planta Aamsa"
+                  src="/joists-linea-produccion-planta-aamsa.webp"
+                  alt="Joists de alma abierta en línea de producción de la planta Aamsa"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -205,10 +205,10 @@ export default function JoistsGirdersPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative h-80 lg:h-96 overflow-hidden order-2 lg:order-1">
                 <Image
-                  src="/joist-girder-planta-aamsa.jpeg"
-                  alt="Joist Girder de gran formato en nave industrial Aamsa"
+                  src="/joist-girder-nave-industrial-aamsa.webp"
+                  alt="Joist Girder de acero suspendido en nave industrial de Aamsa"
                   fill
-                  className="object-cover object-[70%_20%]"
+                  className="object-cover object-[72%_18%]"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
