@@ -10,7 +10,7 @@ import { JsonLd } from "@/components/servicios/JsonLd";
 export const metadata: Metadata = {
   title: "Placa de Acero en Diferentes Espesores | Aamsa",
   description:
-    "Venta de placa y planchones de acero A-36, AR-400, SAE 1045, 4140, Hardox, Strenx, Brinar y Maxil Inventario inmediato y corte a la medida.",
+    "Venta de placa y planchones de acero A-36, AR-400, SAE 1045, 4140, Brinar, Maxil, Hardox & Strenx Inventario inmediato y corte a la medida.",
   alternates: {
     canonical: "https://aamsa.com/productos/placa",
     languages: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Placa de Acero en Diferentes Espesores | Aamsa",
     description:
-      "Venta de placa y planchones de acero A-36, AR-400, SAE 1045, 4140, Hardox, Strenx, Brinar y Maxil Inventario inmediato y corte a la medida.",
+      "Venta de placa y planchones de acero A-36, AR-400, SAE 1045, 4140, Brinar, Maxil, Hardox & Strenx Inventario inmediato y corte a la medida.",
     url: "https://aamsa.com/productos/placa",
     images: [{ url: "https://aamsa.com/og/placa.jpg" }],
     siteName: "Aamsa",
@@ -35,7 +35,7 @@ const productSchema = {
   "@type": "Product",
   name: "Placa de Acero",
   description:
-    "Placa y planchones de acero A-36, AR-400, SAE 1045, SAE 4140, A572 GR-50, Hardox, Strenx, Brinar y Maxil en diferentes espesores. Inventario inmediato y corte a la medida.",
+    "Placa y planchones de acero A-36, AR-400, SAE 1045, SAE 4140, A572 GR-50, Brinar, Maxil, Hardox & Strenx en diferentes espesores. Inventario inmediato y corte a la medida.",
   category: "Acero estructural",
   brand: { "@type": "Brand", name: "Aamsa" },
   offers: {
@@ -53,7 +53,7 @@ const faqItems = [
   {
     question: "¿Qué grados de placa de acero manejan?",
     answer:
-      "A-36, AR-400, SAE 1045, SAE 4140, A572 GR-50, Hardox, Strenx, Brinar y Maxil, entre otros.",
+      "A-36, AR-400, SAE 1045, SAE 4140, A572 GR-50, Brinar, Maxil, Hardox & Strenx, entre otros.",
   },
   {
     question: "¿Qué espesores de planchón venden?",
@@ -171,7 +171,7 @@ export default function PlacaPage() {
         <section className="py-16 bg-[#1B4375]">
           <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
             <p className="font-[family-name:var(--font-inter)] text-lg text-[#B0C4DE] leading-relaxed max-w-3xl">
-              En Aamsa contamos con venta de placa y planchones de acero. Manejamos varios grados como Acero A-36, AR-400, SAE 1045, SAE 4140, A572 GR-50, Hardox, Strenx, Brinar y Maxil, entre otros, con un gran inventario para entrega inmediata en Nuevo León.
+              En Aamsa contamos con venta de placa y planchones de acero. Manejamos varios grados como Acero A-36, AR-400, SAE 1045, SAE 4140, A572 GR-50, Brinar, Maxil, Hardox & Strenx, entre otros, con un gran inventario para entrega inmediata en Nuevo León.
             </p>
           </div>
         </section>
