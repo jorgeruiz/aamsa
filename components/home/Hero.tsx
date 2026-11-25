@@ -181,7 +181,7 @@ export function Hero() {
   });
 
   return (
-    <section className="relative min-h-[100dvh] flex items-center overflow-hidden bg-[#1B4375]">
+    <section data-hero className="relative min-h-[100dvh] flex items-center overflow-hidden bg-[#1B4375]">
       {/* Plant photo stays under the video, including on the server. */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <Image

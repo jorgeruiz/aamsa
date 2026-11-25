@@ -112,3 +112,11 @@
 - En Stats, el encabezado ya dice "respaldada por más de cuatro décadas de experiencia". No se cambió a "más de más de cuatro décadas" porque rompería la frase. El contador de esa sección ya muestra +45.
 
 **Aplicado por:** Cursor agent
+
+### 2026-11-25 — Párrafos de contenido justificados
+
+**Cambios aplicados:**
+- app/globals.css justifica los párrafos de contenido dentro de main (text-align: justify y hyphens: auto; el idioma sale de html lang="es")
+- Quedan sin justificar el hero de inicio, párrafos con text-center o text-right, textos cortos de tarjetas (text-sm dentro de grids o articles), stats, notas pequeñas, direcciones y extractos con line-clamp. Navbar y footer están fuera de main.
+
+**Aplicado por:** Cursor agent
