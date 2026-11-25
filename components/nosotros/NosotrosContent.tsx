@@ -93,7 +93,7 @@ export function NosotrosContent() {
               className="font-[family-name:var(--font-barlow)] font-black uppercase leading-none text-white max-w-3xl"
               style={{ fontSize: "clamp(36px, 5vw, 64px)" }}
             >
-              Más de 40 años
+              Más de 45 años
               <br />
               <span className="text-[#FF7F00]">transformando acero</span>
             </h1>

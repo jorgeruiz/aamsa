@@ -62,7 +62,7 @@ export default function HomePage() {
               "name": "¿Aamsa cuenta con certificación ISO 9001?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí, Aamsa está certificado bajo la norma ISO 9001, garantizando procesos de calidad en distribución y procesamiento de acero industrial. Con más de 40 años en la industria, la calidad es parte de nuestra operación diaria."
+                "text": "Sí, Aamsa está certificado bajo la norma ISO 9001, garantizando procesos de calidad en distribución y procesamiento de acero industrial. Con más de 45 años en la industria, la calidad es parte de nuestra operación diaria."
               }
             }
           ]
