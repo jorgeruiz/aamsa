@@ -4,7 +4,7 @@
 
 ## Estado actual
 
-**Ultima actualizacion:** 2026-07-08
+**Ultima actualizacion:** 2026-11-25
 **Version del sitio:** 1.0.0
 **URL de produccion:** https://aamsa.com
 **Repo:** https://github.com/jorgeruiz/aamsa
@@ -93,3 +93,14 @@
 - Articulo de blog publicado: "Acero Estructural: Tipos y Aplicaciones para Proyectos Industriales en Monterrey" (/blog/acero-estructural-tipos-y-aplicaciones-para-proyectos-industriales-en-monterrey)
 
 **Aplicado por:** Constructor (publicacion directa)
+
+### 2026-11-25 — SOL-4230a146 imagenes de Joists
+
+**Cambios aplicados:**
+- En /productos/joists-girders, seccion Joists: /joists-produccion-aamsa.jpeg sustituida por /joists-linea-produccion-planta-aamsa.webp
+- En la seccion Joist Girders: /joist-girder-planta-aamsa.jpeg sustituida por /joist-girder-nave-industrial-aamsa.webp, con recorte object-[72%_18%]
+- Galeria (items 3 y 4): mismas dos fotos nuevas y textos alternativos en espanol
+- Los JPEG anteriores siguen en public/ y ya no se referencian en el codigo
+
+**Aplicado por:** Cursor agent
+**Solicitud:** https://app.notion.com/p/4230a1465e5281e6b80eec99fe606863
