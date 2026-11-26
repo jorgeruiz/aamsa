@@ -120,3 +120,5 @@
 - Quedan sin justificar el hero de inicio, párrafos con text-center o text-right, textos cortos de tarjetas (text-sm dentro de grids o articles), stats, notas pequeñas, direcciones y extractos con line-clamp. Navbar y footer están fuera de main.
 
 **Aplicado por:** Cursor agent
+
+25 nov 2026 — Se relanza el despliegue de producción porque falló el deploy de c48f7f7 (orden de marcas en Placas).
